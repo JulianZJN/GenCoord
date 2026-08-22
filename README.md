@@ -104,7 +104,7 @@ REQ agent_b craft.item(q=1,input=oak_planks,item=crafting_table)
   > resource.deliver(q=1,item=crafting_table,dst=order_chest)
 ```
 
-The same schema carries proposal-time routes, resolved role-local obligations, and the executable object consumed by the grounded stack. Short DSL exposes this structure directly at the coordination boundary.
+The same schema carries proposal-time routes, resolved role-local obligations, and the executable object consumed by the grounded stack. Short DSL presents this structure directly as the agent-to-agent executable interface.
 
 ## Release
 
@@ -155,7 +155,7 @@ The arXiv-oriented source order is recorded in [`paper/00README.json`](paper/00R
 
 ## Reproducibility
 
-The deterministic evidence pipeline validates the experimental schema, conditions, episode counts, semantic-cluster unit, training seeds, parse and grounding validity, fallback count, and selected paired-comparison deltas before emitting the released tables and compact data.
+The deterministic evidence pipeline validates the experimental schema, conditions, episode counts, semantic-cluster unit, training seeds, parse and grounding validity, fallback count, and selected paired-comparison deltas before emitting the released tables and canonical data.
 
 ```bash
 make evidence
