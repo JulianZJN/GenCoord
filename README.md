@@ -30,39 +30,33 @@
 <sup>&#42; Equal contribution</sup>
 
 <table width="100%">
-  <tr>
-    <td width="25%" align="center" valign="top">
+  <tr height="92">
+    <td width="25%" align="center" valign="middle">
       <a href="https://www.tsinghua.edu.cn/">
-        <img src="assets/affiliations/tsinghua.png" width="100%" alt="Tsinghua University">
+        <img src="assets/affiliations/tsinghua.png" height="50" alt="Tsinghua University">
       </a>
-      <br><br>
-      <sup>1</sup> <b>Tsinghua University</b><br>
-      <sub>Beijing, China</sub>
     </td>
-    <td width="25%" align="center" valign="top">
+    <td width="25%" align="center" valign="middle">
       <a href="https://www.bnbu.edu.cn/">
-        <img src="assets/affiliations/bnbu.svg" width="100%" alt="Beijing Normal-Hong Kong Baptist University">
+        <img src="assets/affiliations/bnbu.svg" height="50" alt="Beijing Normal-Hong Kong Baptist University">
       </a>
-      <br><br>
-      <sup>2</sup> <b>Beijing Normal-Hong Kong Baptist University</b><br>
-      <sub>Zhuhai, China</sub>
     </td>
-    <td width="25%" align="center" valign="top">
+    <td width="25%" align="center" valign="middle">
       <a href="https://www.charlotte.edu/">
-        <img src="assets/affiliations/unc_charlotte.png" width="100%" alt="University of North Carolina at Charlotte">
+        <img src="assets/affiliations/unc_charlotte.png" height="50" alt="University of North Carolina at Charlotte">
       </a>
-      <br><br>
-      <sup>3</sup> <b>University of North Carolina at Charlotte</b><br>
-      <sub>Charlotte, United States</sub>
     </td>
-    <td width="25%" align="center" valign="top">
+    <td width="25%" align="center" valign="middle">
       <a href="https://ucsd.edu/">
-        <img src="assets/affiliations/uc_san_diego.png" width="100%" alt="University of California San Diego">
+        <img src="assets/affiliations/uc_san_diego.png" height="50" alt="University of California San Diego">
       </a>
-      <br><br>
-      <sup>4</sup> <b>University of California San Diego</b><br>
-      <sub>San Diego, United States</sub>
     </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><sup>1</sup> <b>Tsinghua University</b><br><sub>Beijing, China</sub></td>
+    <td align="center" valign="top"><sup>2</sup> <b>Beijing Normal-Hong Kong Baptist University</b><br><sub>Zhuhai, China</sub></td>
+    <td align="center" valign="top"><sup>3</sup> <b>University of North Carolina at Charlotte</b><br><sub>Charlotte, United States</sub></td>
+    <td align="center" valign="top"><sup>4</sup> <b>University of California San Diego</b><br><sub>San Diego, United States</sub></td>
   </tr>
 </table>
 
