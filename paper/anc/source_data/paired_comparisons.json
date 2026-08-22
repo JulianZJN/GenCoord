@@ -1,0 +1,347 @@
+{
+  "schema_version": "gencoord-paired-comparisons-v1",
+  "difference_convention": "treatment_minus_comparator_for_success; comparator_minus_treatment_for_cost_saving_when_declared_by_source",
+  "source_scope": "bundled aggregate analysis; no episode-level trajectories",
+  "comparisons": {
+    "CONFIRM|gcp_vs_self_plan|cost.input_tokens": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_self_plan",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SELF_PLAN_ONLY_0.8B",
+      "metric": "cost.input_tokens",
+      "treatment_mean": 1154.9875,
+      "comparator_mean": 1098.4875,
+      "difference": -56.5,
+      "ci95": [
+        -57.025,
+        -55.9875
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 3623271105,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_self_plan|cost.model_calls": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_self_plan",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SELF_PLAN_ONLY_0.8B",
+      "metric": "cost.model_calls",
+      "treatment_mean": 2.0,
+      "comparator_mean": 2.0,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 721347608,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_self_plan|cost.output_tokens": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_self_plan",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SELF_PLAN_ONLY_0.8B",
+      "metric": "cost.output_tokens",
+      "treatment_mean": 268.125,
+      "comparator_mean": 156.125,
+      "difference": -112.0,
+      "ci95": [
+        -112.85640624999999,
+        -111.16875
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 2077404180,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_self_plan|terminal_success": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_self_plan",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SELF_PLAN_ONLY_0.8B",
+      "metric": "terminal_success",
+      "treatment_mean": 1.0,
+      "comparator_mean": 0.5,
+      "difference": 0.5,
+      "ci95": [
+        0.425,
+        0.575
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 2748593156,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_shuffled|cost.input_tokens": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_shuffled",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SHUFFLED_REQUEST",
+      "metric": "cost.input_tokens",
+      "treatment_mean": 1154.9875,
+      "comparator_mean": 1154.9875,
+      "difference": 0.0,
+      "ci95": [
+        -0.5375,
+        0.53125
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 1622726818,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_shuffled|cost.model_calls": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_shuffled",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SHUFFLED_REQUEST",
+      "metric": "cost.model_calls",
+      "treatment_mean": 2.0,
+      "comparator_mean": 2.0,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 1858471609,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_shuffled|cost.output_tokens": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_shuffled",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SHUFFLED_REQUEST",
+      "metric": "cost.output_tokens",
+      "treatment_mean": 268.125,
+      "comparator_mean": 268.125,
+      "difference": 0.0,
+      "ci95": [
+        -0.29375,
+        0.2875
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 1440621422,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_shuffled|terminal_success": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_shuffled",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SHUFFLED_REQUEST",
+      "metric": "terminal_success",
+      "treatment_mean": 1.0,
+      "comparator_mean": 0.0,
+      "difference": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 2045757745,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_rule|cost.input_tokens": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_rule",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "RULE_MINIMAL_REQUEST",
+      "metric": "cost.input_tokens",
+      "treatment_mean": 1154.9875,
+      "comparator_mean": 0.0,
+      "difference": -1154.9875,
+      "ci95": [
+        -1157.2375,
+        -1152.74984375
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 886762646,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_rule|cost.model_calls": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_rule",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "RULE_MINIMAL_REQUEST",
+      "metric": "cost.model_calls",
+      "treatment_mean": 2.0,
+      "comparator_mean": 0.0,
+      "difference": -2.0,
+      "ci95": [
+        -2.0,
+        -2.0
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 86093031,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_rule|cost.output_tokens": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_rule",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "RULE_MINIMAL_REQUEST",
+      "metric": "cost.output_tokens",
+      "treatment_mean": 268.125,
+      "comparator_mean": 0.0,
+      "difference": -268.125,
+      "ci95": [
+        -269.1,
+        -267.16859374999996
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 468143615,
+      "bootstrap_repetitions": 10000
+    },
+    "CONFIRM|gcp_vs_rule|terminal_success": {
+      "scope": "CONFIRM",
+      "comparison": "gcp_vs_rule",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "RULE_MINIMAL_REQUEST",
+      "metric": "terminal_success",
+      "treatment_mean": 1.0,
+      "comparator_mean": 1.0,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 160,
+      "bootstrap_seed": 2259375608,
+      "bootstrap_repetitions": 10000
+    },
+    "TEMPLATE_OOD|gcp_vs_single_step|cost.input_tokens": {
+      "scope": "TEMPLATE_OOD",
+      "comparison": "gcp_vs_single_step",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SINGLE_STEP_REQUEST_0.8B",
+      "metric": "cost.input_tokens",
+      "treatment_mean": 1146.5020833333333,
+      "comparator_mean": 1689.1083333333333,
+      "difference": 542.60625,
+      "ci95": [
+        517.5780729166667,
+        567.81703125
+      ],
+      "clusters": 80,
+      "bootstrap_seed": 2857351022,
+      "bootstrap_repetitions": 10000
+    },
+    "TEMPLATE_OOD|gcp_vs_single_step|cost.model_calls": {
+      "scope": "TEMPLATE_OOD",
+      "comparison": "gcp_vs_single_step",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SINGLE_STEP_REQUEST_0.8B",
+      "metric": "cost.model_calls",
+      "treatment_mean": 1.98125,
+      "comparator_mean": 2.9125,
+      "difference": 0.93125,
+      "ci95": [
+        0.8916666666666666,
+        0.9708333333333334
+      ],
+      "clusters": 80,
+      "bootstrap_seed": 2961879904,
+      "bootstrap_repetitions": 10000
+    },
+    "TEMPLATE_OOD|gcp_vs_single_step|cost.output_tokens": {
+      "scope": "TEMPLATE_OOD",
+      "comparison": "gcp_vs_single_step",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SINGLE_STEP_REQUEST_0.8B",
+      "metric": "cost.output_tokens",
+      "treatment_mean": 265.4625,
+      "comparator_mean": 270.5541666666667,
+      "difference": 5.091666666666667,
+      "ci95": [
+        2.8354166666666667,
+        7.520885416666665
+      ],
+      "clusters": 80,
+      "bootstrap_seed": 3229093998,
+      "bootstrap_repetitions": 10000
+    },
+    "TEMPLATE_OOD|gcp_vs_single_step|terminal_success": {
+      "scope": "TEMPLATE_OOD",
+      "comparison": "gcp_vs_single_step",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "SINGLE_STEP_REQUEST_0.8B",
+      "metric": "terminal_success",
+      "treatment_mean": 0.98125,
+      "comparator_mean": 0.9125,
+      "difference": 0.06875,
+      "ci95": [
+        0.029166666666666664,
+        0.10833333333333332
+      ],
+      "clusters": 80,
+      "bootstrap_seed": 1068640828,
+      "bootstrap_repetitions": 10000
+    },
+    "TEMPLATE_OOD|gcp_vs_rule|cost.input_tokens": {
+      "scope": "TEMPLATE_OOD",
+      "comparison": "gcp_vs_rule",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "RULE_MINIMAL_REQUEST",
+      "metric": "cost.input_tokens",
+      "treatment_mean": 1146.5020833333333,
+      "comparator_mean": 0.0,
+      "difference": -1146.5020833333333,
+      "ci95": [
+        -1157.8416666666667,
+        -1130.9372395833334
+      ],
+      "clusters": 80,
+      "bootstrap_seed": 71434697,
+      "bootstrap_repetitions": 10000
+    },
+    "TEMPLATE_OOD|gcp_vs_rule|cost.model_calls": {
+      "scope": "TEMPLATE_OOD",
+      "comparison": "gcp_vs_rule",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "RULE_MINIMAL_REQUEST",
+      "metric": "cost.model_calls",
+      "treatment_mean": 1.98125,
+      "comparator_mean": 0.0,
+      "difference": -1.98125,
+      "ci95": [
+        -1.9979166666666668,
+        -1.95625
+      ],
+      "clusters": 80,
+      "bootstrap_seed": 3635041144,
+      "bootstrap_repetitions": 10000
+    },
+    "TEMPLATE_OOD|gcp_vs_rule|cost.output_tokens": {
+      "scope": "TEMPLATE_OOD",
+      "comparison": "gcp_vs_rule",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "RULE_MINIMAL_REQUEST",
+      "metric": "cost.output_tokens",
+      "treatment_mean": 265.4625,
+      "comparator_mean": 0.0,
+      "difference": -265.4625,
+      "ci95": [
+        -267.37916666666666,
+        -263.3375
+      ],
+      "clusters": 80,
+      "bootstrap_seed": 2101214627,
+      "bootstrap_repetitions": 10000
+    },
+    "TEMPLATE_OOD|gcp_vs_rule|terminal_success": {
+      "scope": "TEMPLATE_OOD",
+      "comparison": "gcp_vs_rule",
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B",
+      "comparator": "RULE_MINIMAL_REQUEST",
+      "metric": "terminal_success",
+      "treatment_mean": 0.98125,
+      "comparator_mean": 1.0,
+      "difference": -0.01875,
+      "ci95": [
+        -0.04166666666666667,
+        -0.002083333333333333
+      ],
+      "clusters": 80,
+      "bootstrap_seed": 3892618523,
+      "bootstrap_repetitions": 10000
+    }
+  }
+}

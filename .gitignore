@@ -1,0 +1,28 @@
+.DS_Store
+
+# LaTeX build products
+paper/*.aux
+paper/*.bbl.tmp
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.pdf
+paper/*.synctex.gz
+paper/*.toc
+
+# Local combined build
+build/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Editor and local environment files
+.idea/
+.vscode/
+*.swp
+*.swo
+.env
+.env.*

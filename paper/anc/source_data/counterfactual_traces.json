@@ -1,0 +1,30 @@
+[
+  {
+    "source": "reports/gcp_sequence/minimal_supplements/v0.2/C_mutual_private_info/raw_episodes/C_MESSAGE_PASSING.seed_2026080601/shard_00/episodes/GCP-MPI-CONFIRM-STICK-RAW_PROCESSOR-V006-R0/controller_trace.json",
+    "role_instance_id": "GCP-MPI-CONFIRM-STICK-RAW_PROCESSOR-V006-R0",
+    "initial_prompt_sha256": "a7f300f35e9e038a0f80c44eee989682cae5e08eecd50c6513cc5a33ef35a62c",
+    "initial_output": "SELF resource.obtain(q=2,item=oak_planks) > resource.deliver(q=2,item=oak_planks,to=agent_b)\nREQ agent_b craft.item(q=4,input=oak_planks,item=stick) > resource.deliver(q=4,dst=order_chest,item=stick)",
+    "response": {
+      "counter_offer_id": null,
+      "decision": "ACCEPT",
+      "reason_code": "LOCAL_WORKCELL_CAN_PROCESS"
+    },
+    "revised_output": "SELF resource.obtain(q=2,item=oak_planks) > resource.deliver(q=2,item=oak_planks,to=agent_b)\nREQ agent_b craft.item(q=4,input=oak_planks,item=stick) > resource.deliver(q=4,dst=order_chest,item=stick)",
+    "terminal_success": true,
+    "wire_bytes": 88
+  },
+  {
+    "source": "reports/gcp_sequence/minimal_supplements/v0.2/C_mutual_private_info/raw_episodes/C_MESSAGE_PASSING.seed_2026080601/shard_00/episodes/GCP-MPI-CONFIRM-STICK-FINISHED_RECEIVER-V006-R0/controller_trace.json",
+    "role_instance_id": "GCP-MPI-CONFIRM-STICK-FINISHED_RECEIVER-V006-R0",
+    "initial_prompt_sha256": "a7f300f35e9e038a0f80c44eee989682cae5e08eecd50c6513cc5a33ef35a62c",
+    "initial_output": "SELF resource.obtain(q=2,item=oak_planks) > resource.deliver(q=2,item=oak_planks,to=agent_b)\nREQ agent_b craft.item(q=4,input=oak_planks,item=stick) > resource.deliver(q=4,dst=order_chest,item=stick)",
+    "response": {
+      "counter_offer_id": "CRAFT_AT_REQUESTER_HANDOFF_FINISHED",
+      "decision": "COUNTER",
+      "reason_code": "FINISHED_ITEM_REQUIRED"
+    },
+    "revised_output": "SELF resource.obtain(q=2,item=oak_planks) > craft.item(q=4,input=oak_planks,item=stick) > resource.deliver(q=4,item=stick,to=agent_b)\nREQ agent_b resource.deliver(q=4,dst=order_chest,item=stick)",
+    "terminal_success": true,
+    "wire_bytes": 118
+  }
+]

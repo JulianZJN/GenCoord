@@ -1,0 +1,5 @@
+condition,training_seeds,semantic_clusters,episodes,terminal_success,ci95_low,ci95_high,strict_clusters,mean_model_calls,measured_boundary_component
+A_ONLY,3,40,240,0.5,0.35,0.65,20,1.0,0 B cross-boundary payload
+CORRECT_FEEDBACK,3,40,240,1.0,1.0,1.0,40,2.0,response: mean 103 B
+COUNTERFACTUAL_FEEDBACK,3,40,240,0.0,0.0,0.0,0,2.0,injected response: mean 103 B
+CENTRALIZED_FULL_INFO,3,40,240,1.0,1.0,1.0,40,1.0,state aggregation: mean 956 B

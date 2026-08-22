@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use GenCoord, please cite the preprint described below."
+title: "GenCoord: Skill-Path Commitments under Private Information"
+type: software
+repository-code: "https://github.com/JulianZJN/GenCoord"
+authors:
+  - given-names: Peng
+    family-names: He
+    affiliation: Tsinghua University
+    email: hepeng@tsinghua-wx.org
+  - given-names: Junning
+    family-names: Zhu
+    affiliation: Beijing Normal-Hong Kong Baptist University
+    email: t330025113@mail.bnbu.edu.cn
+  - given-names: Haohan
+    family-names: Yuan
+    affiliation: University of North Carolina at Charlotte
+    email: hyuan3@charlotte.edu
+  - given-names: Jianpeng
+    family-names: Liang
+    affiliation: University of California San Diego
+    email: jil652@ucsd.edu
+abstract: >-
+  GenCoord represents the executable task consequences of distributed private
+  facts as typed, multi-step skill-path commitments that are resolved across
+  agents, compiled to grounded skills, and verified in Minecraft.
+preferred-citation:
+  type: article
+  title: "GenCoord: Skill-Path Commitments under Private Information"
+  authors:
+    - given-names: Peng
+      family-names: He
+    - given-names: Junning
+      family-names: Zhu
+    - given-names: Haohan
+      family-names: Yuan
+    - given-names: Jianpeng
+      family-names: Liang
+  year: 2026
+  notes: "Preprint; arXiv identifier and public release date pending."

@@ -1,0 +1,1258 @@
+{
+  "centralized_training_results": [
+    {
+      "base_model": {
+        "path": "MODEL_ROOT/Qwen__Qwen3.5-0.8B",
+        "repo_id": "Qwen/Qwen3.5-0.8B",
+        "tree_sha256": "1ba0a4abe90d8f7a12696558b8967648d50c8c63cd093b18e4b8a1f698111f4d"
+      },
+      "budget_audit": {
+        "path": "PROJECT_ROOT/reports/gcp_sequence/minimal_supplements/v0.2/C_mutual_private_info/training_budget_audit.json",
+        "sha256": "936e710ff9bd18709e4403c12e0d332a0da689dec5201477ecb4687058435dea"
+      },
+      "checkpoint_selection": "FINAL_STEP_NO_DEV_SELECTION",
+      "completed_at_utc": "2026-08-05T19:19:46.876200+00:00",
+      "dev_outcome_accessed": false,
+      "formal_test_unsealed": false,
+      "method_id": "MUTUAL_PRIVATE_CENTRALIZED_GCP_0.8B",
+      "outputs": {
+        "checkpoint": "PROJECT_ROOT/reports/gcp_sequence/minimal_supplements/v0.2/C_mutual_private_info/training/runs/MUTUAL_PRIVATE_CENTRALIZED_GCP_0.8B.seed_2026080601/final_checkpoint",
+        "checkpoint_tree_sha256": "04d61f7a2beadfe44db67078296ff85fff1f750094e157b0ac877fcb6cc26456"
+      },
+      "qualification_access": "NONE",
+      "run_id": "MUTUAL_PRIVATE_CENTRALIZED_GCP_0.8B.seed_2026080601",
+      "runtime": {
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA A100-PCIE-40GB",
+        "gpu_total_memory_bytes": 42405855232,
+        "model_load_seconds": 1.005432428792119,
+        "peak_gpu_memory_bytes": 11648960512,
+        "torch": "2.11.0+cu130",
+        "transformers": "5.12.1"
+      },
+      "schema_version": "gcp-minimal-supplement-training-result-v0.2",
+      "seed": 2026080601,
+      "started_at_utc": "2026-08-05T19:08:12.395895+00:00",
+      "token_exposure": {
+        "max_length": 2048,
+        "max_total_tokens": 765,
+        "median_total_tokens": 760,
+        "min_total_tokens": 753,
+        "p99_total_tokens": 765,
+        "prompt_tokens_sum_per_epoch": 221240,
+        "target_tokens_sum_per_epoch": 20960,
+        "total_tokens_sum_per_epoch": 242520
+      },
+      "training": {
+        "all_losses_finite": true,
+        "effective_batch_size": 16,
+        "epochs": 4,
+        "first_third_mean_loss": 0.21890380848155752,
+        "gradient_accumulation_steps": 8,
+        "last_third_mean_loss": 6.682679042149594e-05,
+        "loss_decreased": true,
+        "micro_batch_size": 2,
+        "optimizer_steps": 80,
+        "rows": 320,
+        "sample_occurrences": 1280,
+        "step_losses": [
+          1.682442545890808,
+          1.7898204177618027,
+          1.0305750891566277,
+          0.43992040306329727,
+          0.2238006256520748,
+          0.12494656257331371,
+          0.049648790154606104,
+          0.08068523975089192,
+          0.04170576692558825,
+          0.04280154686421156,
+          0.03205993911251426,
+          0.0319652003236115,
+          0.039079620968550444,
+          0.019561913679353893,
+          0.01953426841646433,
+          0.018534319067839533,
+          0.00821297662332654,
+          0.008529021521098912,
+          0.004487647907808423,
+          0.001417805404344108,
+          0.0008752846333663911,
+          0.0002438525261823088,
+          0.00019346421686350368,
+          0.00016688207142578904,
+          0.00014982819811848458,
+          0.00014000805640534963,
+          0.0001295759275308228,
+          0.00012494093971326947,
+          0.00011235090823902283,
+          0.00010662344629963627,
+          9.689452144812094e-05,
+          9.506982769380556e-05,
+          8.873976730683353e-05,
+          8.82881167854066e-05,
+          8.347985476575559e-05,
+          8.191203960450366e-05,
+          7.936595739010954e-05,
+          7.607122461195104e-05,
+          7.820942209946224e-05,
+          7.349969473580131e-05,
+          7.615616959810723e-05,
+          7.235586872411659e-05,
+          6.961384588066721e-05,
+          7.214542074507335e-05,
+          7.154900049499702e-05,
+          6.85858049109811e-05,
+          7.06479777363711e-05,
+          7.052273849694757e-05,
+          6.819774353061803e-05,
+          7.211264528450556e-05,
+          6.685526386718266e-05,
+          6.756468792445958e-05,
+          6.869383378216298e-05,
+          6.699475306959357e-05,
+          6.692912393191364e-05,
+          6.82474910718156e-05,
+          6.803648284403607e-05,
+          6.675110216747271e-05,
+          6.661121642537182e-05,
+          6.643790493399138e-05,
+          6.788355040043825e-05,
+          6.655410470557399e-05,
+          6.583191043318948e-05,
+          6.645487883361056e-05,
+          6.680002388748107e-05,
+          6.626101730944356e-05,
+          6.629516792600043e-05,
+          6.719403700117255e-05,
+          6.810254035372054e-05,
+          6.559224129887298e-05,
+          6.709292574669234e-05,
+          6.671586561424192e-05,
+          6.632983604504261e-05,
+          6.668230071227299e-05,
+          6.528616995638004e-05,
+          6.719938301102957e-05,
+          6.704665338475024e-05,
+          6.661990482825786e-05,
+          6.720528290315997e-05,
+          6.733543523296248e-05
+        ],
+        "train_seconds": 690.6073989532888
+      },
+      "training_contract": {
+        "checkpoint_selection": "PRECOMMITTED_FINAL_STEP_NO_DEV_SELECTION",
+        "dtype": "bfloat16",
+        "effective_batch_size": 16,
+        "epochs": 4,
+        "gradient_accumulation_steps": 8,
+        "gradient_checkpointing": true,
+        "learning_rate": 1e-05,
+        "matching_score": 0.11035767841477566,
+        "max_grad_norm": 1.0,
+        "max_length": 2048,
+        "micro_batch_size": 2,
+        "optimizer_update_ratio": 1.0,
+        "optimizer_updates": 80,
+        "scheduler": "cosine",
+        "token_exposure": 970080,
+        "token_exposure_ratio": 1.1166774104429507,
+        "warmup_ratio": 0.03,
+        "weight_decay": 0.01
+      },
+      "training_data": {
+        "path": "PROJECT_ROOT/data/gcp_sequence/minimal_supplements/v0.2/mutual_private_info/training/centralized_gcp.jsonl",
+        "rows": 320,
+        "sha256": "e87e3005b0cdfe4f08fb057b827d8ce1fc1b5b4aa6365f52341022f979eaf776"
+      },
+      "verdict": "TRAIN_COMPLETE_FINAL_STEP_PENDING_EVALUATION"
+    },
+    {
+      "base_model": {
+        "path": "MODEL_ROOT/Qwen__Qwen3.5-0.8B",
+        "repo_id": "Qwen/Qwen3.5-0.8B",
+        "tree_sha256": "1ba0a4abe90d8f7a12696558b8967648d50c8c63cd093b18e4b8a1f698111f4d"
+      },
+      "budget_audit": {
+        "path": "PROJECT_ROOT/reports/gcp_sequence/minimal_supplements/v0.2/C_mutual_private_info/training_budget_audit.json",
+        "sha256": "936e710ff9bd18709e4403c12e0d332a0da689dec5201477ecb4687058435dea"
+      },
+      "checkpoint_selection": "FINAL_STEP_NO_DEV_SELECTION",
+      "completed_at_utc": "2026-08-17T07:33:23.880857+00:00",
+      "dev_outcome_accessed": false,
+      "formal_test_unsealed": false,
+      "method_id": "MUTUAL_PRIVATE_CENTRALIZED_GCP_0.8B",
+      "outputs": {
+        "checkpoint": "PROJECT_ROOT/reports/gcp_sequence/minimal_supplements/v0.2/C_feedback_intervention_and_central_seed_completion_v0.1/training/runs/MUTUAL_PRIVATE_CENTRALIZED_GCP_0.8B.seed_2026080602/final_checkpoint",
+        "checkpoint_tree_sha256": "9e21f90d89353a708d2467fc78011a0805291fd1e003e403ad509c88227926ce"
+      },
+      "qualification_access": "NONE",
+      "run_id": "MUTUAL_PRIVATE_CENTRALIZED_GCP_0.8B.seed_2026080602",
+      "runtime": {
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA GeForce RTX 4090 D",
+        "gpu_total_memory_bytes": 25252724736,
+        "model_load_seconds": 57.77529548481107,
+        "peak_gpu_memory_bytes": 11648960512,
+        "pytorch_cuda_alloc_conf": "expandable_segments:True",
+        "torch": "2.11.0+cu130",
+        "transformers": "5.12.1"
+      },
+      "schema_version": "gcp-minimal-supplement-training-result-v0.2",
+      "seed": 2026080602,
+      "seed_extension": {
+        "additional_training_seeds": [
+          2026080602,
+          2026080603
+        ],
+        "base_training_seed": 2026080601,
+        "path": "PROJECT_ROOT/configs/gcp_mutual_private_feedback_intervention_v0.1.json",
+        "scope": "CENTRALIZED_FULL_INFORMATION_THREE_SEED_COMPLETION",
+        "sha256": "4a12cb3f1dfa95a3854ba75fd7318fe782ec4a87e4bee4c145d1ea84e1d56b9c"
+      },
+      "started_at_utc": "2026-08-17T07:21:17.762211+00:00",
+      "token_exposure": {
+        "max_length": 2048,
+        "max_total_tokens": 765,
+        "median_total_tokens": 760,
+        "min_total_tokens": 753,
+        "p99_total_tokens": 765,
+        "prompt_tokens_sum_per_epoch": 221240,
+        "target_tokens_sum_per_epoch": 20960,
+        "total_tokens_sum_per_epoch": 242520
+      },
+      "training": {
+        "all_losses_finite": true,
+        "effective_batch_size": 16,
+        "epochs": 4,
+        "first_third_mean_loss": 0.20701271195293186,
+        "gradient_accumulation_steps": 8,
+        "last_third_mean_loss": 5.8215229361079626e-05,
+        "loss_decreased": true,
+        "micro_batch_size": 2,
+        "optimizer_steps": 80,
+        "rows": 320,
+        "sample_occurrences": 1280,
+        "step_losses": [
+          1.7057401239871979,
+          1.653818428516388,
+          1.0068660378456116,
+          0.4375787414610386,
+          0.16918252594769,
+          0.14810731820762157,
+          0.06345944246277213,
+          0.043165517039597034,
+          0.030983200063928962,
+          0.03697430482134223,
+          0.020801187260076404,
+          0.02023247629404068,
+          0.012758760654833168,
+          0.014487251290120184,
+          0.008163146208971739,
+          0.0050007381360046566,
+          0.002260371984448284,
+          0.0014595337488572113,
+          0.00029341053232201375,
+          0.00019745474128285423,
+          0.00016864696044649463,
+          0.0001478015419706935,
+          0.00013712483632843941,
+          0.0001246669198735617,
+          0.00011426158107497031,
+          0.00010803773238876602,
+          0.0001003600546027883,
+          9.258154113922501e-05,
+          8.704266929271398e-05,
+          8.363037704839371e-05,
+          8.016220999707002e-05,
+          7.772848766762763e-05,
+          7.525682303821668e-05,
+          7.282732713065343e-05,
+          7.069646926538553e-05,
+          6.842060611234047e-05,
+          6.707922148052603e-05,
+          6.62572401779471e-05,
+          6.474057681771228e-05,
+          6.375920656864764e-05,
+          6.302051133388886e-05,
+          6.335355692499434e-05,
+          6.265611364142387e-05,
+          6.118715054981294e-05,
+          6.140696405054769e-05,
+          6.127296683189343e-05,
+          5.95612336837803e-05,
+          5.919688737776596e-05,
+          5.940360779277398e-05,
+          5.919065279158531e-05,
+          5.9468860854394734e-05,
+          5.918132728766068e-05,
+          5.850623392689158e-05,
+          5.8543242175801424e-05,
+          5.824819527333602e-05,
+          5.972355393168982e-05,
+          5.765333435192588e-05,
+          5.9070006500405725e-05,
+          5.781873369414825e-05,
+          5.829544943480869e-05,
+          5.854628761881031e-05,
+          5.83141295464884e-05,
+          5.756042719440302e-05,
+          5.827293534821365e-05,
+          5.783675351267448e-05,
+          5.7873929563356796e-05,
+          5.797040921606822e-05,
+          5.90400100008992e-05,
+          5.875351052964106e-05,
+          5.823572746521677e-05,
+          5.800325470772805e-05,
+          5.760880776506383e-05,
+          5.7851947985909646e-05,
+          5.867691561434185e-05,
+          5.8879256812360836e-05,
+          5.7836229188978905e-05,
+          5.846277599630412e-05,
+          5.834505236634868e-05,
+          5.7657724028103985e-05,
+          5.706060574084404e-05
+        ],
+        "train_seconds": 723.020791105926
+      },
+      "training_contract": {
+        "checkpoint_selection": "PRECOMMITTED_FINAL_STEP_NO_DEV_SELECTION",
+        "dtype": "bfloat16",
+        "effective_batch_size": 16,
+        "epochs": 4,
+        "gradient_accumulation_steps": 8,
+        "gradient_checkpointing": true,
+        "learning_rate": 1e-05,
+        "matching_score": 0.11035767841477566,
+        "max_grad_norm": 1.0,
+        "max_length": 2048,
+        "micro_batch_size": 2,
+        "optimizer_update_ratio": 1.0,
+        "optimizer_updates": 80,
+        "scheduler": "cosine",
+        "token_exposure": 970080,
+        "token_exposure_ratio": 1.1166774104429507,
+        "warmup_ratio": 0.03,
+        "weight_decay": 0.01
+      },
+      "training_data": {
+        "path": "PROJECT_ROOT/data/gcp_sequence/minimal_supplements/v0.2/mutual_private_info/training/centralized_gcp.jsonl",
+        "rows": 320,
+        "sha256": "e87e3005b0cdfe4f08fb057b827d8ce1fc1b5b4aa6365f52341022f979eaf776"
+      },
+      "verdict": "TRAIN_COMPLETE_FINAL_STEP_PENDING_EVALUATION"
+    },
+    {
+      "base_model": {
+        "path": "MODEL_ROOT/Qwen__Qwen3.5-0.8B",
+        "repo_id": "Qwen/Qwen3.5-0.8B",
+        "tree_sha256": "1ba0a4abe90d8f7a12696558b8967648d50c8c63cd093b18e4b8a1f698111f4d"
+      },
+      "budget_audit": {
+        "path": "PROJECT_ROOT/reports/gcp_sequence/minimal_supplements/v0.2/C_mutual_private_info/training_budget_audit.json",
+        "sha256": "936e710ff9bd18709e4403c12e0d332a0da689dec5201477ecb4687058435dea"
+      },
+      "checkpoint_selection": "FINAL_STEP_NO_DEV_SELECTION",
+      "completed_at_utc": "2026-08-17T07:33:31.658409+00:00",
+      "dev_outcome_accessed": false,
+      "formal_test_unsealed": false,
+      "method_id": "MUTUAL_PRIVATE_CENTRALIZED_GCP_0.8B",
+      "outputs": {
+        "checkpoint": "PROJECT_ROOT/reports/gcp_sequence/minimal_supplements/v0.2/C_feedback_intervention_and_central_seed_completion_v0.1/training/runs/MUTUAL_PRIVATE_CENTRALIZED_GCP_0.8B.seed_2026080603/final_checkpoint",
+        "checkpoint_tree_sha256": "d838b744c1e2854f6421f5876a5596245bd6e9e8e2b9ffe50b4691c108ccc535"
+      },
+      "qualification_access": "NONE",
+      "run_id": "MUTUAL_PRIVATE_CENTRALIZED_GCP_0.8B.seed_2026080603",
+      "runtime": {
+        "cuda": "13.0",
+        "gpu_name": "NVIDIA GeForce RTX 4090 D",
+        "gpu_total_memory_bytes": 25252724736,
+        "model_load_seconds": 57.8196189366281,
+        "peak_gpu_memory_bytes": 11648960512,
+        "pytorch_cuda_alloc_conf": "expandable_segments:True",
+        "torch": "2.11.0+cu130",
+        "transformers": "5.12.1"
+      },
+      "schema_version": "gcp-minimal-supplement-training-result-v0.2",
+      "seed": 2026080603,
+      "seed_extension": {
+        "additional_training_seeds": [
+          2026080602,
+          2026080603
+        ],
+        "base_training_seed": 2026080601,
+        "path": "PROJECT_ROOT/configs/gcp_mutual_private_feedback_intervention_v0.1.json",
+        "scope": "CENTRALIZED_FULL_INFORMATION_THREE_SEED_COMPLETION",
+        "sha256": "4a12cb3f1dfa95a3854ba75fd7318fe782ec4a87e4bee4c145d1ea84e1d56b9c"
+      },
+      "started_at_utc": "2026-08-17T07:21:17.806321+00:00",
+      "token_exposure": {
+        "max_length": 2048,
+        "max_total_tokens": 765,
+        "median_total_tokens": 760,
+        "min_total_tokens": 753,
+        "p99_total_tokens": 765,
+        "prompt_tokens_sum_per_epoch": 221240,
+        "target_tokens_sum_per_epoch": 20960,
+        "total_tokens_sum_per_epoch": 242520
+      },
+      "training": {
+        "all_losses_finite": true,
+        "effective_batch_size": 16,
+        "epochs": 4,
+        "first_third_mean_loss": 0.21085427386760086,
+        "gradient_accumulation_steps": 8,
+        "last_third_mean_loss": 5.922137482299989e-05,
+        "loss_decreased": true,
+        "micro_batch_size": 2,
+        "optimizer_steps": 80,
+        "rows": 320,
+        "sample_occurrences": 1280,
+        "step_losses": [
+          1.7144547700881958,
+          1.644041270017624,
+          1.0598228797316551,
+          0.42395884543657303,
+          0.1777674499899149,
+          0.06536262575536966,
+          0.059907564776949584,
+          0.11513447650941089,
+          0.03775862487964332,
+          0.05982098076492548,
+          0.025497703813016415,
+          0.026447676122188568,
+          0.023007227457128465,
+          0.015160712413489819,
+          0.011258066049776971,
+          0.008359683066373691,
+          0.005302999052219093,
+          0.006323592671833467,
+          0.0011887004948221147,
+          0.0004402441736601759,
+          0.0005136870349815581,
+          0.00021172382548684254,
+          0.0001382007230859017,
+          0.00012021182374155615,
+          0.00010969300547003513,
+          0.00010151088008569786,
+          9.567420602252241e-05,
+          9.014466286316747e-05,
+          8.760913351579802e-05,
+          8.174335016519763e-05,
+          8.347110451722983e-05,
+          8.022230213100556e-05,
+          7.31900981918443e-05,
+          7.340900810959283e-05,
+          7.135345640563173e-05,
+          7.113523133739363e-05,
+          6.904090059833834e-05,
+          7.021258988970658e-05,
+          6.445710096159019e-05,
+          6.531156122946413e-05,
+          6.638642162215547e-05,
+          6.372006009769393e-05,
+          6.201778205650044e-05,
+          6.222651791176759e-05,
+          6.186800510477042e-05,
+          6.076119007047964e-05,
+          5.948691023149877e-05,
+          6.16331453784369e-05,
+          6.022316529197269e-05,
+          5.9876596878893906e-05,
+          6.138070921224426e-05,
+          6.02738782617962e-05,
+          5.995568608341273e-05,
+          5.916983036513557e-05,
+          5.952492210781202e-05,
+          6.123779348854441e-05,
+          5.88562566008477e-05,
+          5.915508836551453e-05,
+          5.903882993152365e-05,
+          5.912599044677336e-05,
+          5.672690440405859e-05,
+          5.770699817730929e-05,
+          6.137710033726762e-05,
+          5.872830115549732e-05,
+          5.859464090463007e-05,
+          5.89399237469479e-05,
+          5.923718845224357e-05,
+          6.006418379911338e-05,
+          5.888905297979363e-05,
+          5.9364108892623335e-05,
+          5.878641695744591e-05,
+          6.0772686993004754e-05,
+          5.7403932260058355e-05,
+          5.87391928092984e-05,
+          6.0263564591878094e-05,
+          5.967826655250974e-05,
+          6.060322994017042e-05,
+          5.957437451797887e-05,
+          5.754093854193343e-05,
+          5.982585844321875e-05
+        ],
+        "train_seconds": 730.2989996299148
+      },
+      "training_contract": {
+        "checkpoint_selection": "PRECOMMITTED_FINAL_STEP_NO_DEV_SELECTION",
+        "dtype": "bfloat16",
+        "effective_batch_size": 16,
+        "epochs": 4,
+        "gradient_accumulation_steps": 8,
+        "gradient_checkpointing": true,
+        "learning_rate": 1e-05,
+        "matching_score": 0.11035767841477566,
+        "max_grad_norm": 1.0,
+        "max_length": 2048,
+        "micro_batch_size": 2,
+        "optimizer_update_ratio": 1.0,
+        "optimizer_updates": 80,
+        "scheduler": "cosine",
+        "token_exposure": 970080,
+        "token_exposure_ratio": 1.1166774104429507,
+        "warmup_ratio": 0.03,
+        "weight_decay": 0.01
+      },
+      "training_data": {
+        "path": "PROJECT_ROOT/data/gcp_sequence/minimal_supplements/v0.2/mutual_private_info/training/centralized_gcp.jsonl",
+        "rows": 320,
+        "sha256": "e87e3005b0cdfe4f08fb057b827d8ce1fc1b5b4aa6365f52341022f979eaf776"
+      },
+      "verdict": "TRAIN_COMPLETE_FINAL_STEP_PENDING_EVALUATION"
+    }
+  ],
+  "claim_boundary": "THREE_TRAINING_SEEDS_ON_ONE_CONTROLLED_GOAL_X_CAPABILITY_FAMILY; COUNTERFACTUAL_RESPONSE_CONTENT_IS_SWAPPED_WHILE_THE_EXECUTABLE_WORLD_STAYS_TRUE",
+  "conditions": {
+    "A_ONLY": {
+      "cost": {
+        "coordination_ms": {
+          "mean": 1858.0080384078126,
+          "p50": 1749.6619801968336,
+          "p95": 1857.7938439324498,
+          "total": 445921.929217875
+        },
+        "decision_rounds": {
+          "mean": 1.0,
+          "p50": 1.0,
+          "p95": 1.0,
+          "total": 240.0
+        },
+        "episode_wall_clock_seconds": {
+          "mean": 15.644616537500001,
+          "p50": 15.546325,
+          "p95": 17.8525359,
+          "total": 3754.707969
+        },
+        "input_tokens": {
+          "mean": 534.5,
+          "p50": 535.0,
+          "p95": 536.0,
+          "total": 128280.0
+        },
+        "merged_central_input_bytes": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "total": 0.0
+        },
+        "model_calls": {
+          "mean": 1.0,
+          "p50": 1.0,
+          "p95": 1.0,
+          "total": 240.0
+        },
+        "model_service_ms": {
+          "mean": 1845.0197198117773,
+          "p50": 1736.8001509457827,
+          "p95": 1844.9138060212135,
+          "total": 442804.73275482655
+        },
+        "output_tokens": {
+          "mean": 67.0,
+          "p50": 67.0,
+          "p95": 69.0,
+          "total": 16080.0
+        },
+        "state_aggregation_bytes": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "total": 0.0
+        },
+        "time_to_commitment_ms": {
+          "mean": 1858.0080384078126,
+          "p50": 1749.6619801968336,
+          "p95": 1857.7938439324498,
+          "total": 445921.929217875
+        },
+        "wire_bytes": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "total": 0.0
+        }
+      },
+      "episodes": 240,
+      "failure_taxonomy": {
+        "SUCCESS": 120,
+        "WRONG_CRAFT_ACTOR": 120
+      },
+      "fallback_episodes": 0,
+      "grounded_valid": 1.0,
+      "per_family": {
+        "MUTUAL_PRIVATE_INFO": {
+          "episodes": 240,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 40,
+          "terminal_success": 0.5
+        }
+      },
+      "per_goal": {
+        "crafting_table": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 0.5
+        },
+        "stick": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 0.5
+        }
+      },
+      "per_motif": {},
+      "per_role_success": {
+        "0": 0.5,
+        "1": 0.5
+      },
+      "per_seed_success": {
+        "2026080601": 0.5,
+        "2026080602": 0.5,
+        "2026080603": 0.5
+      },
+      "per_template": {
+        "PRIVATE_GOAL_X_WORKCELL_CAPABILITY": {
+          "episodes": 240,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 40,
+          "terminal_success": 0.5
+        }
+      },
+      "per_workcell_mode": {
+        "FINISHED_RECEIVER": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 0.0
+        },
+        "RAW_PROCESSOR": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 1.0
+        }
+      },
+      "planning_complete": 1.0,
+      "raw_parse_valid": 1.0,
+      "seed_success_sd_descriptive": 0.0,
+      "semantic_clusters": 40,
+      "strict_clusters_all_replicates_success": 20,
+      "terminal_success_cluster_bootstrap_ci95": [
+        0.35,
+        0.65
+      ],
+      "terminal_success_cluster_mean": 0.5,
+      "verified_handoff": 1.0
+    },
+    "CENTRALIZED_FULL_INFO": {
+      "cost": {
+        "coordination_ms": {
+          "mean": 1745.1136349778,
+          "p50": 1720.1178595423698,
+          "p95": 1825.6433432921767,
+          "total": 418827.27239467204
+        },
+        "decision_rounds": {
+          "mean": 1.0,
+          "p50": 1.0,
+          "p95": 1.0,
+          "total": 240.0
+        },
+        "episode_wall_clock_seconds": {
+          "mean": 16.4459557125,
+          "p50": 16.3415715,
+          "p95": 19.3206703,
+          "total": 3947.029371
+        },
+        "input_tokens": {
+          "mean": 691.5,
+          "p50": 691.0,
+          "p95": 694.0,
+          "total": 165960.0
+        },
+        "merged_central_input_bytes": {
+          "mean": 3128.5,
+          "p50": 3129.5,
+          "p95": 3136.0,
+          "total": 750840.0
+        },
+        "model_calls": {
+          "mean": 1.0,
+          "p50": 1.0,
+          "p95": 1.0,
+          "total": 240.0
+        },
+        "model_service_ms": {
+          "mean": 1735.1986453402787,
+          "p50": 1707.2763312608004,
+          "p95": 1812.6143597066402,
+          "total": 416447.6748816669
+        },
+        "output_tokens": {
+          "mean": 66.5,
+          "p50": 67.0,
+          "p95": 69.0,
+          "total": 15960.0
+        },
+        "state_aggregation_bytes": {
+          "mean": 955.5,
+          "p50": 956.5,
+          "p95": 963.0,
+          "total": 229320.0
+        },
+        "time_to_commitment_ms": {
+          "mean": 1745.1136349778,
+          "p50": 1720.1178595423698,
+          "p95": 1825.6433432921767,
+          "total": 418827.27239467204
+        },
+        "wire_bytes": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "total": 0.0
+        }
+      },
+      "episodes": 240,
+      "failure_taxonomy": {
+        "SUCCESS": 240
+      },
+      "fallback_episodes": 0,
+      "grounded_valid": 1.0,
+      "per_family": {
+        "MUTUAL_PRIVATE_INFO": {
+          "episodes": 240,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 40,
+          "terminal_success": 1.0
+        }
+      },
+      "per_goal": {
+        "crafting_table": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 1.0
+        },
+        "stick": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 1.0
+        }
+      },
+      "per_motif": {},
+      "per_role_success": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "per_seed_success": {
+        "2026080601": 1.0,
+        "2026080602": 1.0,
+        "2026080603": 1.0
+      },
+      "per_template": {
+        "PRIVATE_GOAL_X_WORKCELL_CAPABILITY": {
+          "episodes": 240,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 40,
+          "terminal_success": 1.0
+        }
+      },
+      "per_workcell_mode": {
+        "FINISHED_RECEIVER": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 1.0
+        },
+        "RAW_PROCESSOR": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 1.0
+        }
+      },
+      "planning_complete": 1.0,
+      "raw_parse_valid": 1.0,
+      "seed_success_sd_descriptive": 0.0,
+      "semantic_clusters": 40,
+      "strict_clusters_all_replicates_success": 40,
+      "terminal_success_cluster_bootstrap_ci95": [
+        1.0,
+        1.0
+      ],
+      "terminal_success_cluster_mean": 1.0,
+      "verified_handoff": 1.0
+    },
+    "CORRECT_FEEDBACK": {
+      "cost": {
+        "coordination_ms": {
+          "mean": 3593.397498495566,
+          "p50": 3382.04013928771,
+          "p95": 3691.2314664572477,
+          "total": 862415.3996389359
+        },
+        "decision_rounds": {
+          "mean": 2.0,
+          "p50": 2.0,
+          "p95": 2.0,
+          "total": 480.0
+        },
+        "episode_wall_clock_seconds": {
+          "mean": 16.447964754166666,
+          "p50": 16.2008085,
+          "p95": 19.31196795,
+          "total": 3947.511541
+        },
+        "input_tokens": {
+          "mean": 1224.0,
+          "p50": 1225.0,
+          "p95": 1237.0,
+          "total": 293760.0
+        },
+        "merged_central_input_bytes": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "total": 0.0
+        },
+        "model_calls": {
+          "mean": 2.0,
+          "p50": 2.0,
+          "p95": 2.0,
+          "total": 480.0
+        },
+        "model_service_ms": {
+          "mean": 3546.4335422497243,
+          "p50": 3372.3586834967136,
+          "p95": 3675.4568990319967,
+          "total": 851144.0501399338
+        },
+        "output_tokens": {
+          "mean": 133.5,
+          "p50": 134.0,
+          "p95": 138.0,
+          "total": 32040.0
+        },
+        "state_aggregation_bytes": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "total": 0.0
+        },
+        "time_to_commitment_ms": {
+          "mean": 3593.397498495566,
+          "p50": 3382.04013928771,
+          "p95": 3691.2314664572477,
+          "total": 862415.3996389359
+        },
+        "wire_bytes": {
+          "mean": 103.0,
+          "p50": 103.0,
+          "p95": 118.0,
+          "total": 24720.0
+        }
+      },
+      "episodes": 240,
+      "failure_taxonomy": {
+        "SUCCESS": 240
+      },
+      "fallback_episodes": 0,
+      "grounded_valid": 1.0,
+      "per_family": {
+        "MUTUAL_PRIVATE_INFO": {
+          "episodes": 240,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 40,
+          "terminal_success": 1.0
+        }
+      },
+      "per_goal": {
+        "crafting_table": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 1.0
+        },
+        "stick": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 1.0
+        }
+      },
+      "per_motif": {},
+      "per_role_success": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "per_seed_success": {
+        "2026080601": 1.0,
+        "2026080602": 1.0,
+        "2026080603": 1.0
+      },
+      "per_template": {
+        "PRIVATE_GOAL_X_WORKCELL_CAPABILITY": {
+          "episodes": 240,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 40,
+          "terminal_success": 1.0
+        }
+      },
+      "per_workcell_mode": {
+        "FINISHED_RECEIVER": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 1.0
+        },
+        "RAW_PROCESSOR": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 1.0
+        }
+      },
+      "planning_complete": 1.0,
+      "raw_parse_valid": 1.0,
+      "seed_success_sd_descriptive": 0.0,
+      "semantic_clusters": 40,
+      "strict_clusters_all_replicates_success": 40,
+      "terminal_success_cluster_bootstrap_ci95": [
+        1.0,
+        1.0
+      ],
+      "terminal_success_cluster_mean": 1.0,
+      "verified_handoff": 1.0
+    },
+    "COUNTERFACTUAL_FEEDBACK": {
+      "cost": {
+        "coordination_ms": {
+          "mean": 3585.081663976113,
+          "p50": 3552.018938586116,
+          "p95": 3731.2330283224583,
+          "total": 860419.5993542671
+        },
+        "decision_rounds": {
+          "mean": 2.0,
+          "p50": 2.0,
+          "p95": 2.0,
+          "total": 480.0
+        },
+        "episode_wall_clock_seconds": {
+          "mean": 16.425944179166667,
+          "p50": 16.2556065,
+          "p95": 19.308485649999998,
+          "total": 3942.226603
+        },
+        "input_tokens": {
+          "mean": 1224.0,
+          "p50": 1225.0,
+          "p95": 1237.0,
+          "total": 293760.0
+        },
+        "merged_central_input_bytes": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "total": 0.0
+        },
+        "model_calls": {
+          "mean": 2.0,
+          "p50": 2.0,
+          "p95": 2.0,
+          "total": 480.0
+        },
+        "model_service_ms": {
+          "mean": 3550.442372619485,
+          "p50": 3536.923412233591,
+          "p95": 3715.7911468297243,
+          "total": 852106.1694286764
+        },
+        "output_tokens": {
+          "mean": 133.5,
+          "p50": 134.0,
+          "p95": 138.0,
+          "total": 32040.0
+        },
+        "state_aggregation_bytes": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "total": 0.0
+        },
+        "time_to_commitment_ms": {
+          "mean": 3585.081663976113,
+          "p50": 3552.018938586116,
+          "p95": 3731.2330283224583,
+          "total": 860419.5993542671
+        },
+        "wire_bytes": {
+          "mean": 103.0,
+          "p50": 103.0,
+          "p95": 118.0,
+          "total": 24720.0
+        }
+      },
+      "episodes": 240,
+      "failure_taxonomy": {
+        "WRONG_CRAFT_ACTOR": 240
+      },
+      "fallback_episodes": 0,
+      "grounded_valid": 1.0,
+      "per_family": {
+        "MUTUAL_PRIVATE_INFO": {
+          "episodes": 240,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 40,
+          "terminal_success": 0.0
+        }
+      },
+      "per_goal": {
+        "crafting_table": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 0.0
+        },
+        "stick": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 0.0
+        }
+      },
+      "per_motif": {},
+      "per_role_success": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "per_seed_success": {
+        "2026080601": 0.0,
+        "2026080602": 0.0,
+        "2026080603": 0.0
+      },
+      "per_template": {
+        "PRIVATE_GOAL_X_WORKCELL_CAPABILITY": {
+          "episodes": 240,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 40,
+          "terminal_success": 0.0
+        }
+      },
+      "per_workcell_mode": {
+        "FINISHED_RECEIVER": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 0.0
+        },
+        "RAW_PROCESSOR": {
+          "episodes": 120,
+          "grounded_valid": 1.0,
+          "raw_parse_valid": 1.0,
+          "semantic_clusters": 20,
+          "terminal_success": 0.0
+        }
+      },
+      "planning_complete": 1.0,
+      "raw_parse_valid": 1.0,
+      "seed_success_sd_descriptive": 0.0,
+      "semantic_clusters": 40,
+      "strict_clusters_all_replicates_success": 0,
+      "terminal_success_cluster_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "terminal_success_cluster_mean": 0.0,
+      "verified_handoff": 1.0
+    }
+  },
+  "counterfactual_field_fidelity": {
+    "fields": {
+      "craft_actor": {
+        "eligible": 240,
+        "injected_fidelity": 1.0,
+        "matches_injected": 240,
+        "matches_true": 0,
+        "true_fidelity": 0.0
+      },
+      "goal_count": {
+        "eligible": 240,
+        "injected_fidelity": 1.0,
+        "matches_injected": 240,
+        "matches_true": 240,
+        "true_fidelity": 1.0
+      },
+      "goal_item": {
+        "eligible": 240,
+        "injected_fidelity": 1.0,
+        "matches_injected": 240,
+        "matches_true": 240,
+        "true_fidelity": 1.0
+      },
+      "handoff_count": {
+        "eligible": 240,
+        "injected_fidelity": 1.0,
+        "matches_injected": 240,
+        "matches_true": 0,
+        "true_fidelity": 0.0
+      },
+      "handoff_item": {
+        "eligible": 240,
+        "injected_fidelity": 1.0,
+        "matches_injected": 240,
+        "matches_true": 0,
+        "true_fidelity": 0.0
+      },
+      "peer_suffix": {
+        "eligible": 240,
+        "injected_fidelity": 1.0,
+        "matches_injected": 240,
+        "matches_true": 0,
+        "true_fidelity": 0.0
+      }
+    },
+    "missing_prediction": 0
+  },
+  "episodes": 960,
+  "formal_test_unsealed": false,
+  "pair_block_sensitivity": {
+    "comparisons": {
+      "centralized_minus_correct": {
+        "mean_delta_left_minus_right": 0.0,
+        "pair_blocks": 20,
+        "paired_pair_block_bootstrap_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct_minus_a_only": {
+        "mean_delta_left_minus_right": 0.5,
+        "pair_blocks": 20,
+        "paired_pair_block_bootstrap_ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "correct_minus_counterfactual": {
+        "mean_delta_left_minus_right": 1.0,
+        "pair_blocks": 20,
+        "paired_pair_block_bootstrap_ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "counterfactual_minus_a_only": {
+        "mean_delta_left_minus_right": -0.5,
+        "pair_blocks": 20,
+        "paired_pair_block_bootstrap_ci95": [
+          -0.5,
+          -0.5
+        ]
+      }
+    },
+    "pairing_fields": [
+      "private_goal",
+      "world_variant"
+    ],
+    "repeated_measures_within_block": [
+      "private_workcell_mode",
+      "role_permutation",
+      "training_seed"
+    ],
+    "status": "SENSITIVITY_ANALYSIS"
+  },
+  "paired_comparisons": {
+    "centralized_minus_correct": {
+      "mean_delta_left_minus_right": 0.0,
+      "paired_cluster_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "semantic_clusters": 40
+    },
+    "correct_minus_a_only": {
+      "mean_delta_left_minus_right": 0.5,
+      "paired_cluster_bootstrap_ci95": [
+        0.35,
+        0.65
+      ],
+      "semantic_clusters": 40
+    },
+    "correct_minus_counterfactual": {
+      "mean_delta_left_minus_right": 1.0,
+      "paired_cluster_bootstrap_ci95": [
+        1.0,
+        1.0
+      ],
+      "semantic_clusters": 40
+    },
+    "counterfactual_minus_a_only": {
+      "mean_delta_left_minus_right": -0.5,
+      "paired_cluster_bootstrap_ci95": [
+        -0.65,
+        -0.35
+      ],
+      "semantic_clusters": 40
+    }
+  },
+  "qualification_access": "NONE",
+  "repeated_measures": [
+    "role_permutation",
+    "training_seed"
+  ],
+  "schema_version": "gcp-feedback-intervention-analysis-v0.1",
+  "statistical_unit": "semantic_cluster",
+  "training_seeds": [
+    2026080601,
+    2026080602,
+    2026080603
+  ],
+  "verdict": "VALID_FEEDBACK_INTERVENTION_AND_CENTRAL_THREE_SEED_RESULT"
+}

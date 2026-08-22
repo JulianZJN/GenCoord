@@ -1,0 +1,32 @@
+GenCoord mixed-rights notice
+============================
+
+Copyright (c) 2026 Peng He, Junning Zhu, Haohan Yuan, and Jianpeng Liang.
+
+1. Original code
+----------------
+
+The MIT License in `LICENSES/MIT.txt` applies only to the following original
+project code and build glue:
+
+- `Makefile`
+- `paper/anc/scripts/build_e1e2_tables.py`
+
+2. Manuscript, figures, and compact evidence
+---------------------------------------------
+
+Unless a file states otherwise, the manuscript source and rendered paper,
+author-owned figures, and compact evidence data are copyright of the GenCoord
+authors. All rights are reserved pending final arXiv and venue publication
+rights. Public availability in this repository does not grant permission to
+redistribute, modify, or create derivative works from those materials.
+
+3. Excluded third-party material
+--------------------------------
+
+Institutional marks, venue-support files, Minecraft-related material, and any
+other third-party content are not licensed by the GenCoord authors. They remain
+subject to the rights and terms of their respective owners. See
+`THIRD_PARTY_NOTICES.md` and `assets/affiliations/SOURCES.md`.
+
+No institutional endorsement is implied.

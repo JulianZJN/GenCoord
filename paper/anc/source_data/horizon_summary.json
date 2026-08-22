@@ -1,0 +1,52 @@
+{
+  "terminal_success": {
+    "multi_step": 0.98125,
+    "single_step": 0.9125,
+    "delta": 0.06875,
+    "ci95": [
+      0.029166666666666664,
+      0.10833333333333332
+    ],
+    "clusters": 80
+  },
+  "cost.decision_rounds": {
+    "multi_step": 1.98125,
+    "single_step": 2.9125,
+    "delta": 0.93125,
+    "ci95": [
+      0.8916666666666666,
+      0.9708333333333334
+    ],
+    "clusters": 80
+  },
+  "cost.model_calls": {
+    "multi_step": 1.98125,
+    "single_step": 2.9125,
+    "delta": 0.93125,
+    "ci95": [
+      0.8916666666666666,
+      0.9708333333333334
+    ],
+    "clusters": 80
+  },
+  "cost.input_tokens": {
+    "multi_step": 1146.5020833333333,
+    "single_step": 1689.1083333333333,
+    "delta": 542.60625,
+    "ci95": [
+      517.5780729166667,
+      567.81703125
+    ],
+    "clusters": 80
+  },
+  "cost.output_tokens": {
+    "multi_step": 265.4625,
+    "single_step": 270.5541666666667,
+    "delta": 5.091666666666667,
+    "ci95": [
+      2.8354166666666667,
+      7.520885416666665
+    ],
+    "clusters": 80
+  }
+}

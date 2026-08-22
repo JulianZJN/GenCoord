@@ -1,0 +1,10 @@
+{
+  "experiment": "Naturalized private-fact binding without active answer fields",
+  "semantic_cells": 16,
+  "semantic_cells_seen_in_training": true,
+  "active_binding_id_visible": false,
+  "c1_evaluation": "Minecraft closed loop",
+  "c2_c3_evaluation": "planning and field fidelity only",
+  "learned_seeds": 3,
+  "base_semantic_clusters_per_condition": 160
+}

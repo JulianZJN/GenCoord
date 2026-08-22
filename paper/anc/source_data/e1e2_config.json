@@ -1,0 +1,47 @@
+{
+  "schema_version": "gcp-mutual-private-feedback-intervention-v0.1",
+  "status": "AUTHORIZED_RESPONSE_CONTENT_INTERVENTION_AND_CENTRAL_SEED_COMPLETION",
+  "source_config": "configs/gcp_mutual_private_info_pilot_v0.2.json",
+  "source_config_sha256": "e37268e3debfe2672b3e2e6e86dae076a1db0c0ec8e094208ef4a0c13d763448",
+  "source_seed_extension": "configs/gcp_mutual_private_info_seed_extension_v0.1.json",
+  "source_seed_extension_sha256": "6b8e1b2807be9c91af53490284bf9d9c8a38800bea57a3bceecfb365d7f0a8d4",
+  "source_clusters": "data/gcp_sequence/minimal_supplements/v0.2/mutual_private_info/clusters/confirm.jsonl",
+  "counterfactual_clusters": "data/gcp_sequence/minimal_supplements/v0.2/mutual_private_info/feedback_intervention/counterfactual_confirm.jsonl",
+  "pairing_fields": [
+    "private_goal",
+    "world_variant",
+    "role_permutation"
+  ],
+  "swapped_field": "private_workcell_mode",
+  "distributed_training_seeds": [
+    2026080601,
+    2026080602,
+    2026080603
+  ],
+  "counterfactual_protocol": "C_COUNTERFACTUAL_FEEDBACK",
+  "counterfactual_episodes_per_seed": 80,
+  "centralized_training_extension": {
+    "method_id": "MUTUAL_PRIVATE_CENTRALIZED_GCP_0.8B",
+    "base_training_seed": 2026080601,
+    "additional_training_seeds": [
+      2026080602,
+      2026080603
+    ],
+    "evaluation_protocols": [
+      "C_CENTRALIZED"
+    ],
+    "episodes_per_seed": 80,
+    "scope": "CENTRALIZED_FULL_INFORMATION_THREE_SEED_COMPLETION"
+  },
+  "semantic_clusters": 40,
+  "role_permutations": 2,
+  "statistical_unit": "semantic_cluster",
+  "repeated_measures": [
+    "role_permutation",
+    "training_seed"
+  ],
+  "outputs_root": "reports/gcp_sequence/minimal_supplements/v0.2/C_feedback_intervention_and_central_seed_completion_v0.1",
+  "resource_policy": "VERIFIED_IDLE_RTX4090_ONLY_A100_AND_KVAF_UNTOUCHED",
+  "qualification_access": "NONE",
+  "formal_test_unsealed": false
+}

@@ -1,0 +1,13 @@
+{
+  "representation": "reports/gcp_sequence/short_dsl_paper_evidence/v0.3/paper_tables/main_table.csv",
+  "request_and_horizon": "reports/gcp_sequence/dual_track/v0.2.1/deliverables/v0.4/main_results.csv",
+  "visibility": "reports/gcp_sequence/minimal_supplements/v0.2/A_task_structure/analysis.json",
+  "private_information_seed_robustness": "reports/gcp_sequence/minimal_supplements/v0.2/C_mutual_private_info_seed_extension_v0.1/analysis.json",
+  "private_information_references": "reports/gcp_sequence/minimal_supplements/v0.2/C_mutual_private_info/analysis.json",
+  "backend": "reports/gcp_sequence/factor_baseline/v0.2/analysis.json",
+  "composition": "reports/gcp_sequence/compact_representation/v0.3/combo_request/evaluation/analysis.json",
+  "training": "reports/gcp_sequence/dual_track/v0.2.1/deliverables/v0.4/training_compute.csv",
+  "confirm_paired_analysis": "reports/gcp_sequence/dual_track/v0.2.1/confirm/v0.1/confirm_analysis.json",
+  "held_out_paired_analysis": "reports/gcp_sequence/dual_track/v0.2.1/ood/v0.2.3/ood_analysis.json",
+  "e1e2_compact_episode_metrics": "source_data/e1e2_episode_metrics.jsonl"
+}

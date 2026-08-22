@@ -1,0 +1,472 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GenCoord public arXiv preprint v17 (reader-first narrative and lifecycle precision)
+% Story: private local information -> executable commitments -> grounded execution.
+% GenCoord is the protocol; Short DSL is the executable commitment interface; direct and factor-coded routes are backends.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[sigconf,nonacm]{aamas}
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{xspace}
+
+% Public-preprint top matter.  arXiv license selection is made during upload;
+% no conference copyright or submission metadata is embedded here.
+\settopmatter{printacmref=false,printfolios=true}
+
+% The AAMAS class hard-codes conference headers even in non-ACM mode.  Replace
+% them with a neutral public-preprint page style while preserving its layout.
+\AtBeginDocument{%
+  \fancypagestyle{standardpagestyle}{%
+    \fancyhf{}%
+    \renewcommand{\headrulewidth}{0pt}%
+    \renewcommand{\footrulewidth}{0pt}%
+    \fancyfoot[C]{\footnotesize\thepage}%
+  }%
+  \fancypagestyle{firstpagestyle}{%
+    \fancyhf{}%
+    \renewcommand{\headrulewidth}{0pt}%
+    \renewcommand{\footrulewidth}{0pt}%
+    \fancyfoot[C]{\footnotesize\thepage}%
+  }%
+  \pagestyle{standardpagestyle}%
+  \hypersetup{%
+    pdftitle={GenCoord: Skill-Path Commitments under Private Information},%
+    pdfauthor={Peng He, Junning Zhu, Haohan Yuan, Jianpeng Liang}%
+  }%
+}
+
+\title[GenCoord]{GenCoord: Skill-Path Commitments under Private Information}
+
+\author{Peng He}
+\authornote{Equal contribution.}
+\affiliation{%
+  \institution{Tsinghua University}
+  \city{Beijing}
+  \country{China}}
+\email{hepeng@tsinghua-wx.org}
+
+\author{Junning Zhu}
+\authornotemark[1]
+\affiliation{%
+  \institution{Beijing Normal-Hong Kong Baptist University}
+  \city{Zhuhai}
+  \country{China}}
+\email{t330025113@mail.bnbu.edu.cn}
+
+\author{Haohan Yuan}
+\affiliation{%
+  \institution{University of North Carolina at Charlotte}
+  \city{Charlotte}
+  \country{United States}}
+\email{hyuan3@charlotte.edu}
+
+\author{Jianpeng Liang}
+\affiliation{%
+  \institution{University of California San Diego}
+  \city{San Diego}
+  \country{United States}}
+\email{jil652@ucsd.edu}
+
+\renewcommand{\shortauthors}{He et al.}
+
+\begin{abstract}
+Suppose one embodied agent knows what must be built, while its teammate alone knows which transformation its workcell can perform. Neither local view determines who should act, what should be handed off, or how the joint task should continue. We introduce \emph{GenCoord}, which turns the task consequence of such private facts into an executable skill-path commitment. A local Qwen3.5-0.8B model emits a multi-step \texttt{SELF} plan and peer \texttt{REQ}; bounded feedback conditions route revision when the deciding capability is peer-local. The resolved commitment is parsed, checked, canonically materialized, compiled to Mineflayer skills, and verified by handoff and terminal state. Counterfactual interventions that hold the world, call schedule, and executor unchanged make requester revision and receiver execution follow the injected task consequence in both directions. Across three independently trained seeds, correct capability feedback closes the paired local-information gap from 50\% to 100\%. Multi-step commitments improve held-out-template success by 6.9 points while reducing model decisions by 32\%. At matched closed-loop quality on 128 held-out semantic clusters, Short DSL reduces peer traffic by 92.8\% and median time-to-commitment by 68.2\% relative to controlled free-form communication. These results identify executable task consequences as the coordination unit connecting distributed local reasoning to verified joint action.
+\end{abstract}
+
+\ccsdesc[500]{Computing methodologies~Multi-agent systems}
+\ccsdesc[300]{Computing methodologies~Natural language generation}
+
+\keywords{multi-agent coordination, embodied agents, semantic communication, language-model agents, Minecraft}
+
+\newcommand{\method}{\textsc{GenCoord}\xspace}
+\newcommand{\shortdsl}{\textsc{Short DSL}\xspace}
+\newcommand{\mtfff}{\textsc{MT-FFF}\xspace}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{Z}{>{\raggedright\arraybackslash}X}
+\newcommand{\tabstyle}{\small\setlength{\tabcolsep}{2.5pt}\renewcommand{\arraystretch}{1.10}}
+\newcommand{\figplaceholder}[2]{%
+  \fbox{\parbox[c][#1][c]{0.95\linewidth}{\centering\sffamily\small #2}}%
+}
+% Explicit figure-footprint wrapper: each call matches the tightly cropped
+% artwork so the PDF does not reserve avoidable white space.
+\newcommand{\figblueprint}[2]{%
+  \begingroup
+  \setlength{\fboxrule}{0pt}%
+  \setlength{\fboxsep}{3.4pt}% equals the original 3pt padding + 0.4pt rule
+  \fbox{\parbox[c][#1][c]{0.95\linewidth}{%
+    \centering\includegraphics[width=\linewidth,height=\dimexpr#1-2pt\relax,keepaspectratio]{#2}%
+  }}%
+  \endgroup
+}
+\newtheorem{proposition}{Proposition}
+
+\begin{document}
+\maketitle
+\hypersetup{pdfauthor={Peng He, Junning Zhu, Haohan Yuan, Jianpeng Liang}}
+
+
+\section{Introduction}
+
+Imagine two Minecraft agents fulfilling an order for a crafting table. Agent $A$ sees the order; agent $B$ alone knows whether its workcell can transform oak planks or can only receive the finished table. In the first case, $A$ should hand off planks and $B$ should craft. In the second, $A$ must craft first and hand off the table. Agent $A$ receives the same local input in both cases, yet the correct actor, handoff item, and continuation all change.
+
+This small example captures a general problem in embodied teams. Goals, tools, workcells, inventories, and execution conditions are distributed across agents. The team can have a well-defined joint route even when no individual view determines it. Coordination must reveal the task consequence of a private fact: who acts, what crosses the handoff boundary, where it goes, and which suffix follows.
+
+Centralized planning can reveal that consequence by assembling local contexts; free-form negotiation can reveal it through repeated state, intent, and plan exchange. GenCoord instead makes the consequence itself the coordination object, preserving the fields that directly determine execution.
+
+The path-determining fact may reside at either endpoint of an edge. A sender-local consequence travels forward inside a peer request, after which the receiver generates its downstream skill path. A peer-local capability consequence travels back through bounded feedback, after which the requester revises the division of work. Both directions require one explicit object whose semantics survive communication, resolution, and execution.
+
+\method turns that object into an executable skill-path commitment. Its primary backend uses a local Qwen3.5-0.8B model~\cite{qwenteam2026qwen35} to compose goals, capabilities, objects, history, received messages, and shared task structure into variable-length role-local paths. The sender jointly emits a multi-step self-plan and peer request:
+\begin{center}
+\begin{minipage}{0.94\columnwidth}
+\small\ttfamily
+SELF resource.obtain(q=4,item=oak\_planks)\newline
+\hspace*{1.7em}> resource.deliver(q=4,item=oak\_planks,to=agent\_b)\newline
+REQ agent\_b craft.item(q=1,input=oak\_planks,\newline
+\hspace*{1.7em}item=crafting\_table)\newline
+\hspace*{1.7em}> resource.deliver(q=1,item=crafting\_table,\newline
+\hspace*{3.4em}dst=order\_chest)
+\end{minipage}
+\end{center}
+\shortdsl is the peer-facing executable interface for this canonical schema. Before resolution it carries a proposed \texttt{SELF+REQ} route; after resolution the same schema carries the role-local obligations that enter execution. In the main forward route, the receiver conditions on \texttt{REQ} and generates its downstream \texttt{SELF} path. In the paired capability diagnostic, a transparent \textsc{Accept}/\textsc{Reject}/\textsc{Counter} response conditions requester revision.
+
+The resolved object follows a deterministic grounded path: parse, schema check, canonical materialization, skill compilation, Mineflayer execution~\cite{prismarinejs2026mineflayer}, verified handoff, and terminal-state readback. Figure~\ref{fig:overview} summarizes the two directions and their shared execution closure.
+
+\begin{figure*}[t]
+  \centering
+  \figblueprint{3.35in}{figures/final/figure1_overview_ppt.pdf}
+  \caption{One \texttt{SELF+REQ} schema carries sender-local task consequences forward and peer-local capability consequences back before shared grounded execution.}
+  \Description{The overview distinguishes forward resolution, where a sender request conditions the receiver's downstream self path, from feedback resolution, where bounded feedback communicates a peer-local capability consequence and conditions requester revision. Both routes produce a resolved commitment that is parsed, schema-checked, canonically materialized, compiled, executed, and verified.}
+  \label{fig:overview}
+\end{figure*}
+
+Across three independently trained seeds, bounded capability feedback raises paired local success from 50\% to 100\%, and counterfactual interventions in both directions redirect the resolved route exactly as the injected task consequence specifies. Multi-step commitments improve held-out-template success by 6.9 points while reducing model decisions by 32\%. Across 128 held-out clusters, Short DSL matches JSON and controlled free-form communication in closed-loop quality while reducing peer traffic by 92.8\% and median time-to-commitment by 68.2\% relative to free-form. We make three contributions:
+\begin{itemize}
+  \item \textbf{Private information.} We characterize paired local ambiguity and show how the executable consequence of a private fact crosses the agent boundary, forward in a request or back through bounded feedback.
+  \item \textbf{Executable commitments.} GenCoord represents sender and peer obligations in one multi-step \texttt{SELF+REQ} object; Short DSL preserves that object from proposal and resolution through grounded execution.
+  \item \textbf{Mechanism and systems evidence.} Counterfactual interventions establish a content-to-route causal link in both directions; horizon, communication-surface, and backend experiments show how the same grounded object can be extended, encoded, and formed efficiently.
+\end{itemize}
+
+\section{Related Work}
+
+\paragraph{Commitments and task allocation.}
+Joint-intention theory, SharedPlans, and STEAM model teamwork through shared goals, partial plan knowledge, and communication decisions~\cite{cohen1991teamwork,grosz1996collaborative,tambe1997teamwork}. Contract Net, multi-robot task allocation, and consensus-based auctions coordinate through bids, utilities, contracts, or assignments~\cite{smith1980contractnet,gerkey2004mrta,choi2009cbba}. Azorus combines formal commitments, information protocols, and BDI programming~\cite{chopra2025azorus}. We use commitment operationally: a resolved \texttt{SELF+REQ} object assigns sender and peer task obligations that are discharged by verified handoff and terminal completion.
+
+\paragraph{Embodied and Minecraft collaboration.}
+Voyager builds an executable code-skill library for open-ended single-agent learning in Minecraft~\cite{wang2023voyager}. RoCo uses LLM dialogue for multi-robot task and waypoint planning, with feedback from a motion planner~\cite{mandi2024roco}. MindCraft examines situated theory-of-mind dialogue~\cite{bara2021mindcraft}; MindAgent evaluates coordination and scheduling~\cite{gong2024mindagent}; TeamCraft provides multimodal collaborative tasks~\cite{long2024teamcraft}; and MINDcraft introduces the MineCollab benchmark for natural-language, action-by-action collaboration~\cite{white2025collaborating}. VillagerAgent and CausalMACE organize longer execution through graph-structured dependencies and causal planning~\cite{dong2024villageragent,chai2025causalmace}. Gated Coordination decides when local events should escalate to shared coordination~\cite{jian2026gated}, while TickingCollab studies time-sensitive complementary collaboration~\cite{yi2026ticking}. GenCoord studies what crosses the coordination boundary: a multi-step task object that binds local evidence to peer execution and handoff consequence.
+
+\paragraph{Communication content and representation.}
+Differentiable communication and bottleneck objectives learn task-specific channels end to end~\cite{foerster2016dial,sukhbaatar2016commnet,wang2020imac}. Alternative formats can improve LLM reasoning and communication~\cite{chen2024beyond}; Optima jointly optimizes communication quality and cost~\cite{chen2024optima}; and OPTiMACS learns task-aware message representations~\cite{gupta2026optimacs}. AgenticCache removes repeated planning from the critical path through reusable transitions~\cite{kim2026agenticcache}. These lines study when agents communicate and how messages are encoded; GenCoord isolates what the peer must receive: an inspectable task consequence whose execution can be intervened on and verified end to end.
+
+\section{Coordination under Private Information}
+
+\subsection{Local Contexts}
+
+Let $\mathcal A=\{a_1,\ldots,a_n\}$ be a team. At coordination round $t$, agent $a_i$ has local context
+\begin{equation*}
+ x_i^t=(o_i^t,h_i^t,m_i^t),
+\end{equation*}
+where $o_i^t$ is its observation, $h_i^t$ its execution history, and $m_i^t$ received task messages. Agents share an executable prior $\mathcal K$ containing a skill ontology, task structure, typed arguments, and grounding constraints. Instance goals, capabilities, inventories, and bindings remain local until their task consequences cross a coordination boundary.
+
+\subsection{Paired Ambiguity}
+
+Let $z$ denote a task instance and $\Pi^\star(z;\mathcal K)\subseteq\Pi(\mathcal K)$ the feasible goal-reaching paths allowed by the shared prior. A coordinator must form some $\hat\pi\in\Pi^\star(z;\mathcal K)$ from information distributed across local contexts. The path-determining fact induces an execution-relevant binding $\beta(z)$ over the fields that select actor, handoff object, destination, and continuation. Under the fixed prior $\mathcal K$ and canonical schema used here, a cross-boundary object is coordination-sufficient when it identifies a resolved route in $\Pi^\star(z;\mathcal K)$. GenCoord communicates $\beta(z)$ together with the role-local paths that discharge it.
+
+\begin{proposition}[Paired local ambiguity]\label{prop:ambiguity}
+Consider equiprobable instances $z_1,z_2$ and an agent $a_i$ with identical model-visible contexts $x_i(z_1)=x_i(z_2)$. Let $F_k:=\Pi^\star(z_k;\mathcal K)$. If $F_1\cap F_2=\varnothing$, then any $a_i$-local policy whose output distribution is identical under the two views has pairwise expected success at most $1/2$.
+\end{proposition}
+\noindent\emph{Proof sketch.} Let $\mu$ be the common output distribution. Since $F_1\cap F_2=\varnothing$, $\mu(F_1)+\mu(F_2)\leq1$, and the equiprobable success is at most $\tfrac12\mu(F_1)+\tfrac12\mu(F_2)\leq\tfrac12$. Deterministic policies are point-mass special cases.
+
+The proposition characterizes whichever endpoint lacks the path-determining fact. In the main forward suites, the receiver cannot recover the active binding from its local view by construction. In the Goal~$\times$~Capability diagnostic, paired requester views are identical while the peer capability changes the feasible actor, handoff object, and suffix.
+
+\subsection{Commitment Object and Resolution}
+
+A grounded task is a tuple $\tau=(a,k,\mathbf v,\ell,P)$ containing an actor $a$, skill $k$, typed arguments $\mathbf v$, grounding location $\ell$, and predecessor set $P$. Let $\mathcal T_{\mathcal K}^{*}$ denote finite sequences supported by $\mathcal K$. A sender proposes
+\begin{equation*}
+ q_i^t=(s_i^t,r_{i\rightarrow j}^t),\qquad
+ s_i^t,r_{i\rightarrow j}^t\in\mathcal T_{\mathcal K}^{*},
+\end{equation*}
+where $s_i^t$ is its proposed self path and $r_{i\rightarrow j}^t$ the requested peer path. The same canonical schema supports two resolution directions.
+
+\textbf{Forward resolution.} When the sender holds the deciding fact, the receiver observes the delivered request and generates a downstream self path $u_j^t$. The joint object is
+\begin{equation*}
+ C_{ij}^{\rightarrow,t}=\mathrm{Resolve}_{\rightarrow}(q_i^t,u_j^t).
+\end{equation*}
+$\mathrm{Resolve}_{\rightarrow}$ returns a commitment only when the receiver identity and normalized \texttt{SELF} suffix realize the request, handoff fields align, and predecessor links admit an acyclic merge.
+
+\textbf{Feedback resolution.} When the peer holds the deciding capability, it returns
+$\rho_{j\rightarrow i}^t\in\{\textsc{Accept},\textsc{Reject},\textsc{Counter}(\alpha)\}$,
+with $\alpha$ selected from bounded executable alternatives. The requester then produces a revised proposal $q_{i\mid\rho}^t=(s_{i\mid\rho}^t,r_{i\rightarrow j\mid\rho}^t)$, and
+\begin{equation*}
+ C_{ij}^{\leftarrow,t}=\mathrm{Resolve}_{\leftarrow}
+ \bigl(q_i^t,\rho_{j\rightarrow i}^t,q_{i\mid\rho}^t\bigr).
+\end{equation*}
+\textsc{Accept} requires the revision to preserve the requested branch, \textsc{Counter} requires it to realize the selected alternative, and \textsc{Reject} yields no commitment. Missing or conflicting obligations also yield no resolved object. Resolution aligns role, route, and handoff across the initial and revised proposals; the checker validates typed fields and the materializer instantiates the dispatch plan.
+
+\section{GenCoord}
+
+\subsection{Local Proposal Generation}
+
+A local autoregressive model $G_\theta$ receives $x_i^t$ and $\mathcal K$, generates a string $\hat y_i^t$, and parses it into the initial proposal:
+\begin{equation*}
+ \hat y_i^t=G_\theta(x_i^t,\mathcal K),\qquad
+ q_i^t=\mathrm{Parse}(\hat y_i^t)\in\mathcal Q\cup\{\bot\}.
+\end{equation*}
+The input explicitly identifies the decision agent, local observation, history, incoming messages, peer, and shared task prior. The model maps local semantics to the task consequence $\beta(z)$, binds active objects and destinations, composes multi-step paths, allocates transformations, and chooses the inter-agent cut represented by \texttt{SELF}+\texttt{REQ}.
+
+\subsection{Generative Task-Path Composition}
+
+The shared prior supplies legal skills and coarse dependencies; the learned backend instantiates the current path. For a bilateral episode, write a feasible joint path as a sender prefix, an inter-agent handoff, and a receiver suffix. GenCoord selects the participating actor for each transformation, grounds objects and destinations, and places the cut between role-local paths. This cut is task dependent: Destination changes where the suffix terminates; Recipe changes the transformation and handoff object; Allocation changes the actor and residual work; Active Branch changes the continuation released after handoff.
+
+The resulting object carries more than an atomic assignment. It records the local steps required before the boundary, the peer obligation activated at the boundary, and the dependencies that connect both. A sender-local fact selects and transmits the suffix directly. A peer-local capability consequence can move the cut, changing which prefix the requester must complete before handoff. Both cases therefore use the same semantic operation---composition of complementary role-local paths around an explicit coordination edge.
+
+\subsection{Resolution across the Agent Boundary}
+
+\textbf{Forward resolution.} This is the main protocol used by the request, horizon, representation, and factor experiments. The sender generates $q_i^t=(s_i^t,r_{i\rightarrow j}^t)$. After receiving $r_{i\rightarrow j}^t$, the receiver makes the second learned call:
+\begin{equation*}
+ \hat y_j^t=G_\theta(x_j^t\oplus r_{i\rightarrow j}^t,\mathcal K),\qquad
+ u_j^t=\mathrm{Parse}(\hat y_j^t),
+\end{equation*}
+where $u_j^t$ contains the receiver's downstream \texttt{SELF} path. The canonical resolver joins sender and receiver obligations into $C_{ij}^{\rightarrow,t}$ under the role, path, handoff, and dependency conditions above.
+
+\textbf{Feedback resolution.} The Goal~$\times$~Capability diagnostic uses the reverse information direction. A transparent capability policy maps the requested suffix and peer-local capability to \textsc{Accept}, \textsc{Reject}, or \textsc{Counter}$(\alpha)$ without a model call. For accepted or countered proposals, the requester performs a second learned call:
+\begin{equation*}
+\begin{aligned}
+ \hat y_{i\mid\rho}^t
+ &=G_\theta(x_i^t\oplus q_i^t\oplus\rho_{j\rightarrow i}^t,\mathcal K),\\
+ q_{i\mid\rho}^t&=\mathrm{Parse}(\hat y_{i\mid\rho}^t).
+\end{aligned}
+\end{equation*}
+The resolver then forms $C_{ij}^{\leftarrow,t}$ from the initial proposal, response, and revised proposal under the conditions in Section~3.3. The bounded response communicates the capability consequence for the current request and can move the inter-agent cut by changing the transformation actor, handoff object, and continuation. Because the response is explicit, counterfactual feedback can be injected while the requester view, initial proposal, executable world, and two-call schedule remain fixed. Table~\ref{tab:counterfactual} shows the affected fields.
+
+\begin{table}[t]
+\centering
+\caption{Capability-conditioned commitment rewrite. The matched rows share the requester view and initial proposal; the counterfactual condition injects the paired response.}
+\label{tab:counterfactual}
+\tabstyle
+\begin{tabularx}{\columnwidth}{@{}
+>{\hsize=1.35\hsize\linewidth=\hsize\raggedright\arraybackslash}X
+>{\hsize=0.42\hsize\linewidth=\hsize\centering\arraybackslash}X
+>{\hsize=0.63\hsize\linewidth=\hsize\centering\arraybackslash}X
+>{\hsize=1.00\hsize\linewidth=\hsize\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Peer mode / response} & \textbf{Actor} & \textbf{Handoff item} & \textbf{Peer suffix} \\
+\midrule
+Raw processor / \textsc{Accept} & $B$ & oak planks & craft table $\rightarrow$ deposit \\
+Finished receiver / \textsc{Counter} & $A$ & crafting table & deposit crafting table \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Short DSL}\label{sec:dsl}
+
+The peer-facing grammar is
+\begin{center}
+\begin{minipage}{0.94\columnwidth}
+\small\ttfamily
+SELF <task> [ > <task> ...]\newline
+REQ  <agent> <task> [ > <task> ...]
+\end{minipage}
+\end{center}
+where each task is a hierarchical skill path with typed arguments. Short DSL has four properties.
+
+\textbf{Role completeness.} A sender output couples its proposed self path with the requested peer contribution; a receiver output records the downstream obligation it accepts.
+
+\textbf{Semantic sufficiency.} Actor, skill path, object, quantity, destination, binding, and dependency order are explicit because they determine executable behavior.
+
+\textbf{Compositional horizon.} Variable-length paths express acquisition, transformation, handoff, and deposit in one commitment, allowing the model to compose multi-step paths before acting.
+
+\textbf{Deterministic grounding.} For every legal object under the fixed prior and canonical schema, parsing yields a canonical object and the codec preserves task semantics:
+\begin{equation*}
+ \mathrm{Decode}_{\mathcal K}(\mathrm{Encode}_{\mathcal K}(q))\equiv_{\mathrm{sem}}q,
+ \qquad q\in\mathcal Q_{\mathrm{valid}}(\mathcal K).
+\end{equation*}
+Here $\equiv_{\mathrm{sem}}$ denotes equality of normalized ordered tasks, roles, typed arguments, bindings, destinations, and dependencies. The schema carries a proposal before resolution and role-local obligations afterward, with dynamic arguments attached to the consuming skill.
+
+\textbf{Operational commitment semantics.} A resolved object assigns role-specific obligations with observable discharge: the sender prefix closes at verified handoff, and the peer suffix closes at terminal completion. \textsc{Accept} preserves the division of work; \textsc{Counter} changes its task fields.
+
+\subsection{Commitment Backends}
+
+Direct Short DSL predicts the complete role-local path at both learned stages. Factor-Code + Rule instead predicts one stage-specific binding code at the sender and one at the receiver; a deterministic composer expands those codes through the shared task structure into the same canonical Short DSL object. Both backends use the same model-visible context, two-stage forward schedule, peer-facing interface, and grounded execution stack. When a code identifies one branch of the task structure, composition recovers its actor, path, object, destination, and dependency fields. Exact target-field names appear in the supplement.
+
+\subsection{Grounded Execution}
+
+\begin{figure*}[t]
+  \centering
+  \figblueprint{2.60in}{figures/final/figure2_grounded_closure_ppt.pdf}
+  \caption{Grounded closure from a schema-validated commitment through canonical materialization to verified execution.}
+  \Description{A resolved Short DSL commitment is parsed and checked, canonically materialized into a dispatch plan, compiled to Mineflayer skills, executed as an in-world handoff, and verified through recipient inventory and the terminal predicate.}
+  \label{fig:trace}
+\end{figure*}
+
+The resolved commitment follows
+\begin{equation*}
+\begin{aligned}
+\text{generate}&\rightarrow\text{parse}\rightarrow\text{schema check}\rightarrow\text{materialize}\\
+&\rightarrow\text{compile}\rightarrow\text{execute}\rightarrow\text{verify}.
+\end{aligned}
+\end{equation*}
+The checker validates the resolved commitment against a typed execution schema: agent identity, skill availability, arguments, quantities, bindings, destinations, and predecessor constraints. A passing object is a \emph{validated commitment}. The selected binding and shared task structure then canonically materialize an equivalent dispatch plan, which the compiler lowers to Mineflayer skills while preserving dependency order. In the running example, validation preserves the selected actor and either the oak-planks or crafting-table handoff before materialization. Handoff succeeds only when the recipient inventory reflects the intended item and quantity; the episode succeeds only when the terminal world predicate holds. Figure~\ref{fig:trace} shows this runtime closure.
+
+\section{Experimental Setup}
+
+\subsection{Environment and Tasks}
+
+We evaluate on the official Minecraft Java 1.21.4 server with Mineflayer 4.37.1. Each episode contains two agents, local observations, a shared skill ontology and task prior, and a mandatory in-world handoff. The environment is static and communication reliable, isolating how distributed task facts enter a joint plan. Four families vary distinct commitment fields: Destination changes the target location; Recipe changes the transformation and handoff item; Allocation changes the actor and remaining work; Active Branch changes the downstream continuation. Each family contains two templates. Figure~\ref{fig:tasks} summarizes the coverage; complete schemas and bindings appear in the supplement.
+
+\begin{figure*}[t]
+  \centering
+  \figblueprint{2.25in}{figures/final/figure3_task_families_ppt.pdf}
+  \caption{Four Minecraft families vary the task consequence carried across the agent boundary.}
+  \Description{Annotated panels show Destination, Recipe, Allocation, and Active Branch tasks. Each panel marks the local fact and the resulting change in destination, transformation or handoff object, actor, or continuation.}
+  \label{fig:tasks}
+\end{figure*}
+
+\subsection{Data and Training}
+
+Targets are generated programmatically from task templates, sampled local facts, and canonical task specifications. Public Minecraft resources inform the ontology and scenario design. We use no language-model teacher or manually annotated reciprocal requests. Forward records contain two learned stages: a sender-local context paired with its \texttt{SELF}+\texttt{REQ} target, and a receiver context augmented with the delivered \texttt{REQ} paired with its downstream \texttt{SELF} target. The Goal~$\times$~Capability diagnostic uses a separate requester-initial, transparent-response, and requester-revision dataset.
+
+Task templates yield 480 semantic training clusters under two role permutations and 1,920 forward rows: 960 sender-proposal rows and 960 receiver-after-request rows. Training uses two epochs and 240 optimizer steps; full optimization settings appear in the supplement. Input tokens are masked from the causal-LM loss. The single-step control adds 960 intermediate sender rows, for 2,880 rows and 360 optimizer steps. Controlled free-form receives 2,400 rows and 300 optimizer steps under the same two-epoch schedule. Main learned conditions use three independent seeds.
+
+The submission-scale representation pool contains 128 held-out semantic clusters---16 per template---with both role permutations and three seeds, yielding 768 views per representation and 2,304 closed-loop episodes across the three communication surfaces. Mechanism evaluations use 160 clusters for request interventions, 80 held-out-template clusters for commitment horizon, and 60 unseen binding combinations. The Goal~$\times$~Capability suite contains 40 semantic clusters---two goals, two workcell modes, and ten world variants---organized as 20 matched capability-counterfactual pairs. A-only planning, correct feedback, counterfactual feedback, and centralized full information each evaluate all 40 clusters under two role permutations and three independently trained seeds: 240 episodes per condition and 960 total. The counterfactual condition injects the bounded response from the paired workcell mode while preserving the requester input, initial proposal, and executable world. Semantic cluster remains the independent unit, with seed and role as repeated observations; the supplement additionally reports a 20-pair block-bootstrap sensitivity. A separate 128-cluster pool supports the matched backend comparison.
+
+The pools separate distinct transfers: new bindings within known templates, held-out templates, unseen factor cross-products, and unseen transform-order motifs. Each retains its own independent cluster count.
+
+\subsection{Comparators}
+
+The representation comparison matches the Qwen3.5-0.8B base model, semantic clusters, canonical task fields, two-epoch budget, skill interface, checker, materializer, executor, and verifier. GenCoord--DSL emits Section~\ref{sec:dsl}'s grammar; GenCoord--JSON serializes the same fields; controlled multi-turn free-form expresses the same bilateral task semantics in natural language until a shared extractor recovers the commitment. It is a communication-surface comparator under the same model, task, and executor; MINDcraft and MineCollab remain system-level related work.
+
+Mechanism conditions remove \texttt{REQ}, replace it with an executable same-template alternative, inject counterfactual feedback from the paired capability mode, or shorten the commitment horizon. \textsc{Rule-Minimal-Request} forwards the sender's private binding with zero model calls and uses the public composer to materialize both agents' paths. The Explicit-Factor Composer receives canonical factors directly. Factor-Code + Rule uses the same 1,920 rows, three seeds, two epochs, 240 steps, and forward stages as Direct Short DSL. In this structured suite, model-visible private-fact labels align one-to-one with the shared binding codebook; generated target length is the measured representation difference.
+
+Each comparison changes one scientific layer. Request intervention changes delivered task content while preserving schedule and surface validity. Horizon changes whether the joint route is committed before execution or regenerated at an intermediate state. Short DSL versus JSON is a serialization comparison over the same canonical fields, two learned stages, and execution stack. Controlled free-form is an end-to-end communication-surface comparison under the same base model, task, and executor; it also changes turn structure, context growth, commitment extraction, calls, and training budget. Backend comparison changes the learned target while preserving the peer-facing Short DSL message. Centralized full information changes where local contexts are assembled.
+
+\subsection{Metrics and Statistics}
+
+Terminal success requires the world-state goal predicate after the complete episode. Raw validity records parsing. Commitment validity checks actors, skills, arguments, bindings, and dependencies against the canonical task schema and, when present, the delivered request or feedback. In feedback interventions this validity is response-conditioned; terminal success separately tests consistency with the unchanged true-world capability. Verified handoff requires the intended inventory transfer. Online metrics are model calls, input/output tokens, peer-directed wire bytes, and time-to-commitment (TTC). For structured methods, wire bytes count the inter-agent \texttt{REQ} payload; for controlled free-form, they sum all agent-to-agent dialogue before commitment extraction. Complete episode time ends at terminal readback and is reported descriptively.
+
+Calls, tokens, wire bytes, and TTC are measured on a 40-cluster same-card sample with hot batch-1 models on an NVIDIA RTX 4090D, totaling 720 episode runs and 1,560 model calls. Semantic cluster is the independent unit; seed and role views are repeated observations. Paired comparisons use cluster-bootstrap 95\% intervals, and all-success pools receive exact binomial lower bounds.
+
+\section{Results}
+
+Private information creates a 50\% ambiguity ceiling; task content selects the resolved path in both directions of the edge; and a longer commitment horizon removes online replanning. Under this mechanism chain, Table~\ref{tab:main} reports the quality-matched headline result: all three communication surfaces complete 128/128 held-out clusters, while Short DSL has the lowest online coordination cost.
+
+\begin{figure*}[t]
+  \centering
+  \figblueprint{1.70in}{figures/final/figure4_mechanism_evidence.pdf}
+  \caption{Mechanism evidence: feedback content selects requester revision, request content selects peer execution, and longer commitments reduce online decisions.}
+  \Description{Panel a compares A-only, correct feedback, counterfactual feedback, and centralized full information on 40 semantic clusters arranged as 20 matched counterfactual pairs across three training seeds. Panel b compares true, removed, and same-template alternative requests with a deterministic correct-binding rule. Panel c compares multi-step and single-step commitments in success and model decisions.}
+  \label{fig:mechanisms}
+\end{figure*}
+
+\subsection{Feedback Content Selects Requester Revision}
+
+The Goal~$\times$~Capability suite contains 40 semantic clusters arranged as 20 matched capability-counterfactual pairs. Within each pair, the requester's model-visible input and initial proposal are byte-identical while the peer's private workcell mode changes the feasible actor, handoff object, and suffix. Four conditions evaluate all 40 clusters under two role permutations and three independently trained seeds, yielding 240 episodes per condition and 960 total: A-only planning, correct bounded feedback, counterfactual feedback, and centralized full information.
+
+Every seed reproduces the 50/100/0/100 profile with descriptive seed-level SD 0.0. All 960 runs are parse-valid, planning-complete, and fallback-free. Correct feedback and centralized full information each succeed on 240/240. A-only succeeds on 120/240 and chooses the wrong craft actor on the remaining 120. In the feedback conditions, every resolved commitment is valid relative to the injected response: correct feedback also matches the true workcell, whereas counterfactual feedback is inconsistent with it and fails all 240 episodes with the wrong actor. Cluster-bootstrap effects are $+50.0$ points over A-only (95\% CI $[35,65]$), $+100.0$ over counterfactual feedback (95\% CI $[100,100]$), and $0.0$ versus centralized full information (95\% CI $[0,0]$).
+
+The intervention isolates feedback semantics. With the requester view, initial proposal, executable world, and two-call schedule unchanged, final commitments follow counterfactual feedback in 240/240 episodes: craft actor, handoff item and count, and peer suffix match the paired workcell mode, while goal fields remain fixed. The bounded capability consequence therefore causally controls the inter-agent cut in this diagnostic. Centralized planning uses one call and aggregates a mean 956 B of state; feedback resolution uses two local calls and a mean 103 B response (p95 118 B). Figure~\ref{fig:mechanisms}(a) summarizes the causal and full-information references.
+
+\subsection{Delivered Binding Determines Peer Execution}
+
+On 160 semantic clusters, the true multi-step request reaches 100\% terminal success. Removing \texttt{REQ} while retaining the sender self-plan yields 50\%; each template contains two balanced admissible bindings, making this a construction-level ambiguity ceiling. Replacing the request with the executable alternative from the same template---the request that would be correct under the other private fact---preserves message presence, protocol schedule, schema, approximate length, and call count, yet success falls to 0\%. The paired gains are $+50.0$ points over request removal (95\% CI $[42.5,57.5]$) and $+100.0$ points over the same-template alternative (95\% CI $[100,100]$).
+
+A sender-local deterministic rule also reaches 100\% with zero model calls by forwarding the correct private binding; the public composer materializes the two role-local paths. Under template shift, the rule remains at 100\% while GenCoord reaches 98.1\%, a paired difference of $-1.9$ points with 95\% CI $[-4.2,-0.2]$. Receiver execution follows the delivered binding one-to-one whenever an executable plan is formed: same-template alternatives redirect all 960 confirmatory seed-role episodes and all 471 executable held-out episodes to the alternative path. GenCoord's nine held-out failures all occur before executable-plan formation, with zero wrong-binding failures. Within this intervention, the delivered binding is the causal control variable for peer execution; the backend and protocol surface determine whether a complete executable commitment is formed. Figure~\ref{fig:mechanisms}(b) summarizes the four conditions.
+
+\subsection{Multi-Step Commitments Reduce Online Decisions}
+
+Under their respective closed-loop training protocols, multi-step commitments reach 98.1\% held-out template success, compared with 91.3\% for the separately trained single-step controller; the paired difference is 6.9 points with a 95\% interval of $[2.9,10.8]$. Multi-step uses 1.98 model decisions per episode versus 2.91, a 32\% reduction; the paired difference (multi-step minus single-step) is $-0.931$ with 95\% CI $[-0.971,-0.892]$. The advantage persists even though the single-step model receives 2,880 supervision rows and 360 optimizer steps, compared with 1,920 rows and 240 steps for multi-step, including an explicit intermediate sender-after-obtain stage.
+
+The gain concentrates where the hidden fact changes actor or continuation: Allocation improves from 83.3\% to 92.5\%, and Active Branch from 81.7\% to 100\%, while both variants reach 100\% on Destination and Recipe. The result identifies commitment horizon as an online control variable: committing farther both improves transfer and removes a replanning stage. Figure~\ref{fig:mechanisms}(c) summarizes success and online decisions.
+
+
+\subsection{Quality-Matched Coordination Cost}
+
+Across 2,304 closed-loop episodes, Short DSL, JSON, and controlled free-form each complete 128/128 held-out semantic clusters with 100\% raw validity, commitment validity, and verified handoff and with no repair or fallback. The exact-binomial 95\% lower bound is 0.972, and role-swap success differs by 0.0 for every surface. This pool locks closed-loop quality before comparing online representation cost. Table~\ref{tab:main} separates the 128-cluster quality and episode measurements from the 40-cluster same-card online-cost sample.
+
+\begin{table*}[t]
+\centering
+\caption{Quality-matched communication surfaces. Quality and episode time use 128 held-out clusters; online cost uses the 40-cluster same-card subset. Wire counts the peer request for structured methods and all inter-agent dialogue for free-form.}
+\label{tab:main}
+\tabstyle
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrrrr@{}}
+\toprule
+\textbf{Method} & \textbf{Success $\uparrow$} & \textbf{Calls $\downarrow$} & \textbf{Input tok. $\downarrow$} & \textbf{Output tok. $\downarrow$} & \textbf{Wire (B) $\downarrow$} & \textbf{TTC p50/p95 (s) $\downarrow$} & \textbf{Episode p50/p95 (s) $\downarrow$} \\
+\midrule
+\textbf{GenCoord--DSL} & 128/128 & \textbf{2.00} & \textbf{949.1} & \textbf{78.6} & \textbf{76.3} & \textbf{2.27 / 2.62} & \textbf{24.86 / 27.06} \\
+GenCoord--JSON & 128/128 & \textbf{2.00} & 1154.7 & 267.6 & 303.4 & 7.07 / 7.86 & 29.94 / 31.82 \\
+Controlled free-form & 128/128 & 2.50 & 1585.2 & 265.8 & 1061.1 & 7.13 / 7.86 & 30.09 / 31.92 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+With closed-loop quality fixed, Short DSL improves on controlled free-form on every reported online cost. Free-form receives 2,400 training rows and 300 updates, versus 1,920 and 240 for Short DSL; Short DSL reduces calls by 20\%, output tokens by 70.4\%, wire bytes by 92.8\%, median TTC by 68.2\%, and descriptive median episode time by 17.4\%. Relative to JSON, it reduces output tokens by 70.6\%, wire bytes by 74.9\%, median TTC by 67.9\%, and descriptive median episode time by 17.0\%. The structured rows share sender-proposal and receiver-after-request calls and canonical fields, isolating serialization cost. Free-form measures the full surface, including multi-turn context, extraction, calls, and training budget. Median per-call latency is 1.14 seconds for Short DSL, 3.53 for JSON, and 3.27 for free-form; the shared executor takes approximately 22.6 seconds.
+
+\subsection{Specialized Commitment Backends}
+
+\textbf{Composition reference.} On 60 unseen binding cross-products, an enumerated case table reaches 0\%, while the Explicit-Factor Composer and Direct Short DSL each reach 100\%, confirming factor-wise construction beyond memorized complete cases.
+
+\textbf{Matched model backends.} Direct Short DSL predicts complete role-local paths; Factor-Code + Rule predicts stage-specific binding codes and delegates path materialization to the deterministic composer. Both complete 128/128 semantic clusters (768/768 seed-role views) with perfect parsing, commitment validity, and verified handoff. On the separate 40-cluster same-card subset, Factor-Code + Rule uses slightly longer input context but reduces mean output by 75.5\% and TTC p50 from 2.453 to 0.824 seconds. Both transmit the same 76.6-byte peer request. Table~\ref{tab:realization} reports the matched profile.
+
+\begin{table}[t]
+\centering
+\caption{Matched model backends for the same peer-facing commitment interface. Quality uses 128 clusters; cost uses a separate 40-cluster same-card subset.}
+\label{tab:realization}
+\tabstyle
+\begin{tabularx}{\columnwidth}{@{}
+>{\hsize=1.15\hsize\linewidth=\hsize\raggedright\arraybackslash}X
+>{\hsize=0.925\hsize\linewidth=\hsize\centering\arraybackslash}X
+>{\hsize=0.925\hsize\linewidth=\hsize\centering\arraybackslash}X@{}}
+\toprule
+\textbf{Metric} & \textbf{Direct Short DSL} & \textbf{Factor-Code + Rule} \\
+\midrule
+Success $\uparrow$ & \textbf{128/128} & \textbf{128/128} \\
+Input tok. $\downarrow$ & \textbf{948.9} & 980.2 \\
+Output tok. $\downarrow$ & 79.1 & \textbf{19.4} \\
+Wire (B) $\downarrow$ & \textbf{76.6} & \textbf{76.6} \\
+TTC p50/p95 (s) $\downarrow$ & 2.453 / 2.723 & \textbf{0.824 / 0.997} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The byte-identical peer payload separates the coordination interface from its model-side realization: the latency gain comes from shortening the autoregressive target while preserving the same validated commitment.
+
+\subsection{Task-Structure Visibility}
+
+Across 96 diagnostic clusters, Full DAG and Skeleton views each preserve the familiar post-handoff motif at 100\%; Skeleton removes instance-specific predecessors and edges while retaining coarse stages. Node-only additionally removes stage cues and changes node arrangement, reducing familiar-motif success to 18.2\%. Both unseen transform-order motifs remain at 0\% under all views. Coarse order therefore supports familiar path composition without the complete instance DAG, while new transformation orders remain the structural boundary; the full matrix appears in the supplement.
+
+\section{Discussion}
+
+\paragraph{Task consequence as the coordination primitive.}
+The two intervention families expose the same content-to-route causal link in opposite directions: replacing \texttt{REQ} redirects receiver execution, while counterfactual feedback changes requester actor, handoff object, and suffix. The zero-call rule reproduces the content effect, identifying the binding as the cross-boundary control variable in the current task families; GenCoord couples it to the executable paths and discharge conditions that realize the joint route.
+
+\paragraph{Commitment horizon as online control.}
+A skill-path commitment fixes both who acts and how far the route proceeds before another model decision. \texttt{SELF+REQ} exposes the sender prefix, handoff boundary, peer suffix, typed arguments, and dependencies. Multi-step commitments remove an intermediate deliberation stage and improve template-shift success despite the single-step controller's additional supervision, linking horizon directly to online replanning.
+
+\paragraph{Stable semantics, optimized realization.}
+Tables~\ref{tab:main} and~\ref{tab:realization} expose two orthogonal layers. Surface compression replaces JSON or dialogue with Short DSL; formation compression replaces full-path decoding with a stage code and deterministic composition. Rule, factor, and direct backends all terminate at the same peer-facing interface. At that boundary, the typed checker produces a validated commitment, materialization instantiates the dispatch plan, and world predicates verify discharge. Explicit task fields therefore support causal intervention, modular backend replacement, and failure localization without changing coordination semantics.
+
+\paragraph{Shared structure and information interfaces.}
+Coarse stages preserve a familiar handoff motif after instance-specific edges are removed, whereas new transform orders remain unresolved. Let $b(z)$ be serialized byte length, $u_i^t$ uploaded local state, $d_i^t$ dispatched decision, $E_t$ active coordination edges, $\gamma_{ij}^t$ an edge exchange, and $R_c,R_l$ the respective round counts:
+\begin{equation*}
+\begin{aligned}
+ B_{\mathrm{central}}&=\sum_{t=1}^{R_c}\sum_{i=1}^{n}[b(u_i^t)+b(d_i^t)],\\
+ B_{\mathrm{local}}&=\sum_{t=1}^{R_l}\sum_{(i,j)\in E_t}b(\gamma_{ij}^t).
+\end{aligned}
+\end{equation*}
+Centralized traffic follows synchronized state volume, participating agents, and rounds; local traffic follows active edges, commitment size, and local rounds. Both interfaces resolve all 40 Goal~$\times$~Capability clusters across three seeds, while exposing different information flows.
+
+\paragraph{Limitations.}
+The evaluation covers bilateral coordination over a shared executable prior in static Minecraft with reliable messaging. Dynamic multi-edge consistency and open-ended task decomposition remain outside the current evidence.
+
+\section{Conclusion}
+
+Joint skill paths become ambiguous when their determining facts are distributed across agents. GenCoord carries each fact's executable consequence in a \texttt{SELF+REQ} commitment: requests transmit sender-local bindings, while bounded feedback returns peer-local capability consequences. Counterfactual interventions make receiver execution and requester revision follow the delivered task consequence in their respective directions. Multi-step commitments reduce online decisions and improve held-out-template success. At matched closed-loop quality, Short DSL lowers every reported online cost relative to controlled free-form communication, while a factor-coded backend accelerates the same peer-facing interface. Skill-path commitments thus connect local generative reasoning to verified multi-agent action.
+
+\clearpage
+\balance
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "gencoord-supplement-e1e2-v15",
+  "source_schema": "gcp-feedback-intervention-analysis-v0.1",
+  "conditions": [
+    "A_ONLY",
+    "CORRECT_FEEDBACK",
+    "COUNTERFACTUAL_FEEDBACK",
+    "CENTRALIZED_FULL_INFO"
+  ],
+  "training_seeds": [
+    2026080601,
+    2026080602,
+    2026080603
+  ],
+  "semantic_clusters": 40,
+  "role_permutations": 2,
+  "episodes_per_condition": 240,
+  "total_episodes": 960,
+  "counterfactual_control_traces": 240,
+  "pair_block_sensitivity": {
+    "comparisons": {
+      "centralized_minus_correct": {
+        "mean_delta_left_minus_right": 0.0,
+        "pair_blocks": 20,
+        "paired_pair_block_bootstrap_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct_minus_a_only": {
+        "mean_delta_left_minus_right": 0.5,
+        "pair_blocks": 20,
+        "paired_pair_block_bootstrap_ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "correct_minus_counterfactual": {
+        "mean_delta_left_minus_right": 1.0,
+        "pair_blocks": 20,
+        "paired_pair_block_bootstrap_ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "counterfactual_minus_a_only": {
+        "mean_delta_left_minus_right": -0.5,
+        "pair_blocks": 20,
+        "paired_pair_block_bootstrap_ci95": [
+          -0.5,
+          -0.5
+        ]
+      }
+    },
+    "pairing_fields": [
+      "private_goal",
+      "world_variant"
+    ],
+    "repeated_measures_within_block": [
+      "private_workcell_mode",
+      "role_permutation",
+      "training_seed"
+    ],
+    "status": "SENSITIVITY_ANALYSIS"
+  }
+}

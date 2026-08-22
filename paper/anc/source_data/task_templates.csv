@@ -1,0 +1,9 @@
+family_id,template_id,handoff_item,handoff_required,terminal_predicate,binding_ids,request_paths
+P4_BRANCH,ACTIVE_ORDER_BRANCH,oak_planks,True,selected binding reaches Minecraft terminal checker,STORAGE_BRANCH / WORK_BRANCH,craft.item
+P1_DESTINATION,BUILD_SITE_A_OR_B,oak_planks,True,selected binding reaches Minecraft terminal checker,SITE_A / SITE_B,build.component
+P1_DESTINATION,CHEST_A_OR_B,cobblestone,True,selected binding reaches Minecraft terminal checker,CHEST_A / CHEST_B,resource.deliver
+P2_RECIPE,CHEST_OR_CRAFTING_TABLE,oak_planks,True,selected binding reaches Minecraft terminal checker,CHEST / CRAFTING_TABLE,craft.item
+P3_ALLOCATION,DEPOSIT_OR_BUILD,cobblestone,True,selected binding reaches Minecraft terminal checker,BUILD / DEPOSIT,build.component / resource.deliver
+P3_ALLOCATION,DUAL_BUILD_ALLOCATION,oak_planks,True,selected binding reaches Minecraft terminal checker,ROOF / WALL,build.component
+P2_RECIPE,PLANKS_OR_STICKS,oak_planks,True,selected binding reaches Minecraft terminal checker,PLANKS / STICKS,craft.item / resource.deliver
+P4_BRANCH,REMAINING_TERMINAL,oak_planks,True,selected binding reaches Minecraft terminal checker,DEPOT_TERMINAL / MARKER_TERMINAL,build.component / resource.deliver
