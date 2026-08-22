@@ -55,8 +55,8 @@
   <tr>
     <td align="center"><sub><sup>1</sup> <b>Tsinghua University</b><br>Beijing, China</sub></td>
     <td align="center"><sub><sup>2</sup> <b>Beijing Normal-Hong Kong Baptist University</b><br>Zhuhai, China</sub></td>
-    <td align="center"><sub><sup>3</sup> <b>UNC Charlotte</b><br>Charlotte, United States</sub></td>
-    <td align="center"><sub><sup>4</sup> <b>UC San Diego</b><br>San Diego, United States</sub></td>
+    <td align="center"><sub><sup>3</sup> <b>University of North Carolina at Charlotte</b><br>Charlotte, United States</sub></td>
+    <td align="center"><sub><sup>4</sup> <b>University of California San Diego</b><br>San Diego, United States</sub></td>
   </tr>
 </table>
 
