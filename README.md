@@ -31,32 +31,38 @@
 
 <table width="100%">
   <tr>
-    <td width="25%" align="center" valign="middle">
+    <td width="25%" align="center" valign="top">
       <a href="https://www.tsinghua.edu.cn/">
         <img src="assets/affiliations/tsinghua.png" width="100%" alt="Tsinghua University">
       </a>
+      <br><br>
+      <sup>1</sup> <b>Tsinghua University</b><br>
+      <sub>Beijing, China</sub>
     </td>
-    <td width="25%" align="center" valign="middle">
+    <td width="25%" align="center" valign="top">
       <a href="https://www.bnbu.edu.cn/">
         <img src="assets/affiliations/bnbu.svg" width="100%" alt="Beijing Normal-Hong Kong Baptist University">
       </a>
+      <br><br>
+      <sup>2</sup> <b>Beijing Normal-Hong Kong Baptist University</b><br>
+      <sub>Zhuhai, China</sub>
     </td>
-    <td width="25%" align="center" valign="middle">
+    <td width="25%" align="center" valign="top">
       <a href="https://www.charlotte.edu/">
         <img src="assets/affiliations/unc_charlotte.png" width="100%" alt="University of North Carolina at Charlotte">
       </a>
+      <br><br>
+      <sup>3</sup> <b>University of North Carolina at Charlotte</b><br>
+      <sub>Charlotte, United States</sub>
     </td>
-    <td width="25%" align="center" valign="middle">
+    <td width="25%" align="center" valign="top">
       <a href="https://ucsd.edu/">
         <img src="assets/affiliations/uc_san_diego.png" width="100%" alt="University of California San Diego">
       </a>
+      <br><br>
+      <sup>4</sup> <b>University of California San Diego</b><br>
+      <sub>San Diego, United States</sub>
     </td>
-  </tr>
-  <tr>
-    <td align="center"><sub><sup>1</sup> <b>Tsinghua University</b><br>Beijing, China</sub></td>
-    <td align="center"><sub><sup>2</sup> <b>Beijing Normal-Hong Kong Baptist University</b><br>Zhuhai, China</sub></td>
-    <td align="center"><sub><sup>3</sup> <b>University of North Carolina at Charlotte</b><br>Charlotte, United States</sub></td>
-    <td align="center"><sub><sup>4</sup> <b>University of California San Diego</b><br>San Diego, United States</sub></td>
   </tr>
 </table>
 
