@@ -53,10 +53,10 @@
     </td>
   </tr>
   <tr>
-    <td align="center" valign="top"><sup>1</sup> <b>Tsinghua University</b><br><sub>Beijing, China</sub></td>
-    <td align="center" valign="top"><sup>2</sup> <b>Beijing Normal-Hong Kong Baptist University</b><br><sub>Zhuhai, China</sub></td>
-    <td align="center" valign="top"><sup>3</sup> <b>University of North Carolina at Charlotte</b><br><sub>Charlotte, United States</sub></td>
-    <td align="center" valign="top"><sup>4</sup> <b>University of California San Diego</b><br><sub>San Diego, United States</sub></td>
+    <td align="center" valign="top"><sup>1</sup> <b>Tsinghua University</b><br></td>
+    <td align="center" valign="top"><sup>2</sup> <b>Beijing Normal-Hong Kong Baptist University</b><br></td>
+    <td align="center" valign="top"><sup>3</sup> <b>University of North Carolina at Charlotte</b><br></td>
+    <td align="center" valign="top"><sup>4</sup> <b>University of California San Diego</b><br></td>
   </tr>
 </table>
 
