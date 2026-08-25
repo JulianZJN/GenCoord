@@ -7,7 +7,9 @@
 **Executable coordination for embodied teams with distributed private information.**
 
 <p>
-  <a href="docs/GenCoord_preprint.pdf"><b>Paper</b></a>
+  <a href="https://arxiv.org/abs/2608.22055"><b>arXiv</b></a>
+  &nbsp;·&nbsp;
+  <a href="docs/GenCoord_preprint.pdf"><b>PDF</b></a>
   &nbsp;·&nbsp;
   <a href="paper/"><b>LaTeX Source</b></a>
   &nbsp;·&nbsp;
@@ -19,7 +21,8 @@
 </p>
 
 <p>
-  <a href="docs/GenCoord_preprint.pdf"><img src="https://img.shields.io/badge/paper-preprint-b31b1b.svg?style=flat-square" alt="Paper preprint"></a>
+  <a href="https://arxiv.org/abs/2608.22055"><img src="https://img.shields.io/badge/arXiv-2608.22055-b31b1b.svg?style=flat-square" alt="arXiv:2608.22055"></a>
+  <a href="docs/GenCoord_preprint.pdf"><img src="https://img.shields.io/badge/paper-PDF-555555.svg?style=flat-square" alt="Paper PDF"></a>
   <a href="paper/"><img src="https://img.shields.io/badge/source-LaTeX-008080.svg?style=flat-square" alt="LaTeX source"></a>
   <a href="paper/anc/source_data/"><img src="https://img.shields.io/badge/artifact-canonical%20evidence-6f42c1.svg?style=flat-square" alt="Canonical evidence"></a>
   <img src="https://img.shields.io/badge/environment-Minecraft-62b47a.svg?style=flat-square" alt="Minecraft environment">
@@ -190,14 +193,17 @@ The consistency target rebuilds every generated output and verifies exact agreem
 
 ## Citation
 
-The arXiv identifier will be added when the public record is assigned. The repository already provides citation-ready metadata in [`CITATION.cff`](CITATION.cff):
+The public preprint is available as [arXiv:2608.22055](https://arxiv.org/abs/2608.22055). Citation-ready metadata is also provided in [`CITATION.cff`](CITATION.cff):
 
 ```bibtex
 @misc{he2026gencoord,
   title        = {GenCoord: Skill-Path Commitments under Private Information},
   author       = {Peng He and Junning Zhu and Haohan Yuan and Jianpeng Liang},
   year         = {2026},
-  note         = {Preprint}
+  eprint       = {2608.22055},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  url          = {https://arxiv.org/abs/2608.22055}
 }
 ```
 

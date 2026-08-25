@@ -14,6 +14,15 @@
 % no conference copyright or submission metadata is embedded here.
 \settopmatter{printacmref=false,printfolios=true}
 
+% Keep the structured city/country fields required by the AAMAS class, but
+% omit those location lines from the compact public-preprint author block.
+\makeatletter
+\AtBeginDocument{%
+  \def\city#1{\global\@ACM@citypresenttrue\ignorespaces}%
+  \def\country#1{\global\@ACM@countrypresenttrue\ignorespaces}%
+}
+\makeatother
+
 % The AAMAS class hard-codes conference headers even in non-ACM mode.  Replace
 % them with a neutral public-preprint page style while preserving its layout.
 \AtBeginDocument{%
