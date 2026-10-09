@@ -4,7 +4,6 @@
 
 ### Executable Commitments for Embodied LLM Agents under Private Information
 
-**Make the division of work the message.**
 
 <p>
   <a href="https://arxiv.org/abs/2608.22055"><b>Paper</b></a>
@@ -26,7 +25,7 @@
 </p>
 
 **Junning Zhu**<sup>1,&#42;</sup>, **Peng He**<sup>2,&#42;,&#8224;</sup>, **Haohan Yuan**<sup>3</sup>, **Jianpeng Liang**<sup>4</sup><br>
-<sup>&#42; Equal contribution. &#8224; Corresponding author: <a href="mailto:hepeng@tsinghua-wx.org">Peng He</a>.</sup>
+<sup>&#42; Equal contribution. &#8224; Corresponding author: Peng He
 
 <table width="100%">
   <tr height="92">
