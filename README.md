@@ -25,7 +25,7 @@
   <img src="https://img.shields.io/badge/environment-Minecraft-62b47a.svg?style=flat-square" alt="Minecraft">
 </p>
 
-**Junning Zhu**<sup>2,&#42;</sup>, **Peng He**<sup>1,5,&#42;,&#8224;</sup>, **Haohan Yuan**<sup>3</sup>, **Jianpeng Liang**<sup>4</sup><br>
+**Junning Zhu**<sup>2,&#42;</sup>, **Peng He**<sup>1,&#42;,&#8224;</sup>, **Haohan Yuan**<sup>3</sup>, **Jianpeng Liang**<sup>4</sup><br>
 <sup>&#42; Equal contribution. &#8224; Corresponding author: <a href="mailto:hepeng@tsinghua-wx.org">Peng He</a>.</sup>
 
 <table width="100%">
@@ -58,8 +58,6 @@
     <td align="center" valign="top"><sup>4</sup> <b>University of California San Diego</b><br></td>
   </tr>
 </table>
-
-<sup>5</sup> <a href="https://sophon.ai/">SOPHGO (sophon.ai)</a>
 
 </div>
 
