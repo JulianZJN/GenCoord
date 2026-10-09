@@ -5,14 +5,14 @@ type: software
 repository-code: "https://github.com/JulianZJN/GenCoord"
 url: "https://arxiv.org/abs/2608.22055"
 authors:
-  - given-names: Peng
-    family-names: He
-    affiliation: Tsinghua University
-    email: hepeng@tsinghua-wx.org
   - given-names: Junning
     family-names: Zhu
     affiliation: Beijing Normal-Hong Kong Baptist University
     email: t330025113@mail.bnbu.edu.cn
+  - given-names: Peng
+    family-names: He
+    affiliation: "Tsinghua University; SOPHGO (sophon.ai)"
+    email: hepeng@tsinghua-wx.org
   - given-names: Haohan
     family-names: Yuan
     affiliation: University of North Carolina at Charlotte
@@ -38,14 +38,14 @@ preferred-citation:
   type: article
   title: "GenCoord: Executable Commitments for Embodied LLM Agents under Private Information"
   authors:
-    - given-names: Peng
-      family-names: He
     - given-names: Junning
       family-names: Zhu
+    - given-names: Peng
+      family-names: He
     - given-names: Haohan
       family-names: Yuan
     - given-names: Jianpeng
       family-names: Liang
   year: 2026
   url: "https://arxiv.org/abs/2608.22055"
-  notes: "Preprint; arXiv:2608.22055 [cs.AI]."
+  notes: "Preprint; arXiv:2608.22055 [cs.AI]. Junning Zhu and Peng He contributed equally. Corresponding author: Peng He (hepeng@tsinghua-wx.org)."

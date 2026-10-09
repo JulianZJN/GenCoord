@@ -31,27 +31,28 @@
   \pagestyle{standardpagestyle}%
   \hypersetup{%
     pdftitle={GenCoord: Executable Commitments for Embodied LLM Agents under Private Information},%
-    pdfauthor={Peng He, Junning Zhu, Haohan Yuan, Jianpeng Liang}%
+    pdfauthor={Junning Zhu, Peng He, Haohan Yuan, Jianpeng Liang}%
   }%
 }
 
 \title[GenCoord]{GenCoord: Executable Commitments for Embodied LLM Agents under Private Information}
 
-\author{Peng He}
-\authornote{Equal contribution.}
-\affiliation{%
-  \institution{Tsinghua University}
-  \city{Beijing}
-  \country{China}}
-\email{hepeng@tsinghua-wx.org}
-
 \author{Junning Zhu}
-\authornotemark[1]
+\authornote{Equal contribution.}
 \affiliation{%
   \institution{Beijing Normal-Hong Kong Baptist University}
   \city{Zhuhai}
   \country{China}}
 \email{t330025113@mail.bnbu.edu.cn}
+
+\author{Peng He}
+\authornotemark[1]
+\authornote{Corresponding author.}
+\affiliation{%
+  \institution{Tsinghua University; SOPHGO (sophon.ai)}
+  \city{Beijing}
+  \country{China}}
+\email{hepeng@tsinghua-wx.org}
 
 \author{Haohan Yuan}
 \affiliation{%
@@ -67,7 +68,7 @@
   \country{United States}}
 \email{jil652@ucsd.edu}
 
-\renewcommand{\shortauthors}{He et al.}
+\renewcommand{\shortauthors}{Zhu et al.}
 
 \begin{abstract}
 Embodied language-model agents must coordinate interdependent actions while each holds private task information. In dialogue-based coordination, models generate messages and interpret replies to decide what each agent should do, spending inference before the team acts. We propose GenCoord, a decentralized protocol that makes the division of work itself the message. A proposal pairs the sender's skill path with its partner's continuation in Short DSL, a compact language for expressing joint work. Compatible paths form commitments linking the sender's delivery to the partner's work after verified receipt. We check fulfillment separately from original-task success. Complete requests also let a deterministic receiver proceed without another model call. In Minecraft, trained local 0.8B agents match the task success of controlled free-form communication while reducing median commitment time by 68.2\%. The same-field full-key JSON control approaches free-form output length and delay, indicating that the amount generated matters even when messages are structured. With the same prompted DeepSeek model, both protocols complete nearly all tasks, but dialogue generates 2.8 times as many output tokens. Multistep commitments improve held-out-template success from 91.3\% to 98.1\% with fewer decisions. These results point to a design principle for embodied cooperation: make the division of work the message, and spend inference on choosing and revising the work.
@@ -100,7 +101,7 @@ Embodied language-model agents must coordinate interdependent actions while each
 \begin{document}
 \maketitle
 \raggedbottom
-\hypersetup{pdfauthor={Peng He, Junning Zhu, Haohan Yuan, Jianpeng Liang}}
+\hypersetup{pdfauthor={Junning Zhu, Peng He, Haohan Yuan, Jianpeng Liang}}
 
 \section{Introduction}
 Language-model-driven embodied agents cooperate by handing over materials, processing objects, and completing actions that depend on a partner's work. We consider teams without a central planner, where each agent holds local observations and private task information that its partner needs to choose compatible work~\cite{white2025collaborating,long2024teamcraft,zhang2024coela}. In dialogue-based coordination, a model generates each message and its partner processes that message before choosing an action. These exchanges consume inference on both sides, so communication can delay the agents' next coordinated action.

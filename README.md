@@ -25,8 +25,8 @@
   <img src="https://img.shields.io/badge/environment-Minecraft-62b47a.svg?style=flat-square" alt="Minecraft">
 </p>
 
-**Peng He**<sup>1,&#42;</sup>, **Junning Zhu**<sup>2,&#42;</sup>, **Haohan Yuan**<sup>3</sup>, **Jianpeng Liang**<sup>4</sup>  
-<sup>&#42; Equal contribution</sup>
+**Junning Zhu**<sup>2,&#42;</sup>, **Peng He**<sup>1,5,&#42;,&#8224;</sup>, **Haohan Yuan**<sup>3</sup>, **Jianpeng Liang**<sup>4</sup><br>
+<sup>&#42; Equal contribution. &#8224; Corresponding author: <a href="mailto:hepeng@tsinghua-wx.org">Peng He</a>.</sup>
 
 <table width="100%">
   <tr height="92">
@@ -58,6 +58,8 @@
     <td align="center" valign="top"><sup>4</sup> <b>University of California San Diego</b><br></td>
   </tr>
 </table>
+
+<sup>5</sup> <a href="https://sophon.ai/">SOPHGO (sophon.ai)</a>
 
 </div>
 
@@ -127,7 +129,7 @@ make            # writes build/GenCoord_preprint.pdf
 ```bibtex
 @misc{he2026gencoord,
   title         = {GenCoord: Executable Commitments for Embodied LLM Agents under Private Information},
-  author        = {Peng He and Junning Zhu and Haohan Yuan and Jianpeng Liang},
+  author        = {Junning Zhu and Peng He and Haohan Yuan and Jianpeng Liang},
   year          = {2026},
   eprint        = {2608.22055},
   archivePrefix = {arXiv},
