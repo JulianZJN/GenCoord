@@ -25,19 +25,19 @@
   <img src="https://img.shields.io/badge/environment-Minecraft-62b47a.svg?style=flat-square" alt="Minecraft">
 </p>
 
-**Junning Zhu**<sup>2,&#42;</sup>, **Peng He**<sup>1,&#42;,&#8224;</sup>, **Haohan Yuan**<sup>3</sup>, **Jianpeng Liang**<sup>4</sup><br>
+**Junning Zhu**<sup>1,&#42;</sup>, **Peng He**<sup>2,&#42;,&#8224;</sup>, **Haohan Yuan**<sup>3</sup>, **Jianpeng Liang**<sup>4</sup><br>
 <sup>&#42; Equal contribution. &#8224; Corresponding author: <a href="mailto:hepeng@tsinghua-wx.org">Peng He</a>.</sup>
 
 <table width="100%">
   <tr height="92">
     <td width="25%" align="center" valign="middle">
-      <a href="https://www.tsinghua.edu.cn/">
-        <img src="assets/affiliations/tsinghua.png" height="50" alt="Tsinghua University">
+      <a href="https://www.bnbu.edu.cn/">
+        <img src="assets/affiliations/bnbu.svg" height="50" alt="Beijing Normal-Hong Kong Baptist University">
       </a>
     </td>
     <td width="25%" align="center" valign="middle">
-      <a href="https://www.bnbu.edu.cn/">
-        <img src="assets/affiliations/bnbu.svg" height="50" alt="Beijing Normal-Hong Kong Baptist University">
+      <a href="https://www.tsinghua.edu.cn/">
+        <img src="assets/affiliations/tsinghua.png" height="50" alt="Tsinghua University">
       </a>
     </td>
     <td width="25%" align="center" valign="middle">
@@ -52,8 +52,8 @@
     </td>
   </tr>
   <tr>
-    <td align="center" valign="top"><sup>1</sup> <b>Tsinghua University</b><br></td>
-    <td align="center" valign="top"><sup>2</sup> <b>Beijing Normal-Hong Kong Baptist University</b><br></td>
+    <td align="center" valign="top"><sup>1</sup> <b>Beijing Normal-Hong Kong Baptist University</b><br></td>
+    <td align="center" valign="top"><sup>2</sup> <b>Tsinghua University</b><br></td>
     <td align="center" valign="top"><sup>3</sup> <b>University of North Carolina at Charlotte</b><br></td>
     <td align="center" valign="top"><sup>4</sup> <b>University of California San Diego</b><br></td>
   </tr>
