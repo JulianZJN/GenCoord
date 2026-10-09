@@ -1,0 +1,17 @@
+{
+  "quality_assigned": 10240,
+  "timing_assigned": 960,
+  "quality_source_count": 32,
+  "timing_source_count": 16,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261001,
+  "generation": "greedy",
+  "direct_max_new_tokens": 128,
+  "factor_max_new_tokens": 32,
+  "encoder": "Qwen/Qwen3-Embedding-0.6B",
+  "encoder_max_length": 8192,
+  "TRAIN_unique_descriptions": 64,
+  "logistic_C": 0.1,
+  "receiver_context": "projected post-handoff inventory/history",
+  "timing_GPU": "RTX 4090D"
+}

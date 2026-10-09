@@ -1,0 +1,190 @@
+{
+  "A:RS_MARGIN": {
+    "assigned": 128,
+    "technical_failures": 0,
+    "aggregation": "Unweighted observed-row description; no stratified estimator or inference",
+    "TTC_ms": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 350.4280082734374,
+      "total_all_assigned": 44854.78505899999
+    },
+    "logical_calls": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.1328125,
+      "total_all_assigned": 17
+    },
+    "http_attempts": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.1328125,
+      "total_all_assigned": 17
+    },
+    "input_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 373.2109375,
+      "total_all_assigned": 47771
+    },
+    "output_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 1.328125,
+      "total_all_assigned": 170
+    },
+    "billed_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 374.5390625,
+      "total_all_assigned": 47941
+    },
+    "api_usd": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 1.3597031250000001e-05,
+      "total_all_assigned": 0.0017404200000000001
+    }
+  },
+  "A:R_ALL": {
+    "assigned": 128,
+    "technical_failures": 0,
+    "aggregation": "Unweighted observed-row description; no stratified estimator or inference",
+    "TTC_ms": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 91.98684046875005,
+      "total_all_assigned": 11774.315580000006
+    },
+    "logical_calls": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    },
+    "http_attempts": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    },
+    "input_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    },
+    "output_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    },
+    "billed_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    },
+    "api_usd": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    }
+  },
+  "A:F_FIRST": {
+    "assigned": 128,
+    "technical_failures": 0,
+    "aggregation": "Unweighted observed-row description; no stratified estimator or inference",
+    "TTC_ms": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 412.39396738281255,
+      "total_all_assigned": 52786.427825000006
+    },
+    "logical_calls": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    },
+    "http_attempts": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    },
+    "input_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    },
+    "output_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    },
+    "billed_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    },
+    "api_usd": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 0.0,
+      "total_all_assigned": 0
+    }
+  },
+  "A:S_ALL": {
+    "assigned": 128,
+    "technical_failures": 0,
+    "aggregation": "Unweighted observed-row description; no stratified estimator or inference",
+    "TTC_ms": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 1402.044080109375,
+      "total_all_assigned": 179461.642254
+    },
+    "logical_calls": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 1.0,
+      "total_all_assigned": 128
+    },
+    "http_attempts": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 1.0,
+      "total_all_assigned": 128
+    },
+    "input_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 2816.0234375,
+      "total_all_assigned": 360451
+    },
+    "output_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 10.5625,
+      "total_all_assigned": 1352
+    },
+    "billed_tokens": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 2826.5859375,
+      "total_all_assigned": 361803
+    },
+    "api_usd": {
+      "observed_records": 128,
+      "missing_records": 0,
+      "mean_observed": 9.371137499999999e-05,
+      "total_all_assigned": 0.011995055999999999
+    }
+  }
+}

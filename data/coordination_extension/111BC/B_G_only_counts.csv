@@ -1,0 +1,10 @@
+﻿condition,category,count,assigned
+clean,no_alarm,256,256
+sham_irrelevant,no_alarm,256,256
+parse_invalid,G_alarm,256,256
+handoff_contract_incompatible,G_alarm,256,256
+handoff_shortfall,G_alarm,256,256
+handoff_wrong_item,G_alarm,256,256
+post_receipt_resource_loss,G_alarm,256,256
+terminal_primitive_failure,G_alarm,256,256
+compatible_wrong_binding,G_alarm,256,256

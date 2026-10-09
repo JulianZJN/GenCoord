@@ -1,0 +1,3 @@
+model,view,rows,epochs,optimizer_updates,token_exposure,training_seeds
+Distributed requester,320 initial local + 320 after-response local,640,2,80,868720,3
+Centralized full information,merged current local views,320,4,80,970080,3

@@ -1,0 +1,14 @@
+{
+  "cuda": "13.0",
+  "gpu_name": "NVIDIA GeForce RTX 4090 D",
+  "gpu_total_memory_bytes": 25252724736,
+  "hostname": "anonymous-host",
+  "model_load_seconds": 0.9635680168867111,
+  "model_path": "anonymous_source_ca66c5122eb83057",
+  "pid": 3473089,
+  "prompt_mode": "raw",
+  "torch": "2.11.0+cu130",
+  "transformers": "5.12.1",
+  "utc": "2026-09-28T04:21:37.896993+00:00",
+  "warmup_train_calls": 2
+}

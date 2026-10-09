@@ -1,0 +1,5 @@
+# Supporting protocol and implementation evidence
+
+The source files support private task-graph execution, fixed-sender receiver comparison, language-source inference, structural cues, and the separately described request-transfer diagnostic. `private_*` contains application-byte accounting, receiver processing, physical receipts, and the unchanged Direct sender probe. `a1_*` describes the three receiver implementations and the seven added physical executions. `naturalized_*` records source-level intervals and the supervised lexical control. `api_transfer/` includes the diagnostic prompts, worked examples, evaluated configuration, trial tables, and selected delivered outputs. This diagnostic is distinct from the final same-DeepSeek two-protocol comparison in `../coordination_extension/111D/`.
+
+Machine locations have been replaced with anonymous source identifiers. The observed metric values and protocol messages are unchanged. The root data guide links these groups to the appendix sections.

@@ -10,13 +10,13 @@ The MIT License in `LICENSES/MIT.txt` applies only to the following original
 project code and build glue:
 
 - `Makefile`
-- `paper/anc/scripts/build_e1e2_tables.py`
+- `data/cost_contrasts/cost_intervals.py`
 
-2. Manuscript, figures, and compact evidence
----------------------------------------------
+2. Manuscript, figures, and data
+--------------------------------
 
 Unless a file states otherwise, the manuscript source and rendered paper,
-author-owned figures, and compact evidence data are copyright of the GenCoord
+author-owned figures, and released data are copyright of the GenCoord
 authors. All rights are reserved pending final arXiv and venue publication
 rights. Public availability in this repository does not grant permission to
 redistribute, modify, or create derivative works from those materials.

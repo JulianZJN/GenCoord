@@ -12,7 +12,7 @@ paper/*.pdf
 paper/*.synctex.gz
 paper/*.toc
 
-# Local combined build
+# Local preprint build
 build/
 
 # Python caches

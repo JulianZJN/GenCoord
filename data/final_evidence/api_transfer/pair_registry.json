@@ -1,0 +1,482 @@
+[
+  {
+    "pair_id": "API-TEST-CHEST_A_OR_B-P00",
+    "template_id": "CHEST_A_OR_B",
+    "world_seed": 178965402334775,
+    "pair_index": 0
+  },
+  {
+    "pair_id": "API-TEST-CHEST_A_OR_B-P01",
+    "template_id": "CHEST_A_OR_B",
+    "world_seed": 236691000595455,
+    "pair_index": 1
+  },
+  {
+    "pair_id": "API-TEST-CHEST_A_OR_B-P02",
+    "template_id": "CHEST_A_OR_B",
+    "world_seed": 7363471909545,
+    "pair_index": 2
+  },
+  {
+    "pair_id": "API-TEST-CHEST_A_OR_B-P03",
+    "template_id": "CHEST_A_OR_B",
+    "world_seed": 164584579707356,
+    "pair_index": 3
+  },
+  {
+    "pair_id": "API-TEST-CHEST_A_OR_B-P04",
+    "template_id": "CHEST_A_OR_B",
+    "world_seed": 280566832392704,
+    "pair_index": 4
+  },
+  {
+    "pair_id": "API-TEST-CHEST_A_OR_B-P05",
+    "template_id": "CHEST_A_OR_B",
+    "world_seed": 367882287558,
+    "pair_index": 5
+  },
+  {
+    "pair_id": "API-TEST-CHEST_A_OR_B-P06",
+    "template_id": "CHEST_A_OR_B",
+    "world_seed": 260483082596412,
+    "pair_index": 6
+  },
+  {
+    "pair_id": "API-TEST-CHEST_A_OR_B-P07",
+    "template_id": "CHEST_A_OR_B",
+    "world_seed": 267838106386243,
+    "pair_index": 7
+  },
+  {
+    "pair_id": "API-TEST-CHEST_A_OR_B-P08",
+    "template_id": "CHEST_A_OR_B",
+    "world_seed": 106255179841266,
+    "pair_index": 8
+  },
+  {
+    "pair_id": "API-TEST-CHEST_A_OR_B-P09",
+    "template_id": "CHEST_A_OR_B",
+    "world_seed": 46237476444004,
+    "pair_index": 9
+  },
+  {
+    "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P00",
+    "template_id": "BUILD_SITE_A_OR_B",
+    "world_seed": 207663038341693,
+    "pair_index": 0
+  },
+  {
+    "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P01",
+    "template_id": "BUILD_SITE_A_OR_B",
+    "world_seed": 252315544961422,
+    "pair_index": 1
+  },
+  {
+    "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P02",
+    "template_id": "BUILD_SITE_A_OR_B",
+    "world_seed": 54692170835297,
+    "pair_index": 2
+  },
+  {
+    "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P03",
+    "template_id": "BUILD_SITE_A_OR_B",
+    "world_seed": 141542367647897,
+    "pair_index": 3
+  },
+  {
+    "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P04",
+    "template_id": "BUILD_SITE_A_OR_B",
+    "world_seed": 173211970606722,
+    "pair_index": 4
+  },
+  {
+    "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P05",
+    "template_id": "BUILD_SITE_A_OR_B",
+    "world_seed": 23851345273384,
+    "pair_index": 5
+  },
+  {
+    "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P06",
+    "template_id": "BUILD_SITE_A_OR_B",
+    "world_seed": 270918728641430,
+    "pair_index": 6
+  },
+  {
+    "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P07",
+    "template_id": "BUILD_SITE_A_OR_B",
+    "world_seed": 276122574676373,
+    "pair_index": 7
+  },
+  {
+    "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P08",
+    "template_id": "BUILD_SITE_A_OR_B",
+    "world_seed": 269524963051396,
+    "pair_index": 8
+  },
+  {
+    "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P09",
+    "template_id": "BUILD_SITE_A_OR_B",
+    "world_seed": 241218676344963,
+    "pair_index": 9
+  },
+  {
+    "pair_id": "API-TEST-PLANKS_OR_STICKS-P00",
+    "template_id": "PLANKS_OR_STICKS",
+    "world_seed": 91430244758739,
+    "pair_index": 0
+  },
+  {
+    "pair_id": "API-TEST-PLANKS_OR_STICKS-P01",
+    "template_id": "PLANKS_OR_STICKS",
+    "world_seed": 6579193560466,
+    "pair_index": 1
+  },
+  {
+    "pair_id": "API-TEST-PLANKS_OR_STICKS-P02",
+    "template_id": "PLANKS_OR_STICKS",
+    "world_seed": 158786519149373,
+    "pair_index": 2
+  },
+  {
+    "pair_id": "API-TEST-PLANKS_OR_STICKS-P03",
+    "template_id": "PLANKS_OR_STICKS",
+    "world_seed": 212945125172388,
+    "pair_index": 3
+  },
+  {
+    "pair_id": "API-TEST-PLANKS_OR_STICKS-P04",
+    "template_id": "PLANKS_OR_STICKS",
+    "world_seed": 231220226367645,
+    "pair_index": 4
+  },
+  {
+    "pair_id": "API-TEST-PLANKS_OR_STICKS-P05",
+    "template_id": "PLANKS_OR_STICKS",
+    "world_seed": 173908297669755,
+    "pair_index": 5
+  },
+  {
+    "pair_id": "API-TEST-PLANKS_OR_STICKS-P06",
+    "template_id": "PLANKS_OR_STICKS",
+    "world_seed": 275565041496255,
+    "pair_index": 6
+  },
+  {
+    "pair_id": "API-TEST-PLANKS_OR_STICKS-P07",
+    "template_id": "PLANKS_OR_STICKS",
+    "world_seed": 251749637793363,
+    "pair_index": 7
+  },
+  {
+    "pair_id": "API-TEST-PLANKS_OR_STICKS-P08",
+    "template_id": "PLANKS_OR_STICKS",
+    "world_seed": 256553446676842,
+    "pair_index": 8
+  },
+  {
+    "pair_id": "API-TEST-PLANKS_OR_STICKS-P09",
+    "template_id": "PLANKS_OR_STICKS",
+    "world_seed": 61260361016516,
+    "pair_index": 9
+  },
+  {
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00",
+    "template_id": "CHEST_OR_CRAFTING_TABLE",
+    "world_seed": 261866970193649,
+    "pair_index": 0
+  },
+  {
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P01",
+    "template_id": "CHEST_OR_CRAFTING_TABLE",
+    "world_seed": 138796652132222,
+    "pair_index": 1
+  },
+  {
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P02",
+    "template_id": "CHEST_OR_CRAFTING_TABLE",
+    "world_seed": 154832745790218,
+    "pair_index": 2
+  },
+  {
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P03",
+    "template_id": "CHEST_OR_CRAFTING_TABLE",
+    "world_seed": 96409448927547,
+    "pair_index": 3
+  },
+  {
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P04",
+    "template_id": "CHEST_OR_CRAFTING_TABLE",
+    "world_seed": 108318080952187,
+    "pair_index": 4
+  },
+  {
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P05",
+    "template_id": "CHEST_OR_CRAFTING_TABLE",
+    "world_seed": 6111376043742,
+    "pair_index": 5
+  },
+  {
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P06",
+    "template_id": "CHEST_OR_CRAFTING_TABLE",
+    "world_seed": 6656713689136,
+    "pair_index": 6
+  },
+  {
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P07",
+    "template_id": "CHEST_OR_CRAFTING_TABLE",
+    "world_seed": 167611049962631,
+    "pair_index": 7
+  },
+  {
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P08",
+    "template_id": "CHEST_OR_CRAFTING_TABLE",
+    "world_seed": 257523576767149,
+    "pair_index": 8
+  },
+  {
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P09",
+    "template_id": "CHEST_OR_CRAFTING_TABLE",
+    "world_seed": 197228987754069,
+    "pair_index": 9
+  },
+  {
+    "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P00",
+    "template_id": "DEPOSIT_OR_BUILD",
+    "world_seed": 256403394246472,
+    "pair_index": 0
+  },
+  {
+    "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P01",
+    "template_id": "DEPOSIT_OR_BUILD",
+    "world_seed": 186415631703027,
+    "pair_index": 1
+  },
+  {
+    "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P02",
+    "template_id": "DEPOSIT_OR_BUILD",
+    "world_seed": 128565323754340,
+    "pair_index": 2
+  },
+  {
+    "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P03",
+    "template_id": "DEPOSIT_OR_BUILD",
+    "world_seed": 240506204472281,
+    "pair_index": 3
+  },
+  {
+    "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P04",
+    "template_id": "DEPOSIT_OR_BUILD",
+    "world_seed": 269303533676171,
+    "pair_index": 4
+  },
+  {
+    "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P05",
+    "template_id": "DEPOSIT_OR_BUILD",
+    "world_seed": 22923262029217,
+    "pair_index": 5
+  },
+  {
+    "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P06",
+    "template_id": "DEPOSIT_OR_BUILD",
+    "world_seed": 41220650542712,
+    "pair_index": 6
+  },
+  {
+    "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P07",
+    "template_id": "DEPOSIT_OR_BUILD",
+    "world_seed": 255381351724838,
+    "pair_index": 7
+  },
+  {
+    "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P08",
+    "template_id": "DEPOSIT_OR_BUILD",
+    "world_seed": 63603787992695,
+    "pair_index": 8
+  },
+  {
+    "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P09",
+    "template_id": "DEPOSIT_OR_BUILD",
+    "world_seed": 237809894022319,
+    "pair_index": 9
+  },
+  {
+    "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P00",
+    "template_id": "DUAL_BUILD_ALLOCATION",
+    "world_seed": 258116620304980,
+    "pair_index": 0
+  },
+  {
+    "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P01",
+    "template_id": "DUAL_BUILD_ALLOCATION",
+    "world_seed": 201827976555307,
+    "pair_index": 1
+  },
+  {
+    "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P02",
+    "template_id": "DUAL_BUILD_ALLOCATION",
+    "world_seed": 145242309145019,
+    "pair_index": 2
+  },
+  {
+    "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P03",
+    "template_id": "DUAL_BUILD_ALLOCATION",
+    "world_seed": 196862242304799,
+    "pair_index": 3
+  },
+  {
+    "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P04",
+    "template_id": "DUAL_BUILD_ALLOCATION",
+    "world_seed": 231154004530190,
+    "pair_index": 4
+  },
+  {
+    "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P05",
+    "template_id": "DUAL_BUILD_ALLOCATION",
+    "world_seed": 260992369223982,
+    "pair_index": 5
+  },
+  {
+    "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P06",
+    "template_id": "DUAL_BUILD_ALLOCATION",
+    "world_seed": 187345223495102,
+    "pair_index": 6
+  },
+  {
+    "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P07",
+    "template_id": "DUAL_BUILD_ALLOCATION",
+    "world_seed": 229030702939524,
+    "pair_index": 7
+  },
+  {
+    "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P08",
+    "template_id": "DUAL_BUILD_ALLOCATION",
+    "world_seed": 120474500283752,
+    "pair_index": 8
+  },
+  {
+    "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P09",
+    "template_id": "DUAL_BUILD_ALLOCATION",
+    "world_seed": 263427827176459,
+    "pair_index": 9
+  },
+  {
+    "pair_id": "API-TEST-REMAINING_TERMINAL-P00",
+    "template_id": "REMAINING_TERMINAL",
+    "world_seed": 247740461059882,
+    "pair_index": 0
+  },
+  {
+    "pair_id": "API-TEST-REMAINING_TERMINAL-P01",
+    "template_id": "REMAINING_TERMINAL",
+    "world_seed": 142033637753488,
+    "pair_index": 1
+  },
+  {
+    "pair_id": "API-TEST-REMAINING_TERMINAL-P02",
+    "template_id": "REMAINING_TERMINAL",
+    "world_seed": 197721844503399,
+    "pair_index": 2
+  },
+  {
+    "pair_id": "API-TEST-REMAINING_TERMINAL-P03",
+    "template_id": "REMAINING_TERMINAL",
+    "world_seed": 251525766549984,
+    "pair_index": 3
+  },
+  {
+    "pair_id": "API-TEST-REMAINING_TERMINAL-P04",
+    "template_id": "REMAINING_TERMINAL",
+    "world_seed": 200596910209706,
+    "pair_index": 4
+  },
+  {
+    "pair_id": "API-TEST-REMAINING_TERMINAL-P05",
+    "template_id": "REMAINING_TERMINAL",
+    "world_seed": 73687937744909,
+    "pair_index": 5
+  },
+  {
+    "pair_id": "API-TEST-REMAINING_TERMINAL-P06",
+    "template_id": "REMAINING_TERMINAL",
+    "world_seed": 262096714116932,
+    "pair_index": 6
+  },
+  {
+    "pair_id": "API-TEST-REMAINING_TERMINAL-P07",
+    "template_id": "REMAINING_TERMINAL",
+    "world_seed": 101448275739141,
+    "pair_index": 7
+  },
+  {
+    "pair_id": "API-TEST-REMAINING_TERMINAL-P08",
+    "template_id": "REMAINING_TERMINAL",
+    "world_seed": 177480857832156,
+    "pair_index": 8
+  },
+  {
+    "pair_id": "API-TEST-REMAINING_TERMINAL-P09",
+    "template_id": "REMAINING_TERMINAL",
+    "world_seed": 213442100282816,
+    "pair_index": 9
+  },
+  {
+    "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P00",
+    "template_id": "ACTIVE_ORDER_BRANCH",
+    "world_seed": 18573234074752,
+    "pair_index": 0
+  },
+  {
+    "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P01",
+    "template_id": "ACTIVE_ORDER_BRANCH",
+    "world_seed": 34454085782651,
+    "pair_index": 1
+  },
+  {
+    "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P02",
+    "template_id": "ACTIVE_ORDER_BRANCH",
+    "world_seed": 194982901183106,
+    "pair_index": 2
+  },
+  {
+    "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P03",
+    "template_id": "ACTIVE_ORDER_BRANCH",
+    "world_seed": 150030593875046,
+    "pair_index": 3
+  },
+  {
+    "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P04",
+    "template_id": "ACTIVE_ORDER_BRANCH",
+    "world_seed": 206857078558673,
+    "pair_index": 4
+  },
+  {
+    "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P05",
+    "template_id": "ACTIVE_ORDER_BRANCH",
+    "world_seed": 241760168250510,
+    "pair_index": 5
+  },
+  {
+    "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P06",
+    "template_id": "ACTIVE_ORDER_BRANCH",
+    "world_seed": 129730380700804,
+    "pair_index": 6
+  },
+  {
+    "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P07",
+    "template_id": "ACTIVE_ORDER_BRANCH",
+    "world_seed": 32482524001971,
+    "pair_index": 7
+  },
+  {
+    "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P08",
+    "template_id": "ACTIVE_ORDER_BRANCH",
+    "world_seed": 137908079188852,
+    "pair_index": 8
+  },
+  {
+    "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P09",
+    "template_id": "ACTIVE_ORDER_BRANCH",
+    "world_seed": 121497962620789,
+    "pair_index": 9
+  }
+]

@@ -1,0 +1,9 @@
+# Assignment selection data
+
+The selector data evaluate 640 source descriptions over 16 template--assignment cells. Each cell contains 40 descriptions. The CSV `mothers_640.csv` gives description-level summaries; the JSON version includes nested role/repetition observations. The word `mother` in raw keys means the original source description. `observed_records_12800.csv` stores the individual method observations. Assignment correctness is computed from the selected assignment and the true task assignment before execution; `G` reports a different, downstream world endpoint.
+
+The selection strategies are embedding retrieval (`R_ALL`), Factor (`F_FIRST`), hosted DeepSeek (`S_ALL`), and retrieval with low-margin decisions sent to DeepSeek (`RS_MARGIN` or `fresh_RS_MARGIN`). Retrieval contributes two role observations per description, while Factor, DeepSeek, and routing each contribute two roles and three repetitions. The hosted selector's 3,839 correct choices are therefore out of 3,840 choices. Repeated roles and calls share their underlying source description.
+
+`margin` is the difference between retrieval scores for the two legal assignments. The routing threshold is set from an unlabeled calibration quantile. `upgraded` indicates invocation of the selected generator. Curve files describe operating points under their stated threshold and outcome definitions; their associated definition files identify the fields. Per-source and writing-task summaries preserve the original strata and repeated-observation structure.
+
+The timing files in `../timing/` are a distinct decision-time sample with 128 observations per strategy. They report selection and formation timing, including query encoding and API service/network time where applicable. A zero API charge denotes local computation, not zero computational work.

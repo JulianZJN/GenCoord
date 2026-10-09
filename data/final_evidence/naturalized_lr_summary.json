@@ -1,0 +1,123 @@
+{
+  "method": "per-public-template word(1,2)+char_wb(3,5) TFIDF plus logistic regression",
+  "selection": "frozen C candidates; maximum unique-description DEV accuracy; lowest C breaks ties",
+  "chosen_C": 0.1,
+  "fit_records": [
+    {
+      "C": 0.1,
+      "fit_seconds": 0.2009,
+      "train_unique_descriptions": 64,
+      "dev_unique": {
+        "correct": 16,
+        "total": 16,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "C": 1.0,
+      "fit_seconds": 0.0243,
+      "train_unique_descriptions": 64,
+      "dev_unique": {
+        "correct": 16,
+        "total": 16,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "C": 10.0,
+      "fit_seconds": 0.0247,
+      "train_unique_descriptions": 64,
+      "dev_unique": {
+        "correct": 16,
+        "total": 16,
+        "accuracy": 1.0
+      }
+    }
+  ],
+  "final_fit_seconds": 0.0173,
+  "sklearn_version": "1.9.1",
+  "source_audit": {
+    "c2_c3_shared_mother_source_groups": 32,
+    "by_split": {
+      "TRAIN": {
+        "raw_rows": 960,
+        "unique_descriptions": 64,
+        "mother_source_groups": 64,
+        "semantic_cells": 16
+      },
+      "DEV": {
+        "raw_rows": 128,
+        "unique_descriptions": 16,
+        "mother_source_groups": 16,
+        "semantic_cells": 16
+      },
+      "C2": {
+        "raw_rows": 320,
+        "unique_descriptions": 32,
+        "mother_source_groups": 32,
+        "semantic_cells": 16
+      },
+      "C3": {
+        "raw_rows": 320,
+        "unique_descriptions": 64,
+        "mother_source_groups": 32,
+        "semantic_cells": 16
+      }
+    }
+  },
+  "totals": {
+    "TRAIN": {
+      "raw_rows": 960,
+      "raw_correct": 960,
+      "raw_accuracy": 1.0,
+      "unique_descriptions": 64,
+      "unique_correct": 64,
+      "unique_accuracy": 1.0,
+      "mother_source_groups": 64,
+      "mother_groups_all_descriptions_correct": 64,
+      "semantic_cells": 16
+    },
+    "DEV": {
+      "raw_rows": 128,
+      "raw_correct": 128,
+      "raw_accuracy": 1.0,
+      "unique_descriptions": 16,
+      "unique_correct": 16,
+      "unique_accuracy": 1.0,
+      "mother_source_groups": 16,
+      "mother_groups_all_descriptions_correct": 16,
+      "semantic_cells": 16
+    },
+    "C2": {
+      "raw_rows": 320,
+      "raw_correct": 190,
+      "raw_accuracy": 0.59375,
+      "unique_descriptions": 32,
+      "unique_correct": 19,
+      "unique_accuracy": 0.59375,
+      "mother_source_groups": 32,
+      "mother_groups_all_descriptions_correct": 19,
+      "semantic_cells": 16
+    },
+    "C3": {
+      "raw_rows": 320,
+      "raw_correct": 184,
+      "raw_accuracy": 0.575,
+      "unique_descriptions": 64,
+      "unique_correct": 37,
+      "unique_accuracy": 0.578125,
+      "mother_source_groups": 32,
+      "mother_groups_all_descriptions_correct": 17,
+      "semantic_cells": 16
+    }
+  },
+  "input_sha256": {
+    "build_audit.json": "f9cc72547b205ba307c336ba4c82dae7b73aa11b3573568eed898dd1c46591ca",
+    "dev.jsonl": "6da9efdbcd9c583af797e05c2cdae7aa3437a880a486148709f5f8b195ee65f0",
+    "naturalization_registry.json": "9062d804699d64c8b010400d5d51623ab3459a35a320fd7d551303d18892bac3",
+    "test_c2_lexical_paraphrase.jsonl": "45c3f5d7d7d057f3cefd71583e37d9c4f2c8c57fe7cc4baa48a6f277a0999388",
+    "test_c3_paraphrase_distractor.jsonl": "97f3d8e5c2e2a7699eedd64869f139c0d6af467c029980d0a7b8dee5b000f60e",
+    "train.jsonl": "a4227159ba9b566505479e6772c1f38c3b927bdd802963d9914c68f87426bd47"
+  },
+  "prediction_scope": "offline binding classification only; no world, GPU, model API or physical DEV"
+}

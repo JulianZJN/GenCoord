@@ -1,35 +1,18 @@
 SHELL := /bin/sh
 
 PAPER_DIR := paper
-LATEX := pdflatex -interaction=nonstopmode -halt-on-error
-BIBTEX := bibtex
+BUILD_DIR := build
+LATEXMK := latexmk -pdf -interaction=nonstopmode -halt-on-error
 
-.PHONY: all main supplement combined evidence verify-evidence
+.PHONY: all paper clean
 
-all: main supplement
+all: paper
 
-main:
-	cd $(PAPER_DIR) && $(LATEX) main.tex
-	cd $(PAPER_DIR) && $(BIBTEX) main
-	cd $(PAPER_DIR) && $(LATEX) main.tex
-	cd $(PAPER_DIR) && $(LATEX) main.tex
+paper:
+	cd $(PAPER_DIR) && $(LATEXMK) main.tex
+	mkdir -p $(BUILD_DIR)
+	cp $(PAPER_DIR)/main.pdf $(BUILD_DIR)/GenCoord_preprint.pdf
 
-supplement:
-	cd $(PAPER_DIR) && $(LATEX) supplement.tex
-	cd $(PAPER_DIR) && $(BIBTEX) supplement
-	cd $(PAPER_DIR) && $(LATEX) supplement.tex
-	cd $(PAPER_DIR) && $(LATEX) supplement.tex
-
-combined: all
-	mkdir -p build
-	pdfunite $(PAPER_DIR)/main.pdf $(PAPER_DIR)/supplement.pdf build/GenCoord_preprint.pdf
-
-evidence:
-	python3 $(PAPER_DIR)/anc/scripts/build_e1e2_tables.py \
-		--analysis $(PAPER_DIR)/anc/source_data/e1e2_analysis.json \
-		--training $(PAPER_DIR)/anc/source_data/e1e2_training_budget.json \
-		--tables-dir $(PAPER_DIR)/tables \
-		--data-dir $(PAPER_DIR)/anc/source_data
-
-verify-evidence: evidence
-	git diff --exit-code -- $(PAPER_DIR)/tables $(PAPER_DIR)/anc/source_data
+clean:
+	cd $(PAPER_DIR) && rm -f *.aux *.blg *.fdb_latexmk *.fls *.log *.out *.pdf *.synctex.gz
+	rm -rf $(BUILD_DIR)

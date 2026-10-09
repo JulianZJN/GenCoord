@@ -1,0 +1,1600 @@
+{
+  "aggregate": {
+    "episode_rows": 2240,
+    "independent_unit": "semantic_cluster",
+    "methods": {
+      "DEFER_OBSERVE_LOCAL": {
+        "episodes": 160,
+        "mean_cost": {
+          "coordination_ms": 0.0,
+          "decision_rounds": 2.0,
+          "format_repair_calls": 0.0,
+          "input_tokens": 0.0,
+          "model_calls": 0.0,
+          "model_service_ms": 0.0,
+          "output_tokens": 0.0,
+          "replan_count": 1.0,
+          "wait_count": 1.0,
+          "wire_bytes": 0.0
+        },
+        "mean_goal_completion_fraction": 0.8333333333333334,
+        "per_family_terminal_success": {
+          "P1_DESTINATION": {
+            "denominator": 40,
+            "numerator": 20
+          },
+          "P2_RECIPE": {
+            "denominator": 40,
+            "numerator": 20
+          },
+          "P3_ALLOCATION": {
+            "denominator": 40,
+            "numerator": 20
+          },
+          "P4_BRANCH": {
+            "denominator": 40,
+            "numerator": 20
+          }
+        },
+        "raw_policy_success_rate": 1.0,
+        "semantic_clusters": 80,
+        "system_success_with_one_format_repair_rate": 1.0,
+        "terminal_success_numerator": 80,
+        "terminal_success_rate": 0.5
+      },
+      "GCP_MULTI_STEP_REQUEST_0.8B": {
+        "episodes": 480,
+        "mean_cost": {
+          "coordination_ms": 7091.197306433848,
+          "decision_rounds": 1.98125,
+          "format_repair_calls": 0.0,
+          "input_tokens": 1146.5020833333333,
+          "model_calls": 1.98125,
+          "model_service_ms": 7056.734339621228,
+          "output_tokens": 265.4625,
+          "replan_count": 0.0,
+          "wait_count": 0.0,
+          "wire_bytes": 307.90625
+        },
+        "mean_goal_completion_fraction": 0.98125,
+        "per_family_terminal_success": {
+          "P1_DESTINATION": {
+            "denominator": 120,
+            "numerator": 120
+          },
+          "P2_RECIPE": {
+            "denominator": 120,
+            "numerator": 120
+          },
+          "P3_ALLOCATION": {
+            "denominator": 120,
+            "numerator": 111
+          },
+          "P4_BRANCH": {
+            "denominator": 120,
+            "numerator": 120
+          }
+        },
+        "raw_policy_success_rate": 0.98125,
+        "semantic_clusters": 80,
+        "system_success_with_one_format_repair_rate": 0.98125,
+        "terminal_success_numerator": 471,
+        "terminal_success_rate": 0.98125
+      },
+      "RULE_MINIMAL_REQUEST": {
+        "episodes": 160,
+        "mean_cost": {
+          "coordination_ms": 0.0,
+          "decision_rounds": 1.0,
+          "format_repair_calls": 0.0,
+          "input_tokens": 0.0,
+          "model_calls": 0.0,
+          "model_service_ms": 0.0,
+          "output_tokens": 0.0,
+          "replan_count": 0.0,
+          "wait_count": 0.0,
+          "wire_bytes": 313.625
+        },
+        "mean_goal_completion_fraction": 1.0,
+        "per_family_terminal_success": {
+          "P1_DESTINATION": {
+            "denominator": 40,
+            "numerator": 40
+          },
+          "P2_RECIPE": {
+            "denominator": 40,
+            "numerator": 40
+          },
+          "P3_ALLOCATION": {
+            "denominator": 40,
+            "numerator": 40
+          },
+          "P4_BRANCH": {
+            "denominator": 40,
+            "numerator": 40
+          }
+        },
+        "raw_policy_success_rate": 1.0,
+        "semantic_clusters": 80,
+        "system_success_with_one_format_repair_rate": 1.0,
+        "terminal_success_numerator": 160,
+        "terminal_success_rate": 1.0
+      },
+      "SELF_PLAN_ONLY_0.8B": {
+        "episodes": 480,
+        "mean_cost": {
+          "coordination_ms": 4280.164086900186,
+          "decision_rounds": 2.0,
+          "format_repair_calls": 0.0,
+          "input_tokens": 1101.05,
+          "model_calls": 2.0,
+          "model_service_ms": 4262.232814678767,
+          "output_tokens": 153.72916666666666,
+          "replan_count": 0.0,
+          "wait_count": 0.0,
+          "wire_bytes": 0.0
+        },
+        "mean_goal_completion_fraction": 0.8145833333333333,
+        "per_family_terminal_success": {
+          "P1_DESTINATION": {
+            "denominator": 120,
+            "numerator": 60
+          },
+          "P2_RECIPE": {
+            "denominator": 120,
+            "numerator": 60
+          },
+          "P3_ALLOCATION": {
+            "denominator": 120,
+            "numerator": 53
+          },
+          "P4_BRANCH": {
+            "denominator": 120,
+            "numerator": 60
+          }
+        },
+        "raw_policy_success_rate": 0.9791666666666666,
+        "semantic_clusters": 80,
+        "system_success_with_one_format_repair_rate": 0.9791666666666666,
+        "terminal_success_numerator": 233,
+        "terminal_success_rate": 0.48541666666666666
+      },
+      "SHUFFLED_REQUEST": {
+        "episodes": 480,
+        "mean_cost": {
+          "coordination_ms": 6928.061328847737,
+          "decision_rounds": 2.0,
+          "format_repair_calls": 0.0,
+          "input_tokens": 1158.175,
+          "model_calls": 2.0,
+          "model_service_ms": 6887.14227261177,
+          "output_tokens": 266.55,
+          "replan_count": 0.0,
+          "wait_count": 0.0,
+          "wire_bytes": 313.625
+        },
+        "mean_goal_completion_fraction": 0.6541666666666667,
+        "per_family_terminal_success": {
+          "P1_DESTINATION": {
+            "denominator": 120,
+            "numerator": 0
+          },
+          "P2_RECIPE": {
+            "denominator": 120,
+            "numerator": 0
+          },
+          "P3_ALLOCATION": {
+            "denominator": 120,
+            "numerator": 0
+          },
+          "P4_BRANCH": {
+            "denominator": 120,
+            "numerator": 0
+          }
+        },
+        "raw_policy_success_rate": 0.98125,
+        "semantic_clusters": 80,
+        "system_success_with_one_format_repair_rate": 0.98125,
+        "terminal_success_numerator": 0,
+        "terminal_success_rate": 0.0
+      },
+      "SINGLE_STEP_REQUEST_0.8B": {
+        "episodes": 480,
+        "mean_cost": {
+          "coordination_ms": 7123.562770329106,
+          "decision_rounds": 2.9125,
+          "format_repair_calls": 0.0,
+          "input_tokens": 1689.1083333333333,
+          "model_calls": 2.9125,
+          "model_service_ms": 7106.940562169378,
+          "output_tokens": 270.5541666666667,
+          "replan_count": 0.0,
+          "wait_count": 0.0,
+          "wire_bytes": 286.3333333333333
+        },
+        "mean_goal_completion_fraction": 0.9125,
+        "per_family_terminal_success": {
+          "P1_DESTINATION": {
+            "denominator": 120,
+            "numerator": 120
+          },
+          "P2_RECIPE": {
+            "denominator": 120,
+            "numerator": 120
+          },
+          "P3_ALLOCATION": {
+            "denominator": 120,
+            "numerator": 100
+          },
+          "P4_BRANCH": {
+            "denominator": 120,
+            "numerator": 98
+          }
+        },
+        "raw_policy_success_rate": 0.9125,
+        "semantic_clusters": 80,
+        "system_success_with_one_format_repair_rate": 0.9125,
+        "terminal_success_numerator": 438,
+        "terminal_success_rate": 0.9125
+      }
+    },
+    "schema_version": "gcp-dual-track-aggregate-v0.2"
+  },
+  "all_metrics": {
+    "path": "<HPC_HOME>/minecraft_gencoord_sid_validation/reports/gcp_sequence/dual_track/v0.2.1/ood/v0.2.3/all_metrics.jsonl",
+    "sha256": "a9c9310d4f81d9a55267c581ab0fd10591dc261a16adda582493874152ba51a8"
+  },
+  "breakdowns": {
+    "DEFER_OBSERVE_LOCAL": {
+      "per_family": {
+        "P1_DESTINATION": {
+          "denominator": 40,
+          "numerator": 20
+        },
+        "P2_RECIPE": {
+          "denominator": 40,
+          "numerator": 20
+        },
+        "P3_ALLOCATION": {
+          "denominator": 40,
+          "numerator": 20
+        },
+        "P4_BRANCH": {
+          "denominator": 40,
+          "numerator": 20
+        }
+      },
+      "per_role": {
+        "0": {
+          "denominator": 80,
+          "numerator": 40
+        },
+        "1": {
+          "denominator": 80,
+          "numerator": 40
+        }
+      },
+      "per_seed": {
+        "None": {
+          "denominator": 160,
+          "numerator": 80
+        }
+      }
+    },
+    "GCP_MULTI_STEP_REQUEST_0.8B": {
+      "per_family": {
+        "P1_DESTINATION": {
+          "denominator": 120,
+          "numerator": 120
+        },
+        "P2_RECIPE": {
+          "denominator": 120,
+          "numerator": 120
+        },
+        "P3_ALLOCATION": {
+          "denominator": 120,
+          "numerator": 111
+        },
+        "P4_BRANCH": {
+          "denominator": 120,
+          "numerator": 120
+        }
+      },
+      "per_role": {
+        "0": {
+          "denominator": 240,
+          "numerator": 235
+        },
+        "1": {
+          "denominator": 240,
+          "numerator": 236
+        }
+      },
+      "per_seed": {
+        "2026073101": {
+          "denominator": 160,
+          "numerator": 156
+        },
+        "2026073102": {
+          "denominator": 160,
+          "numerator": 160
+        },
+        "2026073103": {
+          "denominator": 160,
+          "numerator": 155
+        }
+      }
+    },
+    "RULE_MINIMAL_REQUEST": {
+      "per_family": {
+        "P1_DESTINATION": {
+          "denominator": 40,
+          "numerator": 40
+        },
+        "P2_RECIPE": {
+          "denominator": 40,
+          "numerator": 40
+        },
+        "P3_ALLOCATION": {
+          "denominator": 40,
+          "numerator": 40
+        },
+        "P4_BRANCH": {
+          "denominator": 40,
+          "numerator": 40
+        }
+      },
+      "per_role": {
+        "0": {
+          "denominator": 80,
+          "numerator": 80
+        },
+        "1": {
+          "denominator": 80,
+          "numerator": 80
+        }
+      },
+      "per_seed": {
+        "None": {
+          "denominator": 160,
+          "numerator": 160
+        }
+      }
+    },
+    "SELF_PLAN_ONLY_0.8B": {
+      "per_family": {
+        "P1_DESTINATION": {
+          "denominator": 120,
+          "numerator": 60
+        },
+        "P2_RECIPE": {
+          "denominator": 120,
+          "numerator": 60
+        },
+        "P3_ALLOCATION": {
+          "denominator": 120,
+          "numerator": 53
+        },
+        "P4_BRANCH": {
+          "denominator": 120,
+          "numerator": 60
+        }
+      },
+      "per_role": {
+        "0": {
+          "denominator": 240,
+          "numerator": 115
+        },
+        "1": {
+          "denominator": 240,
+          "numerator": 118
+        }
+      },
+      "per_seed": {
+        "2026073101": {
+          "denominator": 160,
+          "numerator": 73
+        },
+        "2026073102": {
+          "denominator": 160,
+          "numerator": 80
+        },
+        "2026073103": {
+          "denominator": 160,
+          "numerator": 80
+        }
+      }
+    },
+    "SHUFFLED_REQUEST": {
+      "per_family": {
+        "P1_DESTINATION": {
+          "denominator": 120,
+          "numerator": 0
+        },
+        "P2_RECIPE": {
+          "denominator": 120,
+          "numerator": 0
+        },
+        "P3_ALLOCATION": {
+          "denominator": 120,
+          "numerator": 0
+        },
+        "P4_BRANCH": {
+          "denominator": 120,
+          "numerator": 0
+        }
+      },
+      "per_role": {
+        "0": {
+          "denominator": 240,
+          "numerator": 0
+        },
+        "1": {
+          "denominator": 240,
+          "numerator": 0
+        }
+      },
+      "per_seed": {
+        "2026073101": {
+          "denominator": 160,
+          "numerator": 0
+        },
+        "2026073102": {
+          "denominator": 160,
+          "numerator": 0
+        },
+        "2026073103": {
+          "denominator": 160,
+          "numerator": 0
+        }
+      }
+    },
+    "SINGLE_STEP_REQUEST_0.8B": {
+      "per_family": {
+        "P1_DESTINATION": {
+          "denominator": 120,
+          "numerator": 120
+        },
+        "P2_RECIPE": {
+          "denominator": 120,
+          "numerator": 120
+        },
+        "P3_ALLOCATION": {
+          "denominator": 120,
+          "numerator": 100
+        },
+        "P4_BRANCH": {
+          "denominator": 120,
+          "numerator": 98
+        }
+      },
+      "per_role": {
+        "0": {
+          "denominator": 240,
+          "numerator": 218
+        },
+        "1": {
+          "denominator": 240,
+          "numerator": 220
+        }
+      },
+      "per_seed": {
+        "2026073101": {
+          "denominator": 160,
+          "numerator": 140
+        },
+        "2026073102": {
+          "denominator": 160,
+          "numerator": 158
+        },
+        "2026073103": {
+          "denominator": 160,
+          "numerator": 140
+        }
+      }
+    }
+  },
+  "claim_boundary": "TEMPLATE-OOD is conditional held-out-template generalization evidence; it does not select checkpoints, prompts, stopping budgets, or methods.",
+  "confirm_outcome_access": "CURRENT_CONFIRM_ONLY_FOR_PRECOMMITTED_TRIGGER",
+  "created_at_utc": "2026-08-01T18:35:03.195358+00:00",
+  "episodes": 2240,
+  "failure_taxonomy": {
+    "DEFER_OBSERVE_LOCAL": {
+      "correct_binding_executor_or_checker_failure": 0,
+      "format_repair_used": 0,
+      "no_executable_plan": 0,
+      "terminal_success": 80,
+      "wrong_binding": 80
+    },
+    "GCP_MULTI_STEP_REQUEST_0.8B": {
+      "correct_binding_executor_or_checker_failure": 0,
+      "format_repair_used": 0,
+      "no_executable_plan": 9,
+      "terminal_success": 471,
+      "wrong_binding": 0
+    },
+    "RULE_MINIMAL_REQUEST": {
+      "correct_binding_executor_or_checker_failure": 0,
+      "format_repair_used": 0,
+      "no_executable_plan": 0,
+      "terminal_success": 160,
+      "wrong_binding": 0
+    },
+    "SELF_PLAN_ONLY_0.8B": {
+      "correct_binding_executor_or_checker_failure": 0,
+      "format_repair_used": 0,
+      "no_executable_plan": 10,
+      "terminal_success": 233,
+      "wrong_binding": 237
+    },
+    "SHUFFLED_REQUEST": {
+      "correct_binding_executor_or_checker_failure": 0,
+      "format_repair_used": 0,
+      "no_executable_plan": 9,
+      "terminal_success": 0,
+      "wrong_binding": 471
+    },
+    "SINGLE_STEP_REQUEST_0.8B": {
+      "correct_binding_executor_or_checker_failure": 0,
+      "format_repair_used": 0,
+      "no_executable_plan": 42,
+      "terminal_success": 438,
+      "wrong_binding": 0
+    }
+  },
+  "formal_test_unsealed": false,
+  "freeze": {
+    "path": "<HPC_HOME>/minecraft_gencoord_sid_validation/configs/gcp_dual_track_ood_v0.2.3.json",
+    "sha256": "fffd0aa2cff8af86520826980398d2017f3bf1879176f06bf0a7fe76c3e37268"
+  },
+  "independent_statistical_unit": "semantic_cluster",
+  "lane_count": 14,
+  "lanes": {
+    "DEFER_OBSERVE_LOCAL.seed_NONE": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "f2b3a48d3384ecb3313703cb5816266c822f04278f485cc9b912a60bdcf7ce58",
+      "model_calls_checked": 0,
+      "semantic_clusters": 80,
+      "terminal_successes": 80
+    },
+    "GCP_MULTI_STEP_REQUEST_0.8B.seed_2026073101": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "3cea2cd61c79f44faabc9668d293b250ad81cb8ffb3a6bdcfe3c31bb4378b02c",
+      "model_calls_checked": 316,
+      "semantic_clusters": 80,
+      "terminal_successes": 156
+    },
+    "GCP_MULTI_STEP_REQUEST_0.8B.seed_2026073102": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "a93c72f3f228d469900552307d49ff54106f21e2fe8a3dfe92bfbec5a4572d92",
+      "model_calls_checked": 320,
+      "semantic_clusters": 80,
+      "terminal_successes": 160
+    },
+    "GCP_MULTI_STEP_REQUEST_0.8B.seed_2026073103": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "2f69389359a150f45a5833c1caa4ef69847c1aa4782dd56e7d315045918324fb",
+      "model_calls_checked": 315,
+      "semantic_clusters": 80,
+      "terminal_successes": 155
+    },
+    "RULE_MINIMAL_REQUEST.seed_NONE": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "19f386035dcec139da245b6fab2b6e4cfc921550e1221a90c3b0a780c346cd7e",
+      "model_calls_checked": 0,
+      "semantic_clusters": 80,
+      "terminal_successes": 160
+    },
+    "SELF_PLAN_ONLY_0.8B.seed_2026073101": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "524c9d9dd56266deeb7d27b81e2605a0068bd89f5f82450e48eaa4326babca19",
+      "model_calls_checked": 320,
+      "semantic_clusters": 80,
+      "terminal_successes": 73
+    },
+    "SELF_PLAN_ONLY_0.8B.seed_2026073102": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "1d2806e52e03925581fc0c13d88f0d1a35ee5344a5d8b10ca4d8044d89c45753",
+      "model_calls_checked": 320,
+      "semantic_clusters": 80,
+      "terminal_successes": 80
+    },
+    "SELF_PLAN_ONLY_0.8B.seed_2026073103": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "9e7d3f67ab38c65048bd28914c3c3b62957a224fe5b4341f92ab32e957f91116",
+      "model_calls_checked": 320,
+      "semantic_clusters": 80,
+      "terminal_successes": 80
+    },
+    "SHUFFLED_REQUEST.seed_2026073101": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "e8791ccfb3bc3e9390b9760a966ac33a91c2f3295e21da65850cff7554943aed",
+      "model_calls_checked": 320,
+      "semantic_clusters": 80,
+      "terminal_successes": 0
+    },
+    "SHUFFLED_REQUEST.seed_2026073102": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "4950cbc0de766454d627f90a698c28e02179960a66b9bc2aa6b82dba4e8b1d23",
+      "model_calls_checked": 320,
+      "semantic_clusters": 80,
+      "terminal_successes": 0
+    },
+    "SHUFFLED_REQUEST.seed_2026073103": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "861f7ceaa6f8dd1bc76566b77b1054dfceb14e37b8ebe3f43fe466bebbcc513c",
+      "model_calls_checked": 320,
+      "semantic_clusters": 80,
+      "terminal_successes": 0
+    },
+    "SINGLE_STEP_REQUEST_0.8B.seed_2026073101": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "7fbb937861f57c508fa891319ecf523067b9b7440afbe3f244ad5de3feeedd9e",
+      "model_calls_checked": 460,
+      "semantic_clusters": 80,
+      "terminal_successes": 140
+    },
+    "SINGLE_STEP_REQUEST_0.8B.seed_2026073102": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "c683bb209307eb7f53bd583fc8cf0c2de22c86ab3524e314e47b399447ce0dad",
+      "model_calls_checked": 478,
+      "semantic_clusters": 80,
+      "terminal_successes": 158
+    },
+    "SINGLE_STEP_REQUEST_0.8B.seed_2026073103": {
+      "episodes": 160,
+      "length_cap_hits": 0,
+      "metrics_sha256": "2e69fedb33367514fdcb173ab0f5311c78e37128b7a40c56321bcf1b5cf25e48",
+      "model_calls_checked": 460,
+      "semantic_clusters": 80,
+      "terminal_successes": 140
+    }
+  },
+  "length_cap_hits": 0,
+  "model_calls_checked": 4269,
+  "paired_cluster_comparisons": {
+    "gcp_vs_defer": {
+      "comparator": "DEFER_OBSERVE_LOCAL",
+      "metrics": {
+        "cost.coordination_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 604504613,
+          "ci95": [
+            -7215.522878802827,
+            -6988.218265158842
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -7091.197306433848,
+          "relative_saving": null,
+          "treatment_mean": 7091.197306433848
+        },
+        "cost.decision_rounds": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2134650961,
+          "ci95": [
+            0.002083333333333334,
+            0.04166666666666667
+          ],
+          "clusters": 80,
+          "comparator_mean": 2.0,
+          "point_estimate": 0.018750000000000003,
+          "relative_saving": 0.009375000000000022,
+          "treatment_mean": 1.98125
+        },
+        "cost.end_to_end_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1509226771,
+          "ci95": [
+            -7025.9061692763435,
+            -6041.167140748095
+          ],
+          "clusters": 80,
+          "comparator_mean": 28769.6109125,
+          "point_estimate": -6606.243981433848,
+          "relative_saving": -0.2296257673253248,
+          "treatment_mean": 35375.85489393385
+        },
+        "cost.executor_wall_clock_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 595029728,
+          "ci95": [
+            108.05660520833291,
+            997.9342670833327
+          ],
+          "clusters": 80,
+          "comparator_mean": 28769.6109125,
+          "point_estimate": 484.95332500000006,
+          "relative_saving": 0.016856443643778758,
+          "treatment_mean": 28284.6575875
+        },
+        "cost.format_repair_calls": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 4204156773,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.input_tokens": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 4190093290,
+          "ci95": [
+            -1157.7646354166666,
+            -1130.79578125
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -1146.5020833333333,
+          "relative_saving": null,
+          "treatment_mean": 1146.5020833333333
+        },
+        "cost.model_calls": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 635847569,
+          "ci95": [
+            -1.9979166666666668,
+            -1.95625
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -1.98125,
+          "relative_saving": null,
+          "treatment_mean": 1.98125
+        },
+        "cost.model_service_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 517405753,
+          "ci95": [
+            -7169.5122191973505,
+            -6964.733189214409
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -7056.734339621228,
+          "relative_saving": null,
+          "treatment_mean": 7056.734339621228
+        },
+        "cost.output_tokens": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1387178257,
+          "ci95": [
+            -267.3625,
+            -263.2875
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -265.4625,
+          "relative_saving": null,
+          "treatment_mean": 265.4625
+        },
+        "cost.replan_count": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2427306296,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 1.0,
+          "point_estimate": 1.0,
+          "relative_saving": 1.0,
+          "treatment_mean": 0.0
+        },
+        "cost.wait_count": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3478633136,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 1.0,
+          "point_estimate": 1.0,
+          "relative_saving": 1.0,
+          "treatment_mean": 0.0
+        },
+        "cost.wire_bytes": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 169180528,
+          "ci95": [
+            -314.1125,
+            -299.8766145833334
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -307.90625,
+          "relative_saving": null,
+          "treatment_mean": 307.90625
+        },
+        "goal_completion_fraction": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3008215908,
+          "ci95": [
+            0.11041666666666668,
+            0.1854166666666667
+          ],
+          "clusters": 80,
+          "point_estimate": 0.1479166666666667
+        },
+        "terminal_success": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3201190636,
+          "ci95": [
+            0.3770833333333333,
+            0.5875
+          ],
+          "clusters": 80,
+          "point_estimate": 0.48125
+        }
+      },
+      "positive_cost_effect_means_treatment_cost_saving": true,
+      "positive_success_effect_favors_treatment": true,
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B"
+    },
+    "gcp_vs_rule": {
+      "comparator": "RULE_MINIMAL_REQUEST",
+      "metrics": {
+        "cost.coordination_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2234262283,
+          "ci95": [
+            -7217.308775463995,
+            -6986.766433768887
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -7091.197306433848,
+          "relative_saving": null,
+          "treatment_mean": 7091.197306433848
+        },
+        "cost.decision_rounds": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3435157479,
+          "ci95": [
+            -0.9979166666666666,
+            -0.9583333333333334
+          ],
+          "clusters": 80,
+          "comparator_mean": 1.0,
+          "point_estimate": -0.98125,
+          "relative_saving": -0.98125,
+          "treatment_mean": 1.98125
+        },
+        "cost.end_to_end_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2987542101,
+          "ci95": [
+            -7067.065117823599,
+            -6086.012616174585
+          ],
+          "clusters": 80,
+          "comparator_mean": 28728.02741875,
+          "point_estimate": -6647.827475183849,
+          "relative_saving": -0.2314056366726034,
+          "treatment_mean": 35375.85489393385
+        },
+        "cost.executor_wall_clock_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3368627578,
+          "ci95": [
+            79.18303572916592,
+            946.6273022916666
+          ],
+          "clusters": 80,
+          "comparator_mean": 28728.02741875,
+          "point_estimate": 443.36983125000006,
+          "relative_saving": 0.015433354500372792,
+          "treatment_mean": 28284.6575875
+        },
+        "cost.format_repair_calls": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1845526093,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.input_tokens": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 71434697,
+          "ci95": [
+            -1157.8416666666667,
+            -1130.9372395833334
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -1146.5020833333333,
+          "relative_saving": null,
+          "treatment_mean": 1146.5020833333333
+        },
+        "cost.model_calls": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3635041144,
+          "ci95": [
+            -1.9979166666666668,
+            -1.95625
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -1.98125,
+          "relative_saving": null,
+          "treatment_mean": 1.98125
+        },
+        "cost.model_service_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2099824952,
+          "ci95": [
+            -7171.1549047554345,
+            -6962.658541518613
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -7056.734339621228,
+          "relative_saving": null,
+          "treatment_mean": 7056.734339621228
+        },
+        "cost.output_tokens": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2101214627,
+          "ci95": [
+            -267.37916666666666,
+            -263.3375
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -265.4625,
+          "relative_saving": null,
+          "treatment_mean": 265.4625
+        },
+        "cost.replan_count": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3040005379,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.wait_count": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2526856817,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.wire_bytes": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2029146360,
+          "ci95": [
+            0.6354166666666667,
+            12.708333333333334
+          ],
+          "clusters": 80,
+          "comparator_mean": 313.625,
+          "point_estimate": 5.71875,
+          "relative_saving": 0.018234356317257873,
+          "treatment_mean": 307.90625
+        },
+        "goal_completion_fraction": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1194039716,
+          "ci95": [
+            -0.04166666666666667,
+            -0.002083333333333333
+          ],
+          "clusters": 80,
+          "point_estimate": -0.01875
+        },
+        "terminal_success": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3892618523,
+          "ci95": [
+            -0.04166666666666667,
+            -0.002083333333333333
+          ],
+          "clusters": 80,
+          "point_estimate": -0.01875
+        }
+      },
+      "positive_cost_effect_means_treatment_cost_saving": true,
+      "positive_success_effect_favors_treatment": true,
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B"
+    },
+    "gcp_vs_self_plan": {
+      "comparator": "SELF_PLAN_ONLY_0.8B",
+      "metrics": {
+        "cost.coordination_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3628532380,
+          "ci95": [
+            -2929.0560048188972,
+            -2675.5783181696706
+          ],
+          "clusters": 80,
+          "comparator_mean": 4280.164086900186,
+          "point_estimate": -2811.0332195336623,
+          "relative_saving": -0.6567582836688607,
+          "treatment_mean": 7091.197306433848
+        },
+        "cost.decision_rounds": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2002692476,
+          "ci95": [
+            0.0020833333333333333,
+            0.041666666666666664
+          ],
+          "clusters": 80,
+          "comparator_mean": 2.0,
+          "point_estimate": 0.01875,
+          "relative_saving": 0.009375000000000022,
+          "treatment_mean": 1.98125
+        },
+        "cost.end_to_end_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2008330827,
+          "ci95": [
+            -3306.3422371688844,
+            -2213.3572926481197
+          ],
+          "clusters": 80,
+          "comparator_mean": 32570.173293150187,
+          "point_estimate": -2805.681600783662,
+          "relative_saving": -0.08614266726587314,
+          "treatment_mean": 35375.85489393385
+        },
+        "cost.executor_wall_clock_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3697045144,
+          "ci95": [
+            -433.99687744791686,
+            518.018065625
+          ],
+          "clusters": 80,
+          "comparator_mean": 28290.00920625,
+          "point_estimate": 5.351618749999917,
+          "relative_saving": 0.00018916991899800166,
+          "treatment_mean": 28284.6575875
+        },
+        "cost.format_repair_calls": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3928867654,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.input_tokens": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2113355986,
+          "ci95": [
+            -56.114947916666665,
+            -30.797656250000006
+          ],
+          "clusters": 80,
+          "comparator_mean": 1101.05,
+          "point_estimate": -45.452083333333334,
+          "relative_saving": -0.04128067148025371,
+          "treatment_mean": 1146.5020833333333
+        },
+        "cost.model_calls": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2656623210,
+          "ci95": [
+            0.0020833333333333333,
+            0.041666666666666664
+          ],
+          "clusters": 80,
+          "comparator_mean": 2.0,
+          "point_estimate": 0.01875,
+          "relative_saving": 0.009375000000000022,
+          "treatment_mean": 1.98125
+        },
+        "cost.model_service_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2719988646,
+          "ci95": [
+            -2897.164150277288,
+            -2667.751653490899
+          ],
+          "clusters": 80,
+          "comparator_mean": 4262.232814678767,
+          "point_estimate": -2794.5015249424614,
+          "relative_saving": -0.6556426282765306,
+          "treatment_mean": 7056.734339621228
+        },
+        "cost.output_tokens": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 4089457353,
+          "ci95": [
+            -113.34588541666668,
+            -109.82494791666667
+          ],
+          "clusters": 80,
+          "comparator_mean": 153.72916666666666,
+          "point_estimate": -111.73333333333332,
+          "relative_saving": -0.7268193522157473,
+          "treatment_mean": 265.4625
+        },
+        "cost.replan_count": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2507450266,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.wait_count": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 121128247,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.wire_bytes": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 228183980,
+          "ci95": [
+            -314.04015625,
+            -299.92041666666665
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": -307.90625,
+          "relative_saving": null,
+          "treatment_mean": 307.90625
+        },
+        "goal_completion_fraction": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2254834897,
+          "ci95": [
+            0.12916666666666665,
+            0.20416666666666666
+          ],
+          "clusters": 80,
+          "point_estimate": 0.16666666666666666
+        },
+        "terminal_success": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 520869877,
+          "ci95": [
+            0.39166666666666666,
+            0.6
+          ],
+          "clusters": 80,
+          "point_estimate": 0.4958333333333333
+        }
+      },
+      "positive_cost_effect_means_treatment_cost_saving": true,
+      "positive_success_effect_favors_treatment": true,
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B"
+    },
+    "gcp_vs_shuffled": {
+      "comparator": "SHUFFLED_REQUEST",
+      "metrics": {
+        "cost.coordination_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 348491507,
+          "ci95": [
+            -283.6461032630177,
+            -55.86551818657124
+          ],
+          "clusters": 80,
+          "comparator_mean": 6928.061328847737,
+          "point_estimate": -163.1359775861104,
+          "relative_saving": -0.02354713242892778,
+          "treatment_mean": 7091.197306433848
+        },
+        "cost.decision_rounds": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2231706215,
+          "ci95": [
+            0.0020833333333333333,
+            0.04375
+          ],
+          "clusters": 80,
+          "comparator_mean": 2.0,
+          "point_estimate": 0.01875,
+          "relative_saving": 0.009375000000000022,
+          "treatment_mean": 1.98125
+        },
+        "cost.end_to_end_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1228212321,
+          "ci95": [
+            -289.82589113842135,
+            -43.48241552894066
+          ],
+          "clusters": 80,
+          "comparator_mean": 35212.7098955144,
+          "point_estimate": -163.14499841944388,
+          "relative_saving": -0.004633128177397961,
+          "treatment_mean": 35375.85489393385
+        },
+        "cost.executor_wall_clock_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1078988904,
+          "ci95": [
+            -81.72515281250021,
+            83.33120895833297
+          ],
+          "clusters": 80,
+          "comparator_mean": 28284.648566666667,
+          "point_estimate": -0.009020833333404185,
+          "relative_saving": -3.1893036654430127e-07,
+          "treatment_mean": 28284.6575875
+        },
+        "cost.format_repair_calls": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 869665913,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.input_tokens": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1230425909,
+          "ci95": [
+            0.8728645833333333,
+            26.47572916666666
+          ],
+          "clusters": 80,
+          "comparator_mean": 1158.175,
+          "point_estimate": 11.672916666666666,
+          "relative_saving": 0.01007871579568429,
+          "treatment_mean": 1146.5020833333333
+        },
+        "cost.model_calls": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1949786553,
+          "ci95": [
+            0.0020833333333333333,
+            0.04171874999999925
+          ],
+          "clusters": 80,
+          "comparator_mean": 2.0,
+          "point_estimate": 0.01875,
+          "relative_saving": 0.009375000000000022,
+          "treatment_mean": 1.98125
+        },
+        "cost.model_service_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3223345214,
+          "ci95": [
+            -262.98280308546964,
+            -85.554504734464
+          ],
+          "clusters": 80,
+          "comparator_mean": 6887.14227261177,
+          "point_estimate": -169.59206700945896,
+          "relative_saving": -0.02462444658416283,
+          "treatment_mean": 7056.734339621228
+        },
+        "cost.output_tokens": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2612719939,
+          "ci95": [
+            -0.029166666666666674,
+            2.4916666666666663
+          ],
+          "clusters": 80,
+          "comparator_mean": 266.55,
+          "point_estimate": 1.0875,
+          "relative_saving": 0.004079909960607894,
+          "treatment_mean": 265.4625
+        },
+        "cost.replan_count": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 63226609,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.wait_count": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2070724258,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.wire_bytes": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 747965995,
+          "ci95": [
+            0.04583333333333339,
+            13.075312499999994
+          ],
+          "clusters": 80,
+          "comparator_mean": 313.625,
+          "point_estimate": 5.71875,
+          "relative_saving": 0.018234356317257873,
+          "treatment_mean": 307.90625
+        },
+        "goal_completion_fraction": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3734043170,
+          "ci95": [
+            0.3194444444444444,
+            0.3326388888888889
+          ],
+          "clusters": 80,
+          "point_estimate": 0.3270833333333333
+        },
+        "terminal_success": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3993825746,
+          "ci95": [
+            0.9583333333333334,
+            0.9979166666666666
+          ],
+          "clusters": 80,
+          "point_estimate": 0.98125
+        }
+      },
+      "positive_cost_effect_means_treatment_cost_saving": true,
+      "positive_success_effect_favors_treatment": true,
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B"
+    },
+    "gcp_vs_single_step": {
+      "comparator": "SINGLE_STEP_REQUEST_0.8B",
+      "metrics": {
+        "cost.coordination_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2400013910,
+          "ci95": [
+            -101.63242198749987,
+            146.32219331756153
+          ],
+          "clusters": 80,
+          "comparator_mean": 7123.562770329106,
+          "point_estimate": 32.36546389525757,
+          "relative_saving": 0.004543437734565269,
+          "treatment_mean": 7091.197306433848
+        },
+        "cost.decision_rounds": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1353822982,
+          "ci95": [
+            0.8916666666666666,
+            0.9708333333333334
+          ],
+          "clusters": 80,
+          "comparator_mean": 2.9125,
+          "point_estimate": 0.93125,
+          "relative_saving": 0.3197424892703863,
+          "treatment_mean": 1.98125
+        },
+        "cost.end_to_end_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 297831610,
+          "ci95": [
+            -2353.305952364338,
+            -507.0498371344774
+          ],
+          "clusters": 80,
+          "comparator_mean": 33928.80966199577,
+          "point_estimate": -1447.0452319380759,
+          "relative_saving": -0.04264945473636636,
+          "treatment_mean": 35375.85489393385
+        },
+        "cost.executor_wall_clock_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3093969026,
+          "ci95": [
+            -2324.3979996354165,
+            -615.5619976562499
+          ],
+          "clusters": 80,
+          "comparator_mean": 26805.246891666666,
+          "point_estimate": -1479.4106958333332,
+          "relative_saving": -0.0551910863500855,
+          "treatment_mean": 28284.6575875
+        },
+        "cost.format_repair_calls": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2945881755,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.input_tokens": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2857351022,
+          "ci95": [
+            517.5780729166667,
+            567.81703125
+          ],
+          "clusters": 80,
+          "comparator_mean": 1689.1083333333333,
+          "point_estimate": 542.60625,
+          "relative_saving": 0.32123827660550686,
+          "treatment_mean": 1146.5020833333333
+        },
+        "cost.model_calls": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2961879904,
+          "ci95": [
+            0.8916666666666666,
+            0.9708333333333334
+          ],
+          "clusters": 80,
+          "comparator_mean": 2.9125,
+          "point_estimate": 0.93125,
+          "relative_saving": 0.3197424892703863,
+          "treatment_mean": 1.98125
+        },
+        "cost.model_service_ms": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 354270703,
+          "ci95": [
+            -74.18915640970225,
+            156.24226583206718
+          ],
+          "clusters": 80,
+          "comparator_mean": 7106.940562169378,
+          "point_estimate": 50.206222548149526,
+          "relative_saving": 0.007064393195491168,
+          "treatment_mean": 7056.734339621228
+        },
+        "cost.output_tokens": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3229093998,
+          "ci95": [
+            2.8354166666666667,
+            7.520885416666665
+          ],
+          "clusters": 80,
+          "comparator_mean": 270.5541666666667,
+          "point_estimate": 5.091666666666667,
+          "relative_saving": 0.01881939845687104,
+          "treatment_mean": 265.4625
+        },
+        "cost.replan_count": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 2969032702,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.wait_count": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1529613770,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "clusters": 80,
+          "comparator_mean": 0.0,
+          "point_estimate": 0.0,
+          "relative_saving": null,
+          "treatment_mean": 0.0
+        },
+        "cost.wire_bytes": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 402099925,
+          "ci95": [
+            -33.99630208333333,
+            -8.781197916666665
+          ],
+          "clusters": 80,
+          "comparator_mean": 286.3333333333333,
+          "point_estimate": -21.572916666666664,
+          "relative_saving": -0.07534196740395817,
+          "treatment_mean": 307.90625
+        },
+        "goal_completion_fraction": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 3936384552,
+          "ci95": [
+            0.029166666666666664,
+            0.10630208333333258
+          ],
+          "clusters": 80,
+          "point_estimate": 0.06875
+        },
+        "terminal_success": {
+          "bootstrap_replicates": 10000,
+          "bootstrap_seed": 1068640828,
+          "ci95": [
+            0.029166666666666664,
+            0.10833333333333332
+          ],
+          "clusters": 80,
+          "point_estimate": 0.06875
+        }
+      },
+      "positive_cost_effect_means_treatment_cost_saving": true,
+      "positive_success_effect_favors_treatment": true,
+      "treatment": "GCP_MULTI_STEP_REQUEST_0.8B"
+    }
+  },
+  "qualification_access": "NONE",
+  "role_permutation_and_seed": "REPEATED_MEASURES",
+  "schema_version": "gcp-dual-track-ood-analysis-v0.2.3",
+  "semantic_clusters": 80,
+  "trigger_values": {
+    "claim_a": true,
+    "claim_b": false,
+    "multi_step_efficiency": true
+  },
+  "verdict": "TEMPLATE_OOD_COMPLETE_VALID"
+}

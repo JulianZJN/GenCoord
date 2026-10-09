@@ -1,0 +1,5 @@
+condition,method_id,episodes,clusters,terminal_success_pct,calls_mean,wire_bytes_mean
+True learned request,GCP_MULTI_STEP_REQUEST_0.8B,960,160,100.0,2.0,304.375
+Request removed,SELF_PLAN_ONLY_0.8B,960,160,50.0,2.0,0.0
+Executable alternative,SHUFFLED_REQUEST,960,160,0.0,2.0,304.375
+Deterministic binding,RULE_MINIMAL_REQUEST,320,160,100.0,0.0,304.375

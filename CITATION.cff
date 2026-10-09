@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use GenCoord, please cite the preprint described below."
-title: "GenCoord: Skill-Path Commitments under Private Information"
+title: "GenCoord: Executable Commitments for Embodied LLM Agents under Private Information"
 type: software
 repository-code: "https://github.com/JulianZJN/GenCoord"
 url: "https://arxiv.org/abs/2608.22055"
@@ -22,12 +22,21 @@ authors:
     affiliation: University of California San Diego
     email: jil652@ucsd.edu
 abstract: >-
-  GenCoord represents the executable task consequences of distributed private
-  facts as typed, multi-step skill-path commitments that are resolved across
-  agents, compiled to grounded skills, and verified in Minecraft.
+  GenCoord is a decentralized protocol for embodied LLM agents that hold
+  private task information. Each proposal pairs the sender's skill path with
+  its partner's continuation; compatible proposals become conditional
+  commitments that are executed and checked in Minecraft, so models spend
+  inference on choosing and revising the division of work rather than on
+  dialogue.
+keywords:
+  - multi-agent systems
+  - LLM agents
+  - embodied coordination
+  - commitments
+  - Minecraft
 preferred-citation:
   type: article
-  title: "GenCoord: Skill-Path Commitments under Private Information"
+  title: "GenCoord: Executable Commitments for Embodied LLM Agents under Private Information"
   authors:
     - given-names: Peng
       family-names: He

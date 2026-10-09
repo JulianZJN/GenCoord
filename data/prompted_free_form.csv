@@ -1,0 +1,4 @@
+method,evaluation_pool,episodes,clusters,role_views,success_pct,raw_valid_pct,calls_mean,input_tokens_mean,output_tokens_mean,wrong_binding,no_executable_plan
+Prompted free-form 0.8B,CONFIRM,320,160,2,48.75,69.0625,3.7625,5049.65,428.9875,72,92
+Prompted free-form 4B,TEMPLATE_OOD,160,80,2,90.0,95.625,2.63125,3024.2,269.5875,9,7
+Prompted free-form 9B,TEMPLATE_OOD,160,80,2,32.5,32.5,6.9875,8590.575,337.0625,0,108

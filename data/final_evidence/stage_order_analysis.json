@@ -1,0 +1,177 @@
+{
+  "api_calls": 0,
+  "denominators": {
+    "assignments": 2304,
+    "per_arm": 576,
+    "role_instances": 192,
+    "roles_per_block": 2,
+    "seeds_per_role": 3,
+    "source_blocks": 96,
+    "strata": 24
+  },
+  "metrics": {
+    "binding_correct": {
+      "arm_denominator": 576,
+      "arm_numerator": {
+        "stage_0_order_0": 482,
+        "stage_0_order_1": 512,
+        "stage_1_order_0": 475,
+        "stage_1_order_1": 507
+      },
+      "bootstrap_95pct_ci": {
+        "interaction_difference_in_differences": [
+          -0.02083333333333333,
+          0.02777777777777778
+        ],
+        "order_main": [
+          0.009548611111111107,
+          0.09895833333333333
+        ],
+        "stage_main": [
+          -0.021701388888888895,
+          0.0008680555555555552
+        ]
+      },
+      "bootstrap_replicates": 10000,
+      "bootstrap_unit": "semantic_cluster_id",
+      "effects": {
+        "interaction_difference_in_differences": 0.003472222222222225,
+        "order_main": 0.05381944444444445,
+        "stage_main": -0.010416666666666671
+      },
+      "stratification": "template_id x path_motif"
+    },
+    "full_plan_correct": {
+      "arm_denominator": 576,
+      "arm_numerator": {
+        "stage_0_order_0": 36,
+        "stage_0_order_1": 217,
+        "stage_1_order_0": 37,
+        "stage_1_order_1": 206
+      },
+      "bootstrap_95pct_ci": {
+        "interaction_difference_in_differences": [
+          -0.032986111111111105,
+          -0.006944444444444441
+        ],
+        "order_main": [
+          0.2717013888888889,
+          0.3324652777777778
+        ],
+        "stage_main": [
+          -0.014756944444444446,
+          -0.001736111111111113
+        ]
+      },
+      "bootstrap_replicates": 10000,
+      "bootstrap_unit": "semantic_cluster_id",
+      "effects": {
+        "interaction_difference_in_differences": -0.02083333333333333,
+        "order_main": 0.3038194444444445,
+        "stage_main": -0.008680555555555556
+      },
+      "stratification": "template_id x path_motif"
+    },
+    "order_correct": {
+      "arm_denominator": 576,
+      "arm_numerator": {
+        "stage_0_order_0": 36,
+        "stage_0_order_1": 217,
+        "stage_1_order_0": 37,
+        "stage_1_order_1": 206
+      },
+      "bootstrap_95pct_ci": {
+        "interaction_difference_in_differences": [
+          -0.032986111111111105,
+          -0.006944444444444441
+        ],
+        "order_main": [
+          0.2717013888888889,
+          0.3324652777777778
+        ],
+        "stage_main": [
+          -0.014756944444444446,
+          -0.001736111111111113
+        ]
+      },
+      "bootstrap_replicates": 10000,
+      "bootstrap_unit": "semantic_cluster_id",
+      "effects": {
+        "interaction_difference_in_differences": -0.02083333333333333,
+        "order_main": 0.3038194444444445,
+        "stage_main": -0.008680555555555556
+      },
+      "stratification": "template_id x path_motif"
+    },
+    "parse_ok": {
+      "arm_denominator": 576,
+      "arm_numerator": {
+        "stage_0_order_0": 574,
+        "stage_0_order_1": 576,
+        "stage_1_order_0": 570,
+        "stage_1_order_1": 576
+      },
+      "bootstrap_95pct_ci": {
+        "interaction_difference_in_differences": [
+          0.0017361111111111108,
+          0.013888888888888886
+        ],
+        "order_main": [
+          0.0026041666666666644,
+          0.012152777777777771
+        ],
+        "stage_main": [
+          -0.006944444444444438,
+          -0.0008680555555555547
+        ]
+      },
+      "bootstrap_replicates": 10000,
+      "bootstrap_unit": "semantic_cluster_id",
+      "effects": {
+        "interaction_difference_in_differences": 0.006944444444444443,
+        "order_main": 0.006944444444444441,
+        "stage_main": -0.003472222222222219
+      },
+      "stratification": "template_id x path_motif"
+    },
+    "plan_complete_unordered": {
+      "arm_denominator": 576,
+      "arm_numerator": {
+        "stage_0_order_0": 36,
+        "stage_0_order_1": 217,
+        "stage_1_order_0": 37,
+        "stage_1_order_1": 206
+      },
+      "bootstrap_95pct_ci": {
+        "interaction_difference_in_differences": [
+          -0.032986111111111105,
+          -0.006944444444444441
+        ],
+        "order_main": [
+          0.2717013888888889,
+          0.3324652777777778
+        ],
+        "stage_main": [
+          -0.014756944444444446,
+          -0.001736111111111113
+        ]
+      },
+      "bootstrap_replicates": 10000,
+      "bootstrap_unit": "semantic_cluster_id",
+      "effects": {
+        "interaction_difference_in_differences": -0.02083333333333333,
+        "order_main": 0.3038194444444445,
+        "stage_main": -0.008680555555555556
+      },
+      "stratification": "template_id x path_motif"
+    }
+  },
+  "parse_failures_by_arm": {
+    "stage_0_order_0": 2,
+    "stage_0_order_1": 0,
+    "stage_1_order_0": 6,
+    "stage_1_order_1": 0
+  },
+  "status": "COMPLETE_PLANNING_ONLY",
+  "world_executions": 0
+}

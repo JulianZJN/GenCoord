@@ -1,0 +1,103 @@
+{
+  "schema_version": "gcp-api-request-transfer-v0.3",
+  "state": "FORMAL_PREPARATION",
+  "api": {
+    "model": "deepseek-flash",
+    "thinking": {
+      "type": "disabled"
+    },
+    "output_config": {
+      "effort": "high"
+    },
+    "max_tokens": 8192,
+    "provider_id": "06213846-98c6-4da9-bf31-9dc54f23ba24",
+    "app_type": "claude-desktop",
+    "concurrency": 4,
+    "retries": 2,
+    "budget_usd": 20
+  },
+  "local": {
+    "seeds": [
+      2026073101,
+      2026073102,
+      2026073103
+    ],
+    "dev_seed": 2026073101,
+    "max_new_tokens": 128,
+    "prompt_mode": "raw",
+    "checkpoints": [
+      {
+        "seed": 2026073101,
+        "relative_path": "reports/gcp_sequence/compact_representation/v0.3/training/runs/dsl.seed_2026073101/final_checkpoint",
+        "training_manifest_tree_sha256": "a6404f28bc3bcae9d8c479f93d775bdb81137856bb82429bad6aa46464307388"
+      },
+      {
+        "seed": 2026073102,
+        "relative_path": "reports/gcp_sequence/compact_representation/v0.3/training/runs/dsl.seed_2026073102/final_checkpoint",
+        "training_manifest_tree_sha256": "5b287c75048ee0257502aadb22b299518f8407fe474a34fab0c166c83b96be72"
+      },
+      {
+        "seed": 2026073103,
+        "relative_path": "reports/gcp_sequence/compact_representation/v0.3/training/runs/dsl.seed_2026073103/final_checkpoint",
+        "training_manifest_tree_sha256": "9952639ac5e6a54d8be0cbed82fbe119d1c070926d9a546bf17e64a4dea952f4"
+      }
+    ]
+  },
+  "conditions": [
+    "R_TRUE",
+    "R_ABSENT",
+    "R_ALT",
+    "E2E_TRUE"
+  ],
+  "formal": {
+    "blocks": 80,
+    "semantic_instances": 160,
+    "role_instances": 320,
+    "records_per_backend": 3840,
+    "total_assigned": 7680,
+    "api_repeats": 3
+  },
+  "timing": {
+    "role_instances": 64,
+    "repeats": 3,
+    "condition": "E2E_TRUE",
+    "concurrency": 1,
+    "local_warmup_train_stage_calls": 2,
+    "api_warmup_calls": 0,
+    "physical_worlds": 0,
+    "local_same_gpu": true
+  },
+  "dev": {
+    "role_instances": 32,
+    "repeats": 1,
+    "max_api_calls": 160,
+    "max_local_calls": 160,
+    "max_uniform_revision": 1
+  },
+  "gates": {
+    "api_valid_return_min": 0.95,
+    "dsl_parse_min": 0.95,
+    "token_limit_max": 0.01,
+    "mean_call_cost_usd_max": 0.075,
+    "predicted_total_usd_max": 500
+  },
+  "bootstrap": {
+    "unit": "world_template_pair_block",
+    "strata": "template_id",
+    "draws": 10000,
+    "seed": 20260928
+  },
+  "stop_new_runs_after": "2026-10-04T23:59:00+08:00",
+  "admission": {
+    "engineering_basis": "v0.2_nonthinking/replay_and_fresh",
+    "mechanics_basis": "v0.1/dev1_and_dev2_oracle",
+    "no_semantic_accuracy_gate": true,
+    "no_further_tuning": true
+  },
+  "live": {
+    "workers": 9,
+    "cpus": 18,
+    "memory_gib": 48,
+    "world_attempts_per_record": 3
+  }
+}

@@ -1,0 +1,2 @@
+SELF resource.obtain(q=8,item=cobblestone) > resource.deliver(q=8,item=cobblestone,to=agent_b)
+REQ agent_b resource.deliver(bind=CHEST_A,q=4,dst=chest_a,item=cobblestone)

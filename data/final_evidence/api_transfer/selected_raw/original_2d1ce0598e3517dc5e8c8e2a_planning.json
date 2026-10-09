@@ -1,0 +1,437 @@
+{
+  "assignment": {
+    "backend": "api",
+    "condition": "E2E_TRUE",
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00",
+    "record_id": "2d1ce0598e3517dc5e8c8e2a",
+    "repeat": "3",
+    "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00-B0-R0",
+    "template_id": "CHEST_OR_CRAFTING_TABLE"
+  },
+  "ended_utc": "2026-09-28T04:18:57.374457+00:00",
+  "started_utc": "2026-09-28T04:16:23.134504+00:00",
+  "trace": {
+    "_certificate": {
+      "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00",
+      "public_branch_projected_sha256": "f6c4d53e9bc43b6ce9766a30385f4e39551fa49204b3a56e24f0320b3af2b62c",
+      "receiver_projected_object": {
+        "peer_requests": [],
+        "self_plan": [
+          {
+            "arguments": {
+              "binding_id": "CHEST",
+              "count": 1,
+              "input": "oak_planks",
+              "item": "chest"
+            },
+            "task_path": [
+              "craft",
+              "item"
+            ]
+          }
+        ]
+      },
+      "receiver_projected_sha256": "f6c4d53e9bc43b6ce9766a30385f4e39551fa49204b3a56e24f0320b3af2b62c",
+      "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00-B0-R0",
+      "schema_version": "gcp-api-execution-certificate-v0.1",
+      "selected_binding_id": "CHEST",
+      "sender_projected_object": {
+        "peer_requests": [
+          {
+            "requested_plan": [
+              {
+                "arguments": {
+                  "binding_id": "CHEST",
+                  "count": 1,
+                  "input": "oak_planks",
+                  "item": "chest"
+                },
+                "task_path": [
+                  "craft",
+                  "item"
+                ]
+              }
+            ],
+            "to_agent_id": "agent_b"
+          }
+        ],
+        "self_plan": [
+          {
+            "arguments": {
+              "count": 8,
+              "item": "oak_planks"
+            },
+            "task_path": [
+              "resource",
+              "obtain"
+            ]
+          },
+          {
+            "arguments": {
+              "count": 8,
+              "item": "oak_planks",
+              "to_agent_id": "agent_b"
+            },
+            "task_path": [
+              "resource",
+              "deliver"
+            ]
+          }
+        ]
+      },
+      "sender_projected_sha256": "8d737e3675452b6c0c647bea5904241966000f749669ce08bfe58323f8944c7c",
+      "wire_request_sha256": "1ce31eab037fd0bf9e4e5ce7effb77ce9f57b979e4f5e33dba56f7465955e790",
+      "wire_request_utf8_bytes": 66,
+      "world_seed": 261866970193649
+    },
+    "canonical_bookkeeping_bytes": 290,
+    "condition": "E2E_TRUE",
+    "decisions": [
+      {
+        "contract_valid": true,
+        "elapsed_ms": 1133.4534170018742,
+        "normalized_parse_valid": true,
+        "normalized_text": "SELF resource.obtain(q=8,item=oak_planks) > resource.deliver(q=8,item=oak_planks,to=agent_b)\nREQ agent_b craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)",
+        "parse_error": null,
+        "parsed": {
+          "peer_requests": [
+            {
+              "requested_plan": [
+                {
+                  "arguments": {
+                    "binding_id": "CHEST",
+                    "count": 1,
+                    "input": "oak_planks",
+                    "item": "chest"
+                  },
+                  "task_path": [
+                    "craft",
+                    "item"
+                  ]
+                }
+              ],
+              "to_agent_id": "agent_b"
+            }
+          ],
+          "self_plan": [
+            {
+              "arguments": {
+                "count": 8,
+                "item": "oak_planks"
+              },
+              "task_path": [
+                "resource",
+                "obtain"
+              ]
+            },
+            {
+              "arguments": {
+                "count": 8,
+                "item": "oak_planks",
+                "to_agent_id": "agent_b"
+              },
+              "task_path": [
+                "resource",
+                "deliver"
+              ]
+            }
+          ]
+        },
+        "prompt": "Four TRAIN syntax examples; solve only the final MODEL_INPUT.\n\nEXAMPLE P4_BRANCH\nUse only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.\nMODEL_INPUT\nAG agent_a\nCTX {\"dag\":{\"active\":false,\"dag_id\":\"PUBLIC_ACTIVE_ORDER_BRANCH\",\"e\":[[\"acquire_material\",\"handoff_material\"],[\"handoff_material\",\"branch_0\"],[\"handoff_material\",\"branch_1\"],[\"branch_0\",\"verify_terminal\"],[\"branch_1\",\"verify_terminal\"]],\"n\":[{\"id\":\"acquire_material\",\"pre\":[],\"role\":\"sender\",\"task\":\"resource.obtain(q=8,item=oak_planks)\"},{\"id\":\"handoff_material\",\"pre\":[\"acquire_material\"],\"role\":\"sender\",\"task\":\"resource.deliver(q=8,dst_role=receiver,item=oak_planks)\"},{\"id\":\"branch_0\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=STORAGE_BRANCH,q=1,input=oak_planks,item=chest)\"},{\"id\":\"branch_1\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=WORK_BRANCH,q=1,input=oak_planks,item=crafting_table)\"},{\"a\":{\"one_active_branch_required\":true},\"id\":\"verify_terminal\",\"p\":[\"control\",\"verify_terminal\"],\"pre\":[\"branch_0\",\"branch_1\"],\"pre_mode\":\"ACTIVE_BRANCH_ONLY\",\"role\":\"checker\"}]},\"hist\":[],\"msg\":[],\"obs\":{\"inv\":[],\"land\":[{\"bind\":\"STORAGE_BRANCH\",\"pos\":[-14,64,-14],\"reach\":true},{\"bind\":\"WORK_BRANCH\",\"pos\":[0,64,17],\"reach\":true}],\"priv\":{\"at\":\"sender-side dispatch board\",\"kind\":\"active_order_branch\",\"prov\":\"MINECRAFT_LOCAL_OBSERVATION\",\"val\":\"STORAGE_BRANCH\"},\"recv_cap\":true,\"src\":[{\"avail\":8,\"item\":\"oak_planks\",\"reach\":true,\"src_ref\":\"sender_local_source\"}]},\"peer\":\"agent_b\"}\nOUTPUT\nSELF resource.obtain(q=8,item=oak_planks) > resource.deliver(q=8,item=oak_planks,to=agent_b)\nREQ agent_b craft.item(bind=STORAGE_BRANCH,q=1,input=oak_planks,item=chest)\n\nEXAMPLE P1_DESTINATION\nUse only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.\nMODEL_INPUT\nAG agent_a\nCTX {\"dag\":{\"active\":false,\"dag_id\":\"PUBLIC_BUILD_SITE_A_OR_B\",\"e\":[[\"acquire_material\",\"handoff_material\"],[\"handoff_material\",\"branch_0\"],[\"handoff_material\",\"branch_1\"],[\"branch_0\",\"verify_terminal\"],[\"branch_1\",\"verify_terminal\"]],\"n\":[{\"id\":\"acquire_material\",\"pre\":[],\"role\":\"sender\",\"task\":\"resource.obtain(q=8,item=oak_planks)\"},{\"id\":\"handoff_material\",\"pre\":[\"acquire_material\"],\"role\":\"sender\",\"task\":\"resource.deliver(q=8,dst_role=receiver,item=oak_planks)\"},{\"id\":\"branch_0\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"place_block\",\"task\":\"build.component(bind=SITE_A,q=1,item=oak_planks,site=site_a)\"},{\"id\":\"branch_1\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"place_block\",\"task\":\"build.component(bind=SITE_B,q=1,item=oak_planks,site=site_b)\"},{\"a\":{\"one_active_branch_required\":true},\"id\":\"verify_terminal\",\"p\":[\"control\",\"verify_terminal\"],\"pre\":[\"branch_0\",\"branch_1\"],\"pre_mode\":\"ACTIVE_BRANCH_ONLY\",\"role\":\"checker\"}]},\"hist\":[],\"msg\":[],\"obs\":{\"inv\":[],\"land\":[{\"bind\":\"SITE_A\",\"pos\":[-7,64,-9],\"reach\":true},{\"bind\":\"SITE_B\",\"pos\":[6,64,10],\"reach\":true}],\"priv\":{\"at\":\"sender-side blueprint lectern\",\"kind\":\"active_build_site\",\"prov\":\"MINECRAFT_LOCAL_OBSERVATION\",\"val\":\"SITE_A\"},\"recv_cap\":true,\"src\":[{\"avail\":8,\"item\":\"oak_planks\",\"reach\":true,\"src_ref\":\"sender_local_source\"}]},\"peer\":\"agent_b\"}\nOUTPUT\nSELF resource.obtain(q=8,item=oak_planks) > resource.deliver(q=8,item=oak_planks,to=agent_b)\nREQ agent_b build.component(bind=SITE_A,q=1,item=oak_planks,site=site_a)\n\nEXAMPLE P2_RECIPE\nUse only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.\nMODEL_INPUT\nAG agent_a\nCTX {\"dag\":{\"active\":false,\"dag_id\":\"PUBLIC_CHEST_OR_CRAFTING_TABLE\",\"e\":[[\"acquire_material\",\"handoff_material\"],[\"handoff_material\",\"branch_0\"],[\"handoff_material\",\"branch_1\"],[\"branch_0\",\"verify_terminal\"],[\"branch_1\",\"verify_terminal\"]],\"n\":[{\"id\":\"acquire_material\",\"pre\":[],\"role\":\"sender\",\"task\":\"resource.obtain(q=8,item=oak_planks)\"},{\"id\":\"handoff_material\",\"pre\":[\"acquire_material\"],\"role\":\"sender\",\"task\":\"resource.deliver(q=8,dst_role=receiver,item=oak_planks)\"},{\"id\":\"branch_0\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\"},{\"id\":\"branch_1\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=CRAFTING_TABLE,q=1,input=oak_planks,item=crafting_table)\"},{\"a\":{\"one_active_branch_required\":true},\"id\":\"verify_terminal\",\"p\":[\"control\",\"verify_terminal\"],\"pre\":[\"branch_0\",\"branch_1\"],\"pre_mode\":\"ACTIVE_BRANCH_ONLY\",\"role\":\"checker\"}]},\"hist\":[],\"msg\":[],\"obs\":{\"inv\":[],\"land\":[{\"bind\":\"CHEST\",\"pos\":[1,64,-19],\"reach\":true},{\"bind\":\"CRAFTING_TABLE\",\"pos\":[-3,64,-15],\"reach\":true}],\"priv\":{\"at\":\"sender-side construction order\",\"kind\":\"final_product_order\",\"prov\":\"MINECRAFT_LOCAL_OBSERVATION\",\"val\":\"CHEST\"},\"recv_cap\":true,\"src\":[{\"avail\":8,\"item\":\"oak_planks\",\"reach\":true,\"src_ref\":\"sender_local_source\"}]},\"peer\":\"agent_b\"}\nOUTPUT\nSELF resource.obtain(q=8,item=oak_planks) > resource.deliver(q=8,item=oak_planks,to=agent_b)\nREQ agent_b craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\n\nEXAMPLE P3_ALLOCATION\nUse only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.\nMODEL_INPUT\nAG agent_a\nCTX {\"dag\":{\"active\":false,\"dag_id\":\"PUBLIC_DEPOSIT_OR_BUILD\",\"e\":[[\"acquire_material\",\"handoff_material\"],[\"handoff_material\",\"branch_0\"],[\"handoff_material\",\"branch_1\"],[\"branch_0\",\"verify_terminal\"],[\"branch_1\",\"verify_terminal\"]],\"n\":[{\"id\":\"acquire_material\",\"pre\":[],\"role\":\"sender\",\"task\":\"resource.obtain(q=8,item=cobblestone)\"},{\"id\":\"handoff_material\",\"pre\":[\"acquire_material\"],\"role\":\"sender\",\"task\":\"resource.deliver(q=8,dst_role=receiver,item=cobblestone)\"},{\"id\":\"branch_0\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"deposit_item\",\"task\":\"resource.deliver(bind=DEPOSIT,q=4,dst=reserve_chest,item=cobblestone)\"},{\"id\":\"branch_1\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"place_block\",\"task\":\"build.component(bind=BUILD,q=1,item=cobblestone,site=marker_site)\"},{\"a\":{\"one_active_branch_required\":true},\"id\":\"verify_terminal\",\"p\":[\"control\",\"verify_terminal\"],\"pre\":[\"branch_0\",\"branch_1\"],\"pre_mode\":\"ACTIVE_BRANCH_ONLY\",\"role\":\"checker\"}]},\"hist\":[],\"msg\":[],\"obs\":{\"inv\":[],\"land\":[{\"bind\":\"DEPOSIT\",\"pos\":[-6,64,16],\"reach\":true},{\"bind\":\"BUILD\",\"pos\":[-3,64,-16],\"reach\":true}],\"priv\":{\"at\":\"sender-side inventory board\",\"kind\":\"team_resource_deficit\",\"prov\":\"MINECRAFT_LOCAL_OBSERVATION\",\"val\":\"DEPOSIT\"},\"recv_cap\":true,\"src\":[{\"avail\":8,\"item\":\"cobblestone\",\"reach\":true,\"src_ref\":\"sender_local_source\"}]},\"peer\":\"agent_b\"}\nOUTPUT\nSELF resource.obtain(q=8,item=cobblestone) > resource.deliver(q=8,item=cobblestone,to=agent_b)\nREQ agent_b resource.deliver(bind=DEPOSIT,q=4,dst=reserve_chest,item=cobblestone)\n\nCURRENT INSTANCE\nUse only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.\nMODEL_INPUT\nAG agent_a\nCTX {\"dag\":{\"active\":false,\"dag_id\":\"PUBLIC_CHEST_OR_CRAFTING_TABLE\",\"e\":[[\"acquire_material\",\"handoff_material\"],[\"handoff_material\",\"branch_0\"],[\"handoff_material\",\"branch_1\"],[\"branch_0\",\"verify_terminal\"],[\"branch_1\",\"verify_terminal\"]],\"n\":[{\"id\":\"acquire_material\",\"pre\":[],\"role\":\"sender\",\"task\":\"resource.obtain(q=8,item=oak_planks)\"},{\"id\":\"handoff_material\",\"pre\":[\"acquire_material\"],\"role\":\"sender\",\"task\":\"resource.deliver(q=8,dst_role=receiver,item=oak_planks)\"},{\"id\":\"branch_0\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\"},{\"id\":\"branch_1\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=CRAFTING_TABLE,q=1,input=oak_planks,item=crafting_table)\"},{\"a\":{\"one_active_branch_required\":true},\"id\":\"verify_terminal\",\"p\":[\"control\",\"verify_terminal\"],\"pre\":[\"branch_0\",\"branch_1\"],\"pre_mode\":\"ACTIVE_BRANCH_ONLY\",\"role\":\"checker\"}]},\"hist\":[],\"msg\":[],\"obs\":{\"inv\":[],\"land\":[{\"bind\":\"CHEST\",\"pos\":[-5,64,10],\"reach\":true},{\"bind\":\"CRAFTING_TABLE\",\"pos\":[-4,64,-16],\"reach\":true}],\"priv\":{\"at\":\"sender-side construction order\",\"kind\":\"final_product_order\",\"prov\":\"MINECRAFT_LOCAL_OBSERVATION\",\"val\":\"CHEST\"},\"recv_cap\":true,\"src\":[{\"avail\":8,\"item\":\"oak_planks\",\"reach\":true,\"src_ref\":\"sender_local_source\"}]},\"peer\":\"agent_b\"}\nOUTPUT\n",
+        "prompt_sha256": "285b1eca96c7f910a4caea60f7175946a6f69d67a8a954c17e72f4385a582086",
+        "raw_parse_error": null,
+        "raw_parse_valid": true,
+        "raw_parsed": {
+          "peer_requests": [
+            {
+              "requested_plan": [
+                {
+                  "arguments": {
+                    "binding_id": "CHEST",
+                    "count": 1,
+                    "input": "oak_planks",
+                    "item": "chest"
+                  },
+                  "task_path": [
+                    "craft",
+                    "item"
+                  ]
+                }
+              ],
+              "to_agent_id": "agent_b"
+            }
+          ],
+          "self_plan": [
+            {
+              "arguments": {
+                "count": 8,
+                "item": "oak_planks"
+              },
+              "task_path": [
+                "resource",
+                "obtain"
+              ]
+            },
+            {
+              "arguments": {
+                "count": 8,
+                "item": "oak_planks",
+                "to_agent_id": "agent_b"
+              },
+              "task_path": [
+                "resource",
+                "deliver"
+              ]
+            }
+          ]
+        },
+        "raw_response": {
+          "api_valid_return": true,
+          "attempts": [
+            {
+              "attempt": 1,
+              "attempt_id": "7da77d7eb5772e7dbb81cddf19fc0aa4f4bb7c9d2db2943054528504618d5227",
+              "cost_basis": "published_peak_rates_estimate_not_invoice",
+              "credential_source": "cc_switch_readonly",
+              "ended_utc": "2026-09-28T04:16:24.263214+00:00",
+              "endpoint": "https://api.deepseek.com/anthropic",
+              "error_kind": null,
+              "estimated_cost_usd_peak_upper": 0.00016192799999999999,
+              "http_status": 200,
+              "input_tokens": 2906,
+              "latency_ms": 1124.8715830006404,
+              "provider_billable_output_tokens": 67,
+              "provider_id": "06213846-98c6-4da9-bf31-9dc54f23ba24",
+              "request_body_bytes": 10005,
+              "request_body_sha256": "d45923e65303d43f13b5f494bd429597e8b4acdcc916211c497e1232875b5670",
+              "requested_model": "deepseek-flash",
+              "reserved_usd": 0.0134463,
+              "response_headers": {
+                "Date": "Mon, 28 Sep 2026 04:16:23 GMT"
+              },
+              "retryable": false,
+              "returned_model": "deepseek-flash",
+              "started_utc": "2026-09-28T04:16:23.136531+00:00",
+              "success": true,
+              "usage": {
+                "cache_creation_input_tokens": 0,
+                "cache_read_input_tokens": 2688,
+                "input_tokens": 218,
+                "output_tokens": 67,
+                "service_tier": "standard"
+              },
+              "usage_complete": true
+            }
+          ],
+          "cost_basis": "published_peak_rates_estimate_not_invoice",
+          "estimated_cost_usd_peak_upper": 0.00016192799999999999,
+          "input_tokens": 2906,
+          "latency_ms": 1124.8715830006404,
+          "model_call_ms": 1124.8715830006404,
+          "output_tokens": 67,
+          "provider_billable_output_tokens": 67,
+          "provider_response_id": "8101460d-5120-4cc0-bab8-c17be10c7999",
+          "raw_text": "SELF resource.obtain(q=8,item=oak_planks) > resource.deliver(q=8,item=oak_planks,to=agent_b)\nREQ agent_b craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)",
+          "request_body_bytes": 10005,
+          "request_body_sha256": "d45923e65303d43f13b5f494bd429597e8b4acdcc916211c497e1232875b5670",
+          "requested_model": "deepseek-flash",
+          "returned_model": "deepseek-flash",
+          "stop_reason": "end_turn",
+          "terminated_by_length_cap": false,
+          "usage": {
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 2688,
+            "input_tokens": 218,
+            "output_tokens": 67,
+            "service_tier": "standard"
+          },
+          "usage_complete": true,
+          "visible_text_utf8_bytes": 159
+        },
+        "raw_text": "SELF resource.obtain(q=8,item=oak_planks) > resource.deliver(q=8,item=oak_planks,to=agent_b)\nREQ agent_b craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)",
+        "stage": "sender_initial"
+      },
+      {
+        "contract_valid": true,
+        "elapsed_ms": 153102.16516700166,
+        "legal_public_branch": true,
+        "normalized_parse_valid": true,
+        "normalized_text": "SELF craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\nREQ -",
+        "parse_error": null,
+        "parsed": {
+          "peer_requests": [],
+          "self_plan": [
+            {
+              "arguments": {
+                "binding_id": "CHEST",
+                "count": 1,
+                "input": "oak_planks",
+                "item": "chest"
+              },
+              "task_path": [
+                "craft",
+                "item"
+              ]
+            }
+          ]
+        },
+        "prompt": "Four TRAIN syntax examples; solve only the final MODEL_INPUT.\n\nEXAMPLE P4_BRANCH\nUse only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.\nMODEL_INPUT\nAG agent_b\nCTX {\"dag\":{\"active\":false,\"dag_id\":\"PUBLIC_ACTIVE_ORDER_BRANCH\",\"e\":[[\"acquire_material\",\"handoff_material\"],[\"handoff_material\",\"branch_0\"],[\"handoff_material\",\"branch_1\"],[\"branch_0\",\"verify_terminal\"],[\"branch_1\",\"verify_terminal\"]],\"n\":[{\"id\":\"acquire_material\",\"pre\":[],\"role\":\"sender\",\"task\":\"resource.obtain(q=8,item=oak_planks)\"},{\"id\":\"handoff_material\",\"pre\":[\"acquire_material\"],\"role\":\"sender\",\"task\":\"resource.deliver(q=8,dst_role=receiver,item=oak_planks)\"},{\"id\":\"branch_0\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=STORAGE_BRANCH,q=1,input=oak_planks,item=chest)\"},{\"id\":\"branch_1\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=WORK_BRANCH,q=1,input=oak_planks,item=crafting_table)\"},{\"a\":{\"one_active_branch_required\":true},\"id\":\"verify_terminal\",\"p\":[\"control\",\"verify_terminal\"],\"pre\":[\"branch_0\",\"branch_1\"],\"pre_mode\":\"ACTIVE_BRANCH_ONLY\",\"role\":\"checker\"}]},\"hist\":[{\"evt\":\"HANDOFF_COMPLETED\",\"from\":\"agent_a\",\"item\":\"oak_planks\",\"q\":8}],\"msg\":[{\"done\":{\"bind\":\"STORAGE_BRANCH\",\"kind\":\"MINECRAFT_TERMINAL_CHECK\"},\"from\":\"agent_a\",\"rid\":\"req_active_order_branch_storage_branch\",\"task\":\"craft.item(bind=STORAGE_BRANCH,q=1,input=oak_planks,item=chest)\",\"to\":\"agent_b\"}],\"obs\":{\"active_obs\":null,\"both\":true,\"dsts\":[\"crafting_area\"],\"handoff_evidence\":{\"from\":\"agent_a\",\"item\":\"oak_planks\",\"prov\":\"MINECRAFT_LOCAL_OBSERVATION\",\"q\":8},\"inv\":[{\"item\":\"oak_planks\",\"q\":8}],\"land\":[{\"bind\":\"STORAGE_BRANCH\",\"pos\":[-14,64,-14],\"reach\":true},{\"bind\":\"WORK_BRANCH\",\"pos\":[0,64,17],\"reach\":true}],\"stns\":[\"crafting_area\"]}}\nOUTPUT\nSELF craft.item(bind=STORAGE_BRANCH,q=1,input=oak_planks,item=chest)\nREQ -\n\nEXAMPLE P1_DESTINATION\nUse only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.\nMODEL_INPUT\nAG agent_b\nCTX {\"dag\":{\"active\":false,\"dag_id\":\"PUBLIC_BUILD_SITE_A_OR_B\",\"e\":[[\"acquire_material\",\"handoff_material\"],[\"handoff_material\",\"branch_0\"],[\"handoff_material\",\"branch_1\"],[\"branch_0\",\"verify_terminal\"],[\"branch_1\",\"verify_terminal\"]],\"n\":[{\"id\":\"acquire_material\",\"pre\":[],\"role\":\"sender\",\"task\":\"resource.obtain(q=8,item=oak_planks)\"},{\"id\":\"handoff_material\",\"pre\":[\"acquire_material\"],\"role\":\"sender\",\"task\":\"resource.deliver(q=8,dst_role=receiver,item=oak_planks)\"},{\"id\":\"branch_0\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"place_block\",\"task\":\"build.component(bind=SITE_A,q=1,item=oak_planks,site=site_a)\"},{\"id\":\"branch_1\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"place_block\",\"task\":\"build.component(bind=SITE_B,q=1,item=oak_planks,site=site_b)\"},{\"a\":{\"one_active_branch_required\":true},\"id\":\"verify_terminal\",\"p\":[\"control\",\"verify_terminal\"],\"pre\":[\"branch_0\",\"branch_1\"],\"pre_mode\":\"ACTIVE_BRANCH_ONLY\",\"role\":\"checker\"}]},\"hist\":[{\"evt\":\"HANDOFF_COMPLETED\",\"from\":\"agent_a\",\"item\":\"oak_planks\",\"q\":8}],\"msg\":[{\"done\":{\"bind\":\"SITE_A\",\"kind\":\"MINECRAFT_TERMINAL_CHECK\"},\"from\":\"agent_a\",\"rid\":\"req_build_site_a_or_b_site_a\",\"task\":\"build.component(bind=SITE_A,q=1,item=oak_planks,site=site_a)\",\"to\":\"agent_b\"}],\"obs\":{\"active_obs\":null,\"both\":true,\"dsts\":[\"site_a\",\"site_b\"],\"handoff_evidence\":{\"from\":\"agent_a\",\"item\":\"oak_planks\",\"prov\":\"MINECRAFT_LOCAL_OBSERVATION\",\"q\":8},\"inv\":[{\"item\":\"oak_planks\",\"q\":8}],\"land\":[{\"bind\":\"SITE_A\",\"pos\":[-7,64,-9],\"reach\":true},{\"bind\":\"SITE_B\",\"pos\":[6,64,10],\"reach\":true}],\"stns\":[\"crafting_area\"]}}\nOUTPUT\nSELF build.component(bind=SITE_A,q=1,item=oak_planks,site=site_a)\nREQ -\n\nEXAMPLE P2_RECIPE\nUse only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.\nMODEL_INPUT\nAG agent_b\nCTX {\"dag\":{\"active\":false,\"dag_id\":\"PUBLIC_CHEST_OR_CRAFTING_TABLE\",\"e\":[[\"acquire_material\",\"handoff_material\"],[\"handoff_material\",\"branch_0\"],[\"handoff_material\",\"branch_1\"],[\"branch_0\",\"verify_terminal\"],[\"branch_1\",\"verify_terminal\"]],\"n\":[{\"id\":\"acquire_material\",\"pre\":[],\"role\":\"sender\",\"task\":\"resource.obtain(q=8,item=oak_planks)\"},{\"id\":\"handoff_material\",\"pre\":[\"acquire_material\"],\"role\":\"sender\",\"task\":\"resource.deliver(q=8,dst_role=receiver,item=oak_planks)\"},{\"id\":\"branch_0\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\"},{\"id\":\"branch_1\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=CRAFTING_TABLE,q=1,input=oak_planks,item=crafting_table)\"},{\"a\":{\"one_active_branch_required\":true},\"id\":\"verify_terminal\",\"p\":[\"control\",\"verify_terminal\"],\"pre\":[\"branch_0\",\"branch_1\"],\"pre_mode\":\"ACTIVE_BRANCH_ONLY\",\"role\":\"checker\"}]},\"hist\":[{\"evt\":\"HANDOFF_COMPLETED\",\"from\":\"agent_a\",\"item\":\"oak_planks\",\"q\":8}],\"msg\":[{\"done\":{\"bind\":\"CHEST\",\"kind\":\"MINECRAFT_TERMINAL_CHECK\"},\"from\":\"agent_a\",\"rid\":\"req_chest_or_crafting_table_chest\",\"task\":\"craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\",\"to\":\"agent_b\"}],\"obs\":{\"active_obs\":null,\"both\":true,\"dsts\":[\"crafting_area\"],\"handoff_evidence\":{\"from\":\"agent_a\",\"item\":\"oak_planks\",\"prov\":\"MINECRAFT_LOCAL_OBSERVATION\",\"q\":8},\"inv\":[{\"item\":\"oak_planks\",\"q\":8}],\"land\":[{\"bind\":\"CHEST\",\"pos\":[1,64,-19],\"reach\":true},{\"bind\":\"CRAFTING_TABLE\",\"pos\":[-3,64,-15],\"reach\":true}],\"stns\":[\"crafting_area\"]}}\nOUTPUT\nSELF craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\nREQ -\n\nEXAMPLE P3_ALLOCATION\nUse only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.\nMODEL_INPUT\nAG agent_b\nCTX {\"dag\":{\"active\":false,\"dag_id\":\"PUBLIC_DEPOSIT_OR_BUILD\",\"e\":[[\"acquire_material\",\"handoff_material\"],[\"handoff_material\",\"branch_0\"],[\"handoff_material\",\"branch_1\"],[\"branch_0\",\"verify_terminal\"],[\"branch_1\",\"verify_terminal\"]],\"n\":[{\"id\":\"acquire_material\",\"pre\":[],\"role\":\"sender\",\"task\":\"resource.obtain(q=8,item=cobblestone)\"},{\"id\":\"handoff_material\",\"pre\":[\"acquire_material\"],\"role\":\"sender\",\"task\":\"resource.deliver(q=8,dst_role=receiver,item=cobblestone)\"},{\"id\":\"branch_0\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"deposit_item\",\"task\":\"resource.deliver(bind=DEPOSIT,q=4,dst=reserve_chest,item=cobblestone)\"},{\"id\":\"branch_1\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"place_block\",\"task\":\"build.component(bind=BUILD,q=1,item=cobblestone,site=marker_site)\"},{\"a\":{\"one_active_branch_required\":true},\"id\":\"verify_terminal\",\"p\":[\"control\",\"verify_terminal\"],\"pre\":[\"branch_0\",\"branch_1\"],\"pre_mode\":\"ACTIVE_BRANCH_ONLY\",\"role\":\"checker\"}]},\"hist\":[{\"evt\":\"HANDOFF_COMPLETED\",\"from\":\"agent_a\",\"item\":\"cobblestone\",\"q\":8}],\"msg\":[{\"done\":{\"bind\":\"DEPOSIT\",\"kind\":\"MINECRAFT_TERMINAL_CHECK\"},\"from\":\"agent_a\",\"rid\":\"req_deposit_or_build_deposit\",\"task\":\"resource.deliver(bind=DEPOSIT,q=4,dst=reserve_chest,item=cobblestone)\",\"to\":\"agent_b\"}],\"obs\":{\"active_obs\":null,\"both\":true,\"dsts\":[\"marker_site\",\"reserve_chest\"],\"handoff_evidence\":{\"from\":\"agent_a\",\"item\":\"cobblestone\",\"prov\":\"MINECRAFT_LOCAL_OBSERVATION\",\"q\":8},\"inv\":[{\"item\":\"cobblestone\",\"q\":8}],\"land\":[{\"bind\":\"DEPOSIT\",\"pos\":[-6,64,16],\"reach\":true},{\"bind\":\"BUILD\",\"pos\":[-3,64,-16],\"reach\":true}],\"stns\":[\"crafting_area\"]}}\nOUTPUT\nSELF resource.deliver(bind=DEPOSIT,q=4,dst=reserve_chest,item=cobblestone)\nREQ -\n\nCURRENT INSTANCE\nUse only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.\nMODEL_INPUT\nAG agent_b\nCTX {\"dag\":{\"active\":false,\"dag_id\":\"PUBLIC_CHEST_OR_CRAFTING_TABLE\",\"e\":[[\"acquire_material\",\"handoff_material\"],[\"handoff_material\",\"branch_0\"],[\"handoff_material\",\"branch_1\"],[\"branch_0\",\"verify_terminal\"],[\"branch_1\",\"verify_terminal\"]],\"n\":[{\"id\":\"acquire_material\",\"pre\":[],\"role\":\"sender\",\"task\":\"resource.obtain(q=8,item=oak_planks)\"},{\"id\":\"handoff_material\",\"pre\":[\"acquire_material\"],\"role\":\"sender\",\"task\":\"resource.deliver(q=8,dst_role=receiver,item=oak_planks)\"},{\"id\":\"branch_0\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\"},{\"id\":\"branch_1\",\"pre\":[\"handoff_material\"],\"ready\":true,\"role\":\"receiver\",\"skill\":\"craft_item\",\"task\":\"craft.item(bind=CRAFTING_TABLE,q=1,input=oak_planks,item=crafting_table)\"},{\"a\":{\"one_active_branch_required\":true},\"id\":\"verify_terminal\",\"p\":[\"control\",\"verify_terminal\"],\"pre\":[\"branch_0\",\"branch_1\"],\"pre_mode\":\"ACTIVE_BRANCH_ONLY\",\"role\":\"checker\"}]},\"hist\":[{\"evt\":\"HANDOFF_COMPLETED\",\"from\":\"agent_a\",\"item\":\"oak_planks\",\"q\":8}],\"msg\":[{\"done\":{\"bind\":\"CHEST\",\"kind\":\"MINECRAFT_TERMINAL_CHECK\"},\"from\":\"agent_a\",\"rid\":\"req_chest_or_crafting_table_chest\",\"task\":\"craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\",\"to\":\"agent_b\"}],\"obs\":{\"active_obs\":null,\"both\":true,\"dsts\":[\"crafting_area\"],\"handoff_evidence\":{\"from\":\"agent_a\",\"item\":\"oak_planks\",\"prov\":\"MINECRAFT_LOCAL_OBSERVATION\",\"q\":8},\"inv\":[{\"item\":\"oak_planks\",\"q\":8}],\"land\":[{\"bind\":\"CHEST\",\"pos\":[-5,64,10],\"reach\":true},{\"bind\":\"CRAFTING_TABLE\",\"pos\":[-4,64,-16],\"reach\":true}],\"stns\":[\"crafting_area\"]}}\nOUTPUT\n",
+        "prompt_sha256": "c6a341533f233a0428fba57ba4eb6da4612a517183c6500d732ccff3492af185",
+        "raw_parse_error": null,
+        "raw_parse_valid": true,
+        "raw_parsed": {
+          "peer_requests": [],
+          "self_plan": [
+            {
+              "arguments": {
+                "binding_id": "CHEST",
+                "count": 1,
+                "input": "oak_planks",
+                "item": "chest"
+              },
+              "task_path": [
+                "craft",
+                "item"
+              ]
+            }
+          ]
+        },
+        "raw_response": {
+          "api_valid_return": true,
+          "attempts": [
+            {
+              "attempt": 1,
+              "attempt_id": "b2f294150eb2ac51efa622f9fa3f2f9244249ff92dda77c24b5beecc51fb6239",
+              "cost_basis": "published_peak_rates_estimate_not_invoice",
+              "credential_source": "cc_switch_readonly",
+              "ended_utc": "2026-09-28T04:18:54.336705+00:00",
+              "endpoint": "https://api.deepseek.com/anthropic",
+              "error_kind": "transport_error",
+              "estimated_cost_usd_peak_upper": null,
+              "http_status": null,
+              "input_tokens": null,
+              "latency_ms": 150055.39654199674,
+              "provider_billable_output_tokens": null,
+              "provider_id": "06213846-98c6-4da9-bf31-9dc54f23ba24",
+              "request_body_bytes": 11012,
+              "request_body_sha256": "f5dc8532080b9e321fcddc500171b2cb67c3bdfa37703da61ef7001eb52a3d64",
+              "requested_model": "deepseek-flash",
+              "reserved_usd": 0.0137484,
+              "response_headers": {},
+              "retryable": true,
+              "returned_model": null,
+              "started_utc": "2026-09-28T04:16:24.280996+00:00",
+              "success": false,
+              "usage": {},
+              "usage_complete": false
+            },
+            {
+              "attempt": 2,
+              "attempt_id": "2aa2fa07402688402e6579620f9f2a5d7d01f4d1397fb07ec5783579fda63f49",
+              "cost_basis": "published_peak_rates_estimate_not_invoice",
+              "credential_source": "cc_switch_readonly",
+              "ended_utc": "2026-09-28T04:18:57.371632+00:00",
+              "endpoint": "https://api.deepseek.com/anthropic",
+              "error_kind": null,
+              "estimated_cost_usd_peak_upper": 0.000103932,
+              "http_status": 200,
+              "input_tokens": 3245,
+              "latency_ms": 1001.6056250024121,
+              "provider_billable_output_tokens": 28,
+              "provider_id": "06213846-98c6-4da9-bf31-9dc54f23ba24",
+              "request_body_bytes": 11012,
+              "request_body_sha256": "f5dc8532080b9e321fcddc500171b2cb67c3bdfa37703da61ef7001eb52a3d64",
+              "requested_model": "deepseek-flash",
+              "reserved_usd": 0.0137484,
+              "response_headers": {
+                "Date": "Mon, 28 Sep 2026 04:18:56 GMT"
+              },
+              "retryable": false,
+              "returned_model": "deepseek-flash",
+              "started_utc": "2026-09-28T04:18:56.369374+00:00",
+              "success": true,
+              "usage": {
+                "cache_creation_input_tokens": 0,
+                "cache_read_input_tokens": 3072,
+                "input_tokens": 173,
+                "output_tokens": 28,
+                "service_tier": "standard"
+              },
+              "usage_complete": true
+            }
+          ],
+          "cost_basis": "published_peak_rates_estimate_not_invoice",
+          "estimated_cost_usd_peak_upper": 0.000103932,
+          "input_tokens": 3245,
+          "latency_ms": 151057.00216699915,
+          "model_call_ms": 1001.6056250024121,
+          "output_tokens": 28,
+          "provider_billable_output_tokens": 28,
+          "provider_response_id": "1d58bafc-8df9-4a7f-9afa-65b075df6d69",
+          "raw_text": "SELF craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\nREQ -",
+          "request_body_bytes": 11012,
+          "request_body_sha256": "f5dc8532080b9e321fcddc500171b2cb67c3bdfa37703da61ef7001eb52a3d64",
+          "requested_model": "deepseek-flash",
+          "returned_model": "deepseek-flash",
+          "stop_reason": "end_turn",
+          "terminated_by_length_cap": false,
+          "usage": {
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 3072,
+            "input_tokens": 173,
+            "output_tokens": 28,
+            "service_tier": "standard"
+          },
+          "usage_complete": true,
+          "visible_text_utf8_bytes": 65
+        },
+        "raw_selected_binding_id": "CHEST",
+        "raw_text": "SELF craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)\nREQ -",
+        "selected_binding_id": "CHEST",
+        "stage": "receiver_after_request",
+        "syntax_type_role_valid": true
+      }
+    ],
+    "delivered_request": {
+      "arguments": {
+        "count": 1,
+        "input": "oak_planks",
+        "item": "chest"
+      },
+      "binding_id": "CHEST",
+      "completion_condition": {
+        "binding_id": "CHEST",
+        "kind": "MINECRAFT_TERMINAL_CHECK"
+      },
+      "from_agent_id": "agent_a",
+      "request_id": "req_chest_or_crafting_table_chest",
+      "task_path": [
+        "craft",
+        "item"
+      ],
+      "to_agent_id": "agent_b"
+    },
+    "delivered_request_binding_id": "CHEST",
+    "delivered_request_match": true,
+    "failure_phase": null,
+    "fallback_used": false,
+    "legal_public_branch": true,
+    "model_calls": 2,
+    "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00",
+    "planning_complete": true,
+    "raw_selected_binding_id": "CHEST",
+    "realization_conflict": false,
+    "receiver_delivery_representation": "WIRE_DSL_DECODED_TO_CANONICAL_OBJECT",
+    "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00-B0-R0",
+    "schema_version": "gcp-api-request-transfer-trace-v0.1",
+    "selected_binding_id": "CHEST",
+    "semantic_cluster_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00-B0",
+    "syntax_type_role_valid": true,
+    "time_to_commitment_ms": 154239.31620900112,
+    "true_binding_match": true,
+    "wire_bytes": 66,
+    "wire_request_sha256": "1ce31eab037fd0bf9e4e5ce7effb77ce9f57b979e4f5e33dba56f7465955e790",
+    "wire_request_text": "REQ agent_b craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)",
+    "wire_request_utf8_bytes": 66
+  }
+}

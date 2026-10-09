@@ -1,0 +1,17 @@
+{
+  "checkpoint_and_pair_receipt_sha256": "fc40574e2d4333f2bae94dc7a0043d3c74f0e7ef93f2f9c8b8de7f50ec1c8ce0",
+  "contract_sha256": "a554a7db94799a6d0aa410d7519a20515cab00cadd90b08e37a6fdfa66a6b5fa",
+  "dev_complete_sha256": "09933c341df4e0b08fb55f36f9d2972e4d251292bdc04770ee337be69134bd37",
+  "dev_gate_sha256": {
+    "fresh": "d5533477fc1fc92b1333b4d6994111e426b2601a6e225c2a8602077891cae75d",
+    "replay": "f435b036625b1e43d66aeb19b259fc05cc1ce76eb8dd239a50e6019f664612bc"
+  },
+  "formal_blocks": 80,
+  "formal_role_instances": 320,
+  "new_budget_usd": 20,
+  "no_dev_overlap": true,
+  "old_closeout_sha256": "aea2d733691fdff90f85086470489055d5f9fbf0bb87699b1a62be506c25175a",
+  "projected_5184_calls_plus15pct_usd": 0.9407413770432601,
+  "semantic_accuracy_gate": false,
+  "status": "PASS"
+}

@@ -1,0 +1,10 @@
+claim,suite,clusters,seeds,role_views,unit
+Interface quality,Representation quality lock,128,3,2,semantic cluster
+Interface cost,Same-card timing,40,3,2,semantic cluster
+Request binding,Request intervention,160,3,2,semantic cluster
+Commitment horizon,Held-out templates,80,3,2,semantic cluster
+Compositional binding,Unseen cross-products,60,3,2,semantic cluster
+Backend specialization,Matched backend quality,128,3,2,semantic cluster
+Backend timing,Matched same-card timing,40,3,2,semantic cluster
+Structure visibility,Topology-stratified diagnostic,96,3,2,semantic cluster
+Private-information fusion,Goal-by-Capability pairs,40,3,2,semantic cluster (20 pair blocks)

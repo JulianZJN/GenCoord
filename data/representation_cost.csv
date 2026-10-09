@@ -1,0 +1,4 @@
+method,success_pct,calls_mean,input_tokens_mean,output_tokens_mean,wire_bytes_mean,call_p50_ms,call_p95_ms,ttc_p50_ms,ttc_p95_ms,executor_p50_ms,executor_p95_ms,episode_p50_ms,episode_p95_ms
+Short DSL GCP (0.8B),100.0,2.0,949.1,78.6,76.275,1142.8,1659.9,2265.6,2615.7,22614.2,24858.5,24859.0,27058.7
+JSON GCP (0.8B),100.0,2.0,1154.725,267.625,303.425,3531.1,5940.7,7067.4,7864.0,22620.5,24845.3,29941.8,31818.6
+Controlled multi-turn free-form + structured commit (0.8B),100.0,2.5,1585.213,265.8,1061.05,3273.5,3745.6,7132.3,7856.9,22612.9,24854.4,30085.1,31916.3

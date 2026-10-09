@@ -1,0 +1,59 @@
+{
+  "local_0.8B": {
+    "clusters": 40,
+    "point": {
+      "wire_reduction_vs_free_form": 0.9281,
+      "median_ttc_reduction_vs_free_form": 0.6824,
+      "output_token_ratio_json": 3.4049,
+      "output_token_ratio_free_form": 3.3817,
+      "median_ttc_ratio_json": 3.1195,
+      "median_ttc_ratio_free_form": 3.1481
+    },
+    "ci95": {
+      "wire_reduction_vs_free_form": [
+        0.9265,
+        0.9297
+      ],
+      "median_ttc_reduction_vs_free_form": [
+        0.6788,
+        0.6874
+      ],
+      "output_token_ratio_json": [
+        3.3695,
+        3.4406
+      ],
+      "output_token_ratio_free_form": [
+        3.3449,
+        3.4178
+      ],
+      "median_ttc_ratio_json": [
+        3.0763,
+        3.1601
+      ],
+      "median_ttc_ratio_free_form": [
+        3.1137,
+        3.1988
+      ]
+    },
+    "seed": 20261008
+  },
+  "deepseek": {
+    "clusters": 29,
+    "pairs": 64,
+    "point": {
+      "mean_ttc_reduction": 0.304,
+      "median_ttc_reduction": 0.2076
+    },
+    "ci95": {
+      "mean_ttc_reduction": [
+        0.2285,
+        0.3861
+      ],
+      "median_ttc_reduction": [
+        0.1444,
+        0.3287
+      ]
+    },
+    "seed": 20261007
+  }
+}

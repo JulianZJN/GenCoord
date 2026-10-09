@@ -2,20 +2,18 @@
 
 # GenCoord
 
-### Skill-Path Commitments under Private Information
+### Executable Commitments for Embodied LLM Agents under Private Information
 
-**Executable coordination for embodied teams with distributed private information.**
+**Make the division of work the message.**
 
 <p>
-  <a href="https://arxiv.org/abs/2608.22055"><b>arXiv</b></a>
+  <a href="https://arxiv.org/abs/2608.22055"><b>Paper</b></a>
   &nbsp;·&nbsp;
   <a href="docs/GenCoord_preprint.pdf"><b>PDF</b></a>
   &nbsp;·&nbsp;
-  <a href="paper/"><b>LaTeX Source</b></a>
+  <a href="paper/"><b>LaTeX</b></a>
   &nbsp;·&nbsp;
-  <a href="paper/anc/source_data/"><b>Evidence</b></a>
-  &nbsp;·&nbsp;
-  <a href="docs/REPRODUCIBILITY.md"><b>Reproducibility</b></a>
+  <a href="data/"><b>Data</b></a>
   &nbsp;·&nbsp;
   <a href="#citation"><b>Citation</b></a>
 </p>
@@ -23,10 +21,8 @@
 <p>
   <a href="https://arxiv.org/abs/2608.22055"><img src="https://img.shields.io/badge/arXiv-2608.22055-b31b1b.svg?style=flat-square" alt="arXiv:2608.22055"></a>
   <a href="docs/GenCoord_preprint.pdf"><img src="https://img.shields.io/badge/paper-PDF-555555.svg?style=flat-square" alt="Paper PDF"></a>
-  <a href="paper/"><img src="https://img.shields.io/badge/source-LaTeX-008080.svg?style=flat-square" alt="LaTeX source"></a>
-  <a href="paper/anc/source_data/"><img src="https://img.shields.io/badge/artifact-canonical%20evidence-6f42c1.svg?style=flat-square" alt="Canonical evidence"></a>
-  <img src="https://img.shields.io/badge/environment-Minecraft-62b47a.svg?style=flat-square" alt="Minecraft environment">
-  <img src="https://img.shields.io/badge/research-multi--agent%20systems-1f6feb.svg?style=flat-square" alt="Multi-agent systems">
+  <a href="data/"><img src="https://img.shields.io/badge/data-appendix%20source-6f42c1.svg?style=flat-square" alt="Appendix source data"></a>
+  <img src="https://img.shields.io/badge/environment-Minecraft-62b47a.svg?style=flat-square" alt="Minecraft">
 </p>
 
 **Peng He**<sup>1,&#42;</sup>, **Junning Zhu**<sup>2,&#42;</sup>, **Haohan Yuan**<sup>3</sup>, **Jianpeng Liang**<sup>4</sup>  
@@ -66,147 +62,80 @@
 </div>
 
 <p align="center">
-  <img src="assets/teaser.png" width="100%" alt="GenCoord resolves sender-local and peer-local task consequences into a shared executable commitment before grounded Minecraft execution.">
+  <img src="assets/teaser.png" width="100%" alt="GenCoord overview: a SELF+REQ proposal pairs the sender's work with the partner's continuation; forward and feedback routes resolve it into a commitment that is executed and checked in Minecraft.">
 </p>
 <p align="center">
-  <sub><b>GenCoord in one view.</b> Distributed private facts become a shared executable commitment, then flow through grounded execution and terminal-state verification.</sub>
+  <sub>A proposal pairs the sender's own work with the continuation it asks of its partner. Compatible proposals become commitments: the sender owes delivery, and the receiver owes its work once receipt is verified.</sub>
 </p>
 
-> **GenCoord turns distributed private facts into executable, multi-step commitments that preserve their task meaning across communication, resolution, grounding, execution, and verification.**
+Embodied LLM agents that each hold private task information must agree on who does what. In dialogue, models spend inference writing and reading messages before anyone acts. **GenCoord sends the division of work itself:** each proposal names the sender's skill path and the partner's continuation, so the receiver can check and execute it directly, and the model's job reduces to choosing and revising the work.
 
-<p align="center">
-  <code>private fact → β(z) → SELF + REQ → resolved commitment → grounded skills → verified joint action</code>
-</p>
+## How it works
 
-## Overview
-
-Embodied teams frequently distribute the decisive facts of a joint route across agents: one agent sees the goal, another knows the relevant workcell capability, and the team must bind actor, handoff item, destination, and continuation into one coordinated plan.
-
-GenCoord makes that execution-relevant binding explicit. A local Qwen3.5-0.8B model composes role-local paths in a typed, multi-step `SELF+REQ` schema. Bounded `ACCEPT` / `REJECT` / `COUNTER` feedback resolves peer-local capability information, and the resolved commitment is parsed, schema-checked, canonically materialized, compiled to Mineflayer skills, executed, and verified through handoff and terminal state.
-
-| Distributed private facts | Executable commitment | Verified joint action |
+| Propose | Commit | Execute and check |
 | --- | --- | --- |
-| Goal, capability, inventory, and route evidence stay with the agents that observe them. | One typed `SELF+REQ` object binds actor, handoff item, destination, and continuation. | The resolved object drives canonical materialization, skill compilation, grounded execution, handoff, and terminal verification. |
-
-## Headline results
-
-| Capability resolution | Commitment horizon | Communication efficiency |
-| :---: | :---: | :---: |
-| **50% → 100%** | **91.3% → 98.1%** | **92.8% less peer traffic** |
-| Bounded capability feedback closes paired local ambiguity across **three independently trained seeds**. | Multi-step commitments raise held-out-template success while reducing model decisions from **2.91 → 1.98 per episode** (**−32%**). | Short DSL preserves **128/128** closed-loop semantic clusters and reduces median time-to-commitment by **68.2%** versus controlled free-form. |
-
-Paired counterfactual interventions isolate a bidirectional content-to-route mechanism: changing the injected task consequence while holding the world, call schedule, and executor fixed redirects requester revision and receiver execution exactly along the corresponding route.
-
-## The commitment interface
+| Each agent writes a `SELF+REQ` proposal in **Short DSL**: its own skill path and the continuation it requests from its partner. | When the paths agree on the handoff and their dependencies are acyclic, they resolve into a conditional commitment. Structured feedback lets the requester revise the actor and handoff. | Skills run in Minecraft. Inventory and world readback check **fulfillment** of the commitment separately from **success on the original task**. |
 
 ```text
 SELF resource.obtain(q=4,item=oak_planks)
   > resource.deliver(q=4,item=oak_planks,to=agent_b)
-
-REQ agent_b craft.item(q=1,input=oak_planks,item=crafting_table)
+REQ  agent_b craft.item(q=1,input=oak_planks,item=crafting_table)
   > resource.deliver(q=1,item=crafting_table,dst=order_chest)
 ```
 
-The same schema carries proposal-time routes, resolved role-local obligations, and the executable object consumed by the grounded stack. Short DSL presents this structure directly as the agent-to-agent executable interface.
+Because a complete request already specifies the receiver's work, a deterministic receiver can realize it without another model call. Models choose; skills realize.
 
-## Release
+## Results
 
-The repository packages the complete paper, supplementary material, final figures, canonical evidence, and deterministic builders into one research release.
-
-| Asset | Included material |
+| Setting | Finding |
 | --- | --- |
-| **Preprint** | Combined paper and supplementary PDF. |
-| **Paper source** | Main paper, supplement, references, venue-support files, and generated LaTeX tables. |
-| **Figures** | Final paper figures used throughout the manuscript and supplement. |
-| **Canonical evidence** | Source values, episode metrics, paired comparisons, trace registry, source ledger, and experiment summaries. |
-| **Deterministic builder** | Standard-library Python pipeline for rebuilding and validating the released E1/E2 tables. |
+| **Local 0.8B agents** | Same task success as controlled free-form communication (128/128), with **68.2%** lower median commitment time and **92.8%** less peer traffic. |
+| **Same-field JSON** | Output length and delay close to free-form: the amount generated matters even when messages are structured. |
+| **Hosted DeepSeek** | Both protocols complete nearly all tasks (768/768 vs. 766/768); dialogue generates **2.8×** the output tokens, and Short DSL cuts mean commitment time by **30.4%**. |
+| **Multistep commitments** | Held-out-template success rises from **91.3%** to **98.1%**, while online decisions fall from **2.91** to **1.98** per episode. |
 
-## Quick start
-
-```bash
-git clone https://github.com/JulianZJN/GenCoord.git
-cd GenCoord
-
-# Build the paper and supplement
-make main
-make supplement
-make combined
-
-# Rebuild and verify the canonical evidence
-make evidence
-make verify-evidence
-```
+<p align="center">
+  <img src="assets/results.png" width="100%" alt="Communication cost relative to Short DSL for local and hosted models, and the effect of multistep commitments on held-out success and decisions.">
+</p>
 
 <details>
-<summary><b>Build requirements and outputs</b></summary>
-
-- A recent TeX Live distribution with PDFLaTeX and BibTeX.
-- Python 3.9 or newer; the evidence builder uses the Python standard library.
-- `pdfunite` for the combined preprint target.
-
-```text
-paper/main.pdf
-paper/supplement.pdf
-build/GenCoord_preprint.pdf
-```
-
-The build produces a 9-page main paper, a 16-page supplement, and a 25-page combined preprint.
-
+<summary><b>Task families</b></summary>
+<br>
+<p align="center">
+  <img src="assets/tasks.png" width="100%" alt="Four task families: Destination, Recipe, Allocation, and Active Branch.">
+</p>
+Eight templates in four families vary what a private fact changes: the destination, the post-handoff recipe, the assigned remaining work, or the downstream continuation.
 </details>
 
-The arXiv-oriented source order is recorded in [`paper/00README.json`](paper/00README.json).
-
-## Reproducibility
-
-The deterministic evidence pipeline validates the experimental schema, conditions, episode counts, semantic-cluster unit, training seeds, parse and grounding validity, fallback count, and selected paired-comparison deltas before emitting the released tables and canonical data.
-
-```bash
-make evidence
-make verify-evidence
-```
-
-The consistency target rebuilds every generated output and verifies exact agreement with the tracked research artifacts. Full commands and generated-file maps are documented in [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
-
-## Repository structure
+## Repository
 
 ```text
-.
-├── README.md
-├── CITATION.cff
-├── Makefile
-├── assets/
-│   ├── teaser.png
-│   └── affiliations/
-├── docs/
-│   ├── GenCoord_preprint.pdf
-│   └── REPRODUCIBILITY.md
-└── paper/
-    ├── main.tex
-    ├── supplement.tex
-    ├── references.bib
-    ├── figures/
-    ├── tables/
-    └── anc/
-        ├── scripts/build_e1e2_tables.py
-        └── source_data/
+paper/    preprint source: main text and appendix
+data/     appendix source data (guide: data/README.md)
+docs/     compiled preprint
+assets/   README figures, affiliation marks
+```
+
+Build the preprint with a recent TeX Live (pdfLaTeX and latexmk):
+
+```bash
+make            # writes build/GenCoord_preprint.pdf
 ```
 
 ## Citation
 
-The public preprint is available as [arXiv:2608.22055](https://arxiv.org/abs/2608.22055). Citation-ready metadata is also provided in [`CITATION.cff`](CITATION.cff):
-
 ```bibtex
 @misc{he2026gencoord,
-  title        = {GenCoord: Skill-Path Commitments under Private Information},
-  author       = {Peng He and Junning Zhu and Haohan Yuan and Jianpeng Liang},
-  year         = {2026},
-  eprint       = {2608.22055},
+  title         = {GenCoord: Executable Commitments for Embodied LLM Agents under Private Information},
+  author        = {Peng He and Junning Zhu and Haohan Yuan and Jianpeng Liang},
+  year          = {2026},
+  eprint        = {2608.22055},
   archivePrefix = {arXiv},
-  primaryClass = {cs.AI},
-  url          = {https://arxiv.org/abs/2608.22055}
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2608.22055}
 }
 ```
 
-## Acknowledgements and license
+## License
 
-GenCoord uses Minecraft as its embodied evaluation environment and compiles validated commitments to Mineflayer skills. Original project code and build glue are MIT-licensed. Manuscript source, figures, evidence, institutional marks, venue-support files, and third-party materials follow the path-level terms recorded in [`LICENSE`](LICENSE), [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md), and [`assets/affiliations/SOURCES.md`](assets/affiliations/SOURCES.md).
+The `Makefile` and `data/cost_contrasts/cost_intervals.py` are MIT-licensed. The manuscript, figures, data, institutional marks, and bundled venue files follow the terms in [`LICENSE`](LICENSE) and [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).

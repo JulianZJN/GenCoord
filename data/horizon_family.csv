@@ -1,0 +1,5 @@
+family,multi_step_pct,single_step_pct,delta_pp
+Destination,100.0,100.0,0.0
+Recipe,100.0,100.0,0.0
+Allocation,92.5,83.33333333333334,9.166666666666657
+Active branch,100.0,81.66666666666667,18.33333333333333

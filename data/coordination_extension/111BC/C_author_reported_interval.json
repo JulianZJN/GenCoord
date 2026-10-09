@@ -1,0 +1,12 @@
+{
+  "comparison": "correct minus legal alternative feedback",
+  "estimate_pp": 87.29166666666667,
+  "ci_percent": 95,
+  "lower_pp": 84.4,
+  "upper_pp": 90.0,
+  "units": 40,
+  "resamples": 10000,
+  "source": "User-provided final experiment summary in Round2 instructions, 2026-10-07",
+  "point_verified_from": "C_records.csv",
+  "bootstrap_recomputed": false
+}

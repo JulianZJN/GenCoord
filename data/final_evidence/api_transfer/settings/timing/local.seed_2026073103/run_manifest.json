@@ -1,0 +1,625 @@
+{
+  "api_model": "deepseek-flash",
+  "assigned": [
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_A_OR_B-P00",
+      "record_id": "2e23df1612fcc8bc35874b23",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_A_OR_B-P00-B0-R0",
+      "template_id": "CHEST_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_A_OR_B-P00",
+      "record_id": "d8d238dcc88b10b933bbf0f1",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_A_OR_B-P00-B0-R1",
+      "template_id": "CHEST_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_A_OR_B-P00",
+      "record_id": "351632c7395cab8127d94213",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_A_OR_B-P00-B1-R0",
+      "template_id": "CHEST_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_A_OR_B-P00",
+      "record_id": "17b00058fea50854abea9973",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_A_OR_B-P00-B1-R1",
+      "template_id": "CHEST_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_A_OR_B-P01",
+      "record_id": "6de864985f45d6d3c448c106",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_A_OR_B-P01-B0-R0",
+      "template_id": "CHEST_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_A_OR_B-P01",
+      "record_id": "d27fa92fc288f1cb15c30dc1",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_A_OR_B-P01-B0-R1",
+      "template_id": "CHEST_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_A_OR_B-P01",
+      "record_id": "e36e336ae62801e7dffa2586",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_A_OR_B-P01-B1-R0",
+      "template_id": "CHEST_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_A_OR_B-P01",
+      "record_id": "c94fe4cef53a5bded99b0484",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_A_OR_B-P01-B1-R1",
+      "template_id": "CHEST_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P00",
+      "record_id": "e45e927cf7dc10ed14a72abf",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-BUILD_SITE_A_OR_B-P00-B0-R0",
+      "template_id": "BUILD_SITE_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P00",
+      "record_id": "ab737b2d09f5a21cb11e44ce",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-BUILD_SITE_A_OR_B-P00-B0-R1",
+      "template_id": "BUILD_SITE_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P00",
+      "record_id": "76fe0dc7fac02662fcb5bd72",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-BUILD_SITE_A_OR_B-P00-B1-R0",
+      "template_id": "BUILD_SITE_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P00",
+      "record_id": "32d94e666ebf142e4b94d716",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-BUILD_SITE_A_OR_B-P00-B1-R1",
+      "template_id": "BUILD_SITE_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P01",
+      "record_id": "956894ab328c12e5d92c48c3",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-BUILD_SITE_A_OR_B-P01-B0-R0",
+      "template_id": "BUILD_SITE_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P01",
+      "record_id": "27de2260b47f224b4abca4ba",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-BUILD_SITE_A_OR_B-P01-B0-R1",
+      "template_id": "BUILD_SITE_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P01",
+      "record_id": "ed2254ab5fc5ecce1f8bf6f7",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-BUILD_SITE_A_OR_B-P01-B1-R0",
+      "template_id": "BUILD_SITE_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-BUILD_SITE_A_OR_B-P01",
+      "record_id": "14895d163b7d67a285447893",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-BUILD_SITE_A_OR_B-P01-B1-R1",
+      "template_id": "BUILD_SITE_A_OR_B"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-PLANKS_OR_STICKS-P00",
+      "record_id": "e2ddd08c1462723ab7308288",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-PLANKS_OR_STICKS-P00-B0-R0",
+      "template_id": "PLANKS_OR_STICKS"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-PLANKS_OR_STICKS-P00",
+      "record_id": "4834ab98eba0bd05853be8b1",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-PLANKS_OR_STICKS-P00-B0-R1",
+      "template_id": "PLANKS_OR_STICKS"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-PLANKS_OR_STICKS-P00",
+      "record_id": "e0393d700b324e76ca237d46",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-PLANKS_OR_STICKS-P00-B1-R0",
+      "template_id": "PLANKS_OR_STICKS"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-PLANKS_OR_STICKS-P00",
+      "record_id": "868d0f4f88da1c9b96414797",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-PLANKS_OR_STICKS-P00-B1-R1",
+      "template_id": "PLANKS_OR_STICKS"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-PLANKS_OR_STICKS-P01",
+      "record_id": "37b5e7ae2dab4dc1e74e8231",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-PLANKS_OR_STICKS-P01-B0-R0",
+      "template_id": "PLANKS_OR_STICKS"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-PLANKS_OR_STICKS-P01",
+      "record_id": "e4238fd7cca440b5238ced12",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-PLANKS_OR_STICKS-P01-B0-R1",
+      "template_id": "PLANKS_OR_STICKS"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-PLANKS_OR_STICKS-P01",
+      "record_id": "26f884122b69c0e41e79c1d1",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-PLANKS_OR_STICKS-P01-B1-R0",
+      "template_id": "PLANKS_OR_STICKS"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-PLANKS_OR_STICKS-P01",
+      "record_id": "a192e9b3a0a93207de4cd13b",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-PLANKS_OR_STICKS-P01-B1-R1",
+      "template_id": "PLANKS_OR_STICKS"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00",
+      "record_id": "bf0cd9d03ee2a24d8cc42511",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00-B0-R0",
+      "template_id": "CHEST_OR_CRAFTING_TABLE"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00",
+      "record_id": "e75412aa051e400eeac48e2c",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00-B0-R1",
+      "template_id": "CHEST_OR_CRAFTING_TABLE"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00",
+      "record_id": "c16cfecc16ba704ca7ccedec",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00-B1-R0",
+      "template_id": "CHEST_OR_CRAFTING_TABLE"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00",
+      "record_id": "18734607b189f2b247b8bcc9",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P00-B1-R1",
+      "template_id": "CHEST_OR_CRAFTING_TABLE"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P01",
+      "record_id": "643c429e65d8b6570f75a219",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P01-B0-R0",
+      "template_id": "CHEST_OR_CRAFTING_TABLE"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P01",
+      "record_id": "3e3a3bec5da601dd614fd6b4",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P01-B0-R1",
+      "template_id": "CHEST_OR_CRAFTING_TABLE"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P01",
+      "record_id": "ca9f41eabaaecb7a3b30bd1f",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P01-B1-R0",
+      "template_id": "CHEST_OR_CRAFTING_TABLE"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P01",
+      "record_id": "8ebe3a9fc92dc08ee277c47b",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-CHEST_OR_CRAFTING_TABLE-P01-B1-R1",
+      "template_id": "CHEST_OR_CRAFTING_TABLE"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P00",
+      "record_id": "357c908baef0fba6ce64957d",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DEPOSIT_OR_BUILD-P00-B0-R0",
+      "template_id": "DEPOSIT_OR_BUILD"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P00",
+      "record_id": "18a0633805c2da93e96f587c",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DEPOSIT_OR_BUILD-P00-B0-R1",
+      "template_id": "DEPOSIT_OR_BUILD"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P00",
+      "record_id": "5588017af1d29446e2c17422",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DEPOSIT_OR_BUILD-P00-B1-R0",
+      "template_id": "DEPOSIT_OR_BUILD"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P00",
+      "record_id": "d07690ce5e74fa6bcfb2e0b1",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DEPOSIT_OR_BUILD-P00-B1-R1",
+      "template_id": "DEPOSIT_OR_BUILD"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P01",
+      "record_id": "e1d8f11b85aa5482d6765e9d",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DEPOSIT_OR_BUILD-P01-B0-R0",
+      "template_id": "DEPOSIT_OR_BUILD"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P01",
+      "record_id": "87106c784a0b46ced9195f54",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DEPOSIT_OR_BUILD-P01-B0-R1",
+      "template_id": "DEPOSIT_OR_BUILD"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P01",
+      "record_id": "aba2955c87731ff48610ce4f",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DEPOSIT_OR_BUILD-P01-B1-R0",
+      "template_id": "DEPOSIT_OR_BUILD"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DEPOSIT_OR_BUILD-P01",
+      "record_id": "82915227e9f16bc41a77c914",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DEPOSIT_OR_BUILD-P01-B1-R1",
+      "template_id": "DEPOSIT_OR_BUILD"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P00",
+      "record_id": "15a36202d6314a92131391d1",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DUAL_BUILD_ALLOCATION-P00-B0-R0",
+      "template_id": "DUAL_BUILD_ALLOCATION"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P00",
+      "record_id": "1089d27cbda78e00683f99e6",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DUAL_BUILD_ALLOCATION-P00-B0-R1",
+      "template_id": "DUAL_BUILD_ALLOCATION"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P00",
+      "record_id": "1990bb916be11aa4bcccc6d6",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DUAL_BUILD_ALLOCATION-P00-B1-R0",
+      "template_id": "DUAL_BUILD_ALLOCATION"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P00",
+      "record_id": "224a3d634bd5a874aef2ff93",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DUAL_BUILD_ALLOCATION-P00-B1-R1",
+      "template_id": "DUAL_BUILD_ALLOCATION"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P01",
+      "record_id": "9228cd0d82638cb0f4feff18",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DUAL_BUILD_ALLOCATION-P01-B0-R0",
+      "template_id": "DUAL_BUILD_ALLOCATION"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P01",
+      "record_id": "a79245a84d96ddafd075ec03",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DUAL_BUILD_ALLOCATION-P01-B0-R1",
+      "template_id": "DUAL_BUILD_ALLOCATION"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P01",
+      "record_id": "e82263f37ec30051d98058f3",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DUAL_BUILD_ALLOCATION-P01-B1-R0",
+      "template_id": "DUAL_BUILD_ALLOCATION"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-DUAL_BUILD_ALLOCATION-P01",
+      "record_id": "6b5d1bea731fce061d853bd3",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-DUAL_BUILD_ALLOCATION-P01-B1-R1",
+      "template_id": "DUAL_BUILD_ALLOCATION"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-REMAINING_TERMINAL-P00",
+      "record_id": "27b0e14fc879afe527319b2c",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-REMAINING_TERMINAL-P00-B0-R0",
+      "template_id": "REMAINING_TERMINAL"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-REMAINING_TERMINAL-P00",
+      "record_id": "d3d1978d21f05c3990278db9",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-REMAINING_TERMINAL-P00-B0-R1",
+      "template_id": "REMAINING_TERMINAL"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-REMAINING_TERMINAL-P00",
+      "record_id": "605a8b0d54ee77d80c5df52c",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-REMAINING_TERMINAL-P00-B1-R0",
+      "template_id": "REMAINING_TERMINAL"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-REMAINING_TERMINAL-P00",
+      "record_id": "c8aa7c4fa70a91d2c037f9bd",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-REMAINING_TERMINAL-P00-B1-R1",
+      "template_id": "REMAINING_TERMINAL"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-REMAINING_TERMINAL-P01",
+      "record_id": "054787460abc840e302ae7f7",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-REMAINING_TERMINAL-P01-B0-R0",
+      "template_id": "REMAINING_TERMINAL"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-REMAINING_TERMINAL-P01",
+      "record_id": "62470c550d62d4ce795e410a",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-REMAINING_TERMINAL-P01-B0-R1",
+      "template_id": "REMAINING_TERMINAL"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-REMAINING_TERMINAL-P01",
+      "record_id": "0f4bb1f0a62474f8ec799616",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-REMAINING_TERMINAL-P01-B1-R0",
+      "template_id": "REMAINING_TERMINAL"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-REMAINING_TERMINAL-P01",
+      "record_id": "6a3d15f9c05f79efff9000a2",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-REMAINING_TERMINAL-P01-B1-R1",
+      "template_id": "REMAINING_TERMINAL"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P00",
+      "record_id": "36ff27b00cc637a36beb8f2e",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-ACTIVE_ORDER_BRANCH-P00-B0-R0",
+      "template_id": "ACTIVE_ORDER_BRANCH"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P00",
+      "record_id": "9a76f26f0a6dd2d11379f09d",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-ACTIVE_ORDER_BRANCH-P00-B0-R1",
+      "template_id": "ACTIVE_ORDER_BRANCH"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P00",
+      "record_id": "e0c0c057089341e6c7e01614",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-ACTIVE_ORDER_BRANCH-P00-B1-R0",
+      "template_id": "ACTIVE_ORDER_BRANCH"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P00",
+      "record_id": "9eb829e993e591e06aec44f4",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-ACTIVE_ORDER_BRANCH-P00-B1-R1",
+      "template_id": "ACTIVE_ORDER_BRANCH"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P01",
+      "record_id": "653452f78db13256effcd392",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-ACTIVE_ORDER_BRANCH-P01-B0-R0",
+      "template_id": "ACTIVE_ORDER_BRANCH"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P01",
+      "record_id": "44d2febe6393dca02af2a4a5",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-ACTIVE_ORDER_BRANCH-P01-B0-R1",
+      "template_id": "ACTIVE_ORDER_BRANCH"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P01",
+      "record_id": "bb76eb3eed136dc6d3816ccd",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-ACTIVE_ORDER_BRANCH-P01-B1-R0",
+      "template_id": "ACTIVE_ORDER_BRANCH"
+    },
+    {
+      "backend": "local",
+      "condition": "E2E_TRUE",
+      "pair_id": "API-TEST-ACTIVE_ORDER_BRANCH-P01",
+      "record_id": "45f8eba371d4ff2a50cb8665",
+      "repeat": "2026073103",
+      "role_instance_id": "API-TEST-ACTIVE_ORDER_BRANCH-P01-B1-R1",
+      "template_id": "ACTIVE_ORDER_BRANCH"
+    }
+  ],
+  "backend": "local",
+  "clusters_sha256": "dc337f3a936f4e2554fbf206a13c3fe08f9cb6f33afc8c286bf76c73b05b1c34",
+  "codebook_sha256": "d2a0f8ee47d566695993d56e6bf972c3bad04efef5cd79d288bb86d07db3d0bf",
+  "config_sha256": "c20f181fee4bc4d425d6ac8644f168982e8d23aa353a3b910f45aa2266ab9907",
+  "examples_sha256": "e5b883361ed626e5d64ef048c7ddcd7f0505e8b3a6817bc25f12e4818448c788",
+  "local_checkpoint_tree_sha256": "9952639ac5e6a54d8be0cbed82fbe119d1c070926d9a546bf17e64a4dea952f4",
+  "local_max_tokens": 128,
+  "max_tokens": 8192,
+  "model_path": "reports/gcp_sequence/compact_representation/v0.3/training/runs/dsl.seed_2026073103/final_checkpoint",
+  "output_config": {
+    "effort": "high"
+  },
+  "phase": "timing",
+  "physical_execution_required": false,
+  "planning_workers": 1,
+  "schema_version": "gcp-transfer-run-v0.3",
+  "sources": {
+    "configs/gcp_api_request_transfer_formal_v0.3.json": "c20f181fee4bc4d425d6ac8644f168982e8d23aa353a3b910f45aa2266ab9907",
+    "configs/gcp_api_request_transfer_nonthinking_v0.2.json": "1aaa70abc422200d9e275793c7d51a5bf32771d5749d4b43d0e765980c54b04f",
+    "configs/vanilla_gate2_server.json": "d8254cc91b408040ba09b60d4eea5eaf3836fca5e8a12bfb2f6d9c358ca21390",
+    "scripts/analyze_phase96_formal_v03.py": "5d4fef029df237386a13454dca735da228e43252bd9857c546d3e061703aa659",
+    "scripts/build_gcp_api_request_transfer.py": "297d296a57c93f114c67514f87f725561de97861b46a604f64ec704bc731844b",
+    "scripts/drive_phase96_formal_local_v03.py": "e147479d316a217cd8ec983b25b048337c7060dd3afc4ffc17845a68b6001044",
+    "scripts/launch_phase96_formal_hpc_v03.sh": "5fd476a89a551948117900bb33aa3fece889a30cf2c21b979b19665ea748cf73",
+    "scripts/run_gcp_api_request_transfer.py": "07520a478d46d9af6aff6b3e88511dcfff7783cc4f0410cd98ec914a6b170487",
+    "scripts/run_gcp_dual_track_live_episode.js": "d0ba5588054d4c341135563355a82b61d9b6c7bd606eb1413de45e42e7d35646",
+    "scripts/run_gcp_lang_exec_live_table_worker.py": "acaed7d5b12311571ecb6a61dd48e09461407b00ef8b9c4724a0aca7ccadd10f",
+    "scripts/run_phase96_formal_v03.py": "aef04f26fe27809c6e9d3deae29fe9845efeaa868c98a1f9cd4832786471f724",
+    "scripts/run_phase96_nonthinking_dev.py": "1ed9a1cc28978dfaf8f23076313772c841f6464a7d68ba64cb1c525ee91d457b",
+    "scripts/verify_gcp_api_transfer_terminal.js": "b8cd0d5a8570ebf7763b80986ff18c8d9eaacb1e8d4098d8fc1463e5788671c3",
+    "src/executor/vanilla_episode_runner.js": "cc0574e6faa2d0cb91ea6048ce43263e37b51d5cae4915ffcda7d358df9f5ead",
+    "src/executor/vanilla_server_harness.js": "7afce2586b095d14c04d0b74552b394073d5426259cfcfbf410221567771e7f6",
+    "src/gcp_sequence/api_request_transfer.py": "4b13ef845af1cca96e4587f94c8b80da26a55c7ca82436125777d681270166e0",
+    "src/gcp_sequence/api_text_generator.py": "e8d62f908f5dc39d612cd6188e7304698c789b2368f2f65452e7c6e4fc7fa4f7",
+    "src/gcp_sequence/api_text_generator_nonthinking_v02.py": "bad38b8d33a7449667973c6027090cf920d146711879cf5bd0df4de749007aad",
+    "src/gcp_sequence/compact_representation.py": "8251ba04446c56d0c6d46ed2b4d042e320240cec88829a2368db2d49b1288f8c",
+    "src/gcp_sequence/dual_track_baselines.py": "40068e087825fd13532ecf32b78ba4b6e2540052c2ed1d52ba69531e62886959",
+    "src/gcp_sequence/dual_track_live_mechanics.js": "119df751d8e492ccae663108be74e5e64f6337be968ea7e5ae380175ad7b8419",
+    "src/gcp_sequence/local_causal_generator.py": "c3c048c5a22965c86ff3a05d79d832722d88942f085e766beaca2921c27c2a3d",
+    "src/gcp_sequence/peer_request_tasks.py": "3fa3a943157045af5d9f7b5221628ff95d20789eeaa0a7946c58f79c51cc2786"
+  },
+  "thinking": {
+    "type": "disabled"
+  }
+}

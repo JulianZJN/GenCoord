@@ -1,0 +1,5 @@
+condition,training_seeds,semantic_clusters,episodes,terminal_success_pct,seed_success_sd,strict_clusters_success,mean_calls,mean_wire_bytes,ci95_low_pct,ci95_high_pct
+C_A_ONLY,3,40,240,50.0,0.0,20,1.0,0.0,35.0,65.0
+C_MESSAGE_PASSING,3,40,240,100.0,0.0,40,2.0,103.0,100.0,100.0
+C_COUNTERFACTUAL_FEEDBACK,3,40,240,0.0,0.0,0,2.0,103.0,0.0,0.0
+C_CENTRALIZED,3,40,240,100.0,0.0,40,1.0,0.0,100.0,100.0

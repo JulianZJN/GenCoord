@@ -1,0 +1,10 @@
+﻿condition,assigned,records_present,records_missing
+clean,256,256,0
+sham_irrelevant,256,256,0
+parse_invalid,256,256,0
+handoff_contract_incompatible,256,256,0
+handoff_shortfall,256,256,0
+handoff_wrong_item,256,256,0
+post_receipt_resource_loss,256,256,0
+terminal_primitive_failure,256,256,0
+compatible_wrong_binding,256,256,0

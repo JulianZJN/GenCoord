@@ -1,0 +1,228 @@
+{
+ "source": "Short DSL GenCoord 0.8B, seed 2026073101, role instance GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0015-R1, attempt 1 (dispatch_records extracted; times relative to first dispatch start)",
+ "model_calls": [
+  {
+   "stage": "sender_initial",
+   "ms": 1457.0
+  },
+  {
+   "stage": "receiver_after_request",
+   "ms": 733.8
+  }
+ ],
+ "time_to_commitment_ms": 2206.0366962105036,
+ "episode_wall_ms": 22208.074,
+ "dispatches": [
+  {
+   "agent": "agent_b",
+   "skill": "go_to",
+   "args": {},
+   "end_s": 0.005,
+   "latency_ms": 4.941,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": null,
+   "start_s": 0.0
+  },
+  {
+   "agent": "agent_b",
+   "skill": "obtain_block",
+   "args": {
+    "block": "oak_planks",
+    "count": 1
+   },
+   "end_s": 2.604,
+   "latency_ms": 2598.672,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "oak_planks": 1,
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": null,
+   "start_s": 0.005
+  },
+  {
+   "agent": "agent_b",
+   "skill": "obtain_block",
+   "args": {
+    "block": "oak_planks",
+    "count": 1
+   },
+   "end_s": 4.656,
+   "latency_ms": 2052.366,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "oak_planks": 2,
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": null,
+   "start_s": 2.604
+  },
+  {
+   "agent": "agent_b",
+   "skill": "obtain_block",
+   "args": {
+    "block": "oak_planks",
+    "count": 1
+   },
+   "end_s": 6.712,
+   "latency_ms": 2055.36,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "oak_planks": 3,
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": null,
+   "start_s": 4.657
+  },
+  {
+   "agent": "agent_b",
+   "skill": "obtain_block",
+   "args": {
+    "block": "oak_planks",
+    "count": 1
+   },
+   "end_s": 8.767,
+   "latency_ms": 2054.824,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "oak_planks": 4,
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": null,
+   "start_s": 6.712
+  },
+  {
+   "agent": "agent_b",
+   "skill": "obtain_block",
+   "args": {
+    "block": "oak_planks",
+    "count": 1
+   },
+   "end_s": 10.819,
+   "latency_ms": 2052,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "oak_planks": 5,
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": null,
+   "start_s": 8.767
+  },
+  {
+   "agent": "agent_b",
+   "skill": "obtain_block",
+   "args": {
+    "block": "oak_planks",
+    "count": 1
+   },
+   "end_s": 12.872,
+   "latency_ms": 2052.686,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "oak_planks": 6,
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": null,
+   "start_s": 10.819
+  },
+  {
+   "agent": "agent_b",
+   "skill": "obtain_block",
+   "args": {
+    "block": "oak_planks",
+    "count": 1
+   },
+   "end_s": 14.926,
+   "latency_ms": 2053.647,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "oak_planks": 7,
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": null,
+   "start_s": 12.872
+  },
+  {
+   "agent": "agent_b",
+   "skill": "obtain_block",
+   "args": {
+    "block": "oak_planks",
+    "count": 1
+   },
+   "end_s": 17.077,
+   "latency_ms": 2150.771,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "oak_planks": 8,
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": null,
+   "start_s": 14.926
+  },
+  {
+   "agent": "agent_b",
+   "skill": "go_to",
+   "args": {},
+   "end_s": 19.638,
+   "latency_ms": 2560.68,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "oak_planks": 8,
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": null,
+   "start_s": 17.077
+  },
+  {
+   "agent": "agent_b",
+   "skill": "give_item",
+   "args": {
+    "item": "oak_planks",
+    "count": 8
+   },
+   "end_s": 21.622,
+   "latency_ms": 1984.659,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "wooden_axe": 1
+   },
+   "receiver_inventory_end": {
+    "oak_planks": 8
+   },
+   "start_s": 19.637
+  },
+  {
+   "agent": "agent_a",
+   "skill": "go_to",
+   "args": {},
+   "end_s": 22.145,
+   "latency_ms": 522.574,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "oak_planks": 8
+   },
+   "receiver_inventory_end": null,
+   "start_s": 21.622
+  },
+  {
+   "agent": "agent_a",
+   "skill": "craft_item",
+   "args": {
+    "item": "crafting_table",
+    "count": 1
+   },
+   "end_s": 22.207,
+   "latency_ms": 61.869,
+   "status": "SUCCESS",
+   "actor_inventory_end": {
+    "crafting_table": 1,
+    "oak_planks": 4
+   },
+   "receiver_inventory_end": null,
+   "start_s": 22.145
+  }
+ ]
+}

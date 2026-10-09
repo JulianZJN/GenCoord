@@ -1,0 +1,316 @@
+[
+  {
+    "record_id": "111D-quality-GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0000-R0-K0-N",
+    "role": 0,
+    "status": "observed",
+    "formation": true,
+    "G": true,
+    "turns": [
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "I observed the active team order locally. Please take STORAGE_BRANCH after our handoff. I will obtain and deliver the material. <COMMIT>{\"receiver_agent_id\":\"agent_b\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"STORAGE_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"chest\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_a\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_b\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 546
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "I received the binding and can execute it. <COMMIT>{\"receiver_agent_id\":\"agent_b\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"STORAGE_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"chest\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_a\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_b\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 461
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "end_notification",
+        "text": "<COMMITMENT_CLOSED/>",
+        "utf8_bytes": 20
+      }
+    ]
+  },
+  {
+    "record_id": "111D-quality-GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0000-R0-K1-N",
+    "role": 0,
+    "status": "observed",
+    "formation": true,
+    "G": true,
+    "turns": [
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "I observed the active team order locally. Please take STORAGE_BRANCH after our handoff. I will obtain and deliver the material. <COMMIT>{\"receiver_agent_id\":\"agent_b\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"STORAGE_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"chest\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_a\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_b\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 546
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "I received the binding and can execute it. <COMMIT>{\"receiver_agent_id\":\"agent_b\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"STORAGE_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"chest\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_a\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_b\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 461
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "end_notification",
+        "text": "<COMMITMENT_CLOSED/>",
+        "utf8_bytes": 20
+      }
+    ]
+  },
+  {
+    "record_id": "111D-quality-GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0000-R0-K2-N",
+    "role": 0,
+    "status": "observed",
+    "formation": true,
+    "G": true,
+    "turns": [
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "I observed the active team order locally. Please take STORAGE_BRANCH after our handoff. I will obtain and deliver the material. <COMMIT>{\"receiver_agent_id\":\"agent_b\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"STORAGE_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"chest\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_a\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_b\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 546
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "I observed the active binding is locally feasible and will take STORAGE_BRANCH after our handoff. <ACCEPT_COMMIT proposal=\"9c5e75b2b60ea3bfd71608138b891148aa86aa2f30332ecd48b6faf2144b0473\"/>",
+        "utf8_bytes": 190
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "end_notification",
+        "text": "<COMMITMENT_CLOSED/>",
+        "utf8_bytes": 20
+      }
+    ]
+  },
+  {
+    "record_id": "111D-quality-GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0000-R1-K0-N",
+    "role": 1,
+    "status": "observed",
+    "formation": true,
+    "G": true,
+    "turns": [
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "I observed the active team order locally. Please take STORAGE_BRANCH after our handoff. I will obtain and deliver the material. <COMMIT>{\"receiver_agent_id\":\"agent_a\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"STORAGE_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"chest\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_b\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_a\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 546
+      },
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "I accept the proposed allocation: I will handle STORAGE_BRANCH after the handoff.\n\n<ACCEPT_COMMIT proposal=\"d07fd0d06f2f778e35fd0da57ddd5aa1529f2aea454d557ea9ba604c699e9e33\"/>",
+        "utf8_bytes": 175
+      },
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "end_notification",
+        "text": "<COMMITMENT_CLOSED/>",
+        "utf8_bytes": 20
+      }
+    ]
+  },
+  {
+    "record_id": "111D-quality-GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0000-R1-K1-N",
+    "role": 1,
+    "status": "observed",
+    "formation": true,
+    "G": true,
+    "turns": [
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "I observed the active team order locally. Please take STORAGE_BRANCH after our handoff. I will obtain and deliver the material. <COMMIT>{\"receiver_agent_id\":\"agent_a\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"STORAGE_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"chest\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_b\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_a\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 546
+      },
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "I received the STORAGE_BRANCH binding and can execute it.<ACCEPT_COMMIT proposal=\"d07fd0d06f2f778e35fd0da57ddd5aa1529f2aea454d557ea9ba604c699e9e33\"/>",
+        "utf8_bytes": 149
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "<COMMIT>{\"receiver_agent_id\":\"agent_a\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"STORAGE_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"chest\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_b\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_a\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 418
+      },
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "<ACCEPT_COMMIT proposal=\"d07fd0d06f2f778e35fd0da57ddd5aa1529f2aea454d557ea9ba604c699e9e33\"/>",
+        "utf8_bytes": 92
+      },
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "end_notification",
+        "text": "<COMMITMENT_CLOSED/>",
+        "utf8_bytes": 20
+      }
+    ]
+  },
+  {
+    "record_id": "111D-quality-GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0000-R1-K2-N",
+    "role": 1,
+    "status": "observed",
+    "formation": true,
+    "G": true,
+    "turns": [
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "I observed the active team order locally. Please take STORAGE_BRANCH after our handoff. I will obtain and deliver the material. <COMMIT>{\"receiver_agent_id\":\"agent_a\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"STORAGE_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"chest\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_b\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_a\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 546
+      },
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "<ACCEPT_COMMIT proposal=\"d07fd0d06f2f778e35fd0da57ddd5aa1529f2aea454d557ea9ba604c699e9e33\"/>",
+        "utf8_bytes": 92
+      },
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "end_notification",
+        "text": "<COMMITMENT_CLOSED/>",
+        "utf8_bytes": 20
+      }
+    ]
+  },
+  {
+    "record_id": "111D-quality-GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0001-R0-K0-N",
+    "role": 0,
+    "status": "observed",
+    "formation": true,
+    "G": true,
+    "turns": [
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "I observed the active team order locally. Please take WORK_BRANCH after our handoff. I will obtain and deliver the material. <COMMIT>{\"receiver_agent_id\":\"agent_b\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"WORK_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"crafting_table\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_a\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_b\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 549
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "<ACCEPT_COMMIT/>",
+        "utf8_bytes": 16
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "end_notification",
+        "text": "<COMMITMENT_CLOSED/>",
+        "utf8_bytes": 20
+      }
+    ]
+  },
+  {
+    "record_id": "111D-quality-GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0001-R0-K1-N",
+    "role": 0,
+    "status": "observed",
+    "formation": true,
+    "G": true,
+    "turns": [
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "I observed the active team order locally. Please take WORK_BRANCH after our handoff. I will obtain and deliver the material. <COMMIT>{\"receiver_agent_id\":\"agent_b\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"WORK_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"crafting_table\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_a\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_b\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 549
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "I received the binding and can execute it. <COMMIT>{\"receiver_agent_id\":\"agent_b\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"WORK_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"crafting_table\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_a\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_b\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 467
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "end_notification",
+        "text": "<COMMITMENT_CLOSED/>",
+        "utf8_bytes": 20
+      }
+    ]
+  },
+  {
+    "record_id": "111D-quality-GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0001-R0-K2-N",
+    "role": 0,
+    "status": "observed",
+    "formation": true,
+    "G": true,
+    "turns": [
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "I observed the active team order locally. The active branch is WORK_BRANCH, so please take WORK_BRANCH after our handoff. I will obtain and deliver the material.\n\n<COMMIT>{\"sender_agent_id\":\"agent_a\",\"receiver_agent_id\":\"agent_b\",\"sender_tasks\":[{\"task_path\":[\"resource\",\"obtain\"],\"arguments\":{\"count\":8,\"item\":\"oak_planks\"}},{\"task_path\":[\"resource\",\"deliver\"],\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_b\"}}],\"receiver_tasks\":[{\"task_path\":[\"craft\",\"item\"],\"arguments\":{\"binding_id\":\"WORK_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"crafting_table\"}}]}</COMMIT>",
+        "utf8_bytes": 587
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "I received the binding and can execute it. <COMMIT>{\"receiver_agent_id\":\"agent_b\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"WORK_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"crafting_table\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_a\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_b\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 467
+      },
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "end_notification",
+        "text": "<COMMITMENT_CLOSED/>",
+        "utf8_bytes": 20
+      }
+    ]
+  },
+  {
+    "record_id": "111D-quality-GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0001-R1-K0-N",
+    "role": 1,
+    "status": "observed",
+    "formation": true,
+    "G": true,
+    "turns": [
+      {
+        "speaker": "agent_b",
+        "recipient": "agent_a",
+        "kind": "dialogue",
+        "text": "I observed the active team order locally. Please take WORK_BRANCH after our handoff. I will obtain and deliver the material. <COMMIT>{\"receiver_agent_id\":\"agent_a\",\"receiver_tasks\":[{\"arguments\":{\"binding_id\":\"WORK_BRANCH\",\"count\":1,\"input\":\"oak_planks\",\"item\":\"crafting_table\"},\"task_path\":[\"craft\",\"item\"]}],\"sender_agent_id\":\"agent_b\",\"sender_tasks\":[{\"arguments\":{\"count\":8,\"item\":\"oak_planks\"},\"task_path\":[\"resource\",\"obtain\"]},{\"arguments\":{\"count\":8,\"item\":\"oak_planks\",\"to_agent_id\":\"agent_a\"},\"task_path\":[\"resource\",\"deliver\"]}]}</COMMIT>",
+        "utf8_bytes": 549
+      },
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "dialogue",
+        "text": "I received the binding and can execute it. <ACCEPT_COMMIT proposal=\"986154cc7a117e0293b5ff375edd456e64758772b2a6573358b4c9bc16c42e39\"/>",
+        "utf8_bytes": 135
+      },
+      {
+        "speaker": "agent_a",
+        "recipient": "agent_b",
+        "kind": "end_notification",
+        "text": "<COMMITMENT_CLOSED/>",
+        "utf8_bytes": 20
+      }
+    ]
+  }
+]

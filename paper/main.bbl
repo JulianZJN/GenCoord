@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{26}
+\begin{thebibliography}{63}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -50,6 +50,38 @@
 \href{https://doi.org/10.18653/v1/2021.emnlp-main.85}{doi:\nolinkurl{10.18653/v1/2021.emnlp-main.85}}
 
 
+\bibitem[Bernstein et~al\mbox{.}(2002)]%
+        {bernstein2002decentralized}
+\bibfield{author}{\bibinfo{person}{Daniel~S. Bernstein},
+  \bibinfo{person}{Robert Givan}, \bibinfo{person}{Neil Immerman}, {and}
+  \bibinfo{person}{Shlomo Zilberstein}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{The Complexity of Decentralized Control of {Markov}
+  Decision Processes}.
+\newblock \bibinfo{journal}{\emph{Mathematics of Operations Research}}
+  \bibinfo{volume}{27}, \bibinfo{number}{4} (\bibinfo{year}{2002}),
+  \bibinfo{pages}{819--840}.
+\newblock
+\href{https://doi.org/10.1287/moor.27.4.819.297}{doi:\nolinkurl{10.1287/moor.27.4.819.297}}
+
+
+\bibitem[Bhatt et~al\mbox{.}(2026)]%
+        {aamas2026_WHRE3513}
+\bibfield{author}{\bibinfo{person}{Neel~P. Bhatt}, \bibinfo{person}{Po-han Li},
+  \bibinfo{person}{Kushagra Gupta}, \bibinfo{person}{Rohan Siva},
+  \bibinfo{person}{Daniel Milan}, \bibinfo{person}{Alexander~T. Hogue},
+  \bibinfo{person}{Sandeep~P. Chinchali}, \bibinfo{person}{David
+  Fridovich-Keil}, \bibinfo{person}{Zhangyang Wang}, {and}
+  \bibinfo{person}{Ufuk Topcu}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{{UNCAP}: Uncertainty-Guided Neurosymbolic Planning
+  Using Natural Language Communication for Cooperative Autonomous Vehicles}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 25th International Conference on
+  Autonomous Agents and Multiagent Systems}}. \bibinfo{publisher}{International
+  Foundation for Autonomous Agents and Multiagent Systems},
+  \bibinfo{pages}{2609--2617}.
+\newblock
+\href{https://doi.org/10.65109/WHRE3513}{doi:\nolinkurl{10.65109/WHRE3513}}
+
+
 \bibitem[Chai et~al\mbox{.}(2025)]%
         {chai2025causalmace}
 \bibfield{author}{\bibinfo{person}{Qi Chai}, \bibinfo{person}{Zhang Zheng},
@@ -63,6 +95,24 @@
   \bibinfo{pages}{14410--14426}.
 \newblock
 \href{https://doi.org/10.18653/v1/2025.findings-emnlp.777}{doi:\nolinkurl{10.18653/v1/2025.findings-emnlp.777}}
+
+
+\bibitem[Chen et~al\mbox{.}(2025b)]%
+        {aamas2025_p481}
+\bibfield{author}{\bibinfo{person}{Shenghui Chen}, \bibinfo{person}{Ruihan
+  Zhao}, \bibinfo{person}{Sandeep Chinchali}, {and} \bibinfo{person}{Ufuk
+  Topcu}.} \bibinfo{year}{2025}\natexlab{b}.
+\newblock \showarticletitle{{Human-Agent Coordination in Games under Incomplete
+  Information via Multi-Step Intent}}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 24th International Conference on Autonomous Agents and Multiagent
+  Systems}}. \bibinfo{publisher}{International Foundation for Autonomous Agents
+  and Multiagent Systems}, \bibinfo{address}{Detroit, Michigan, USA},
+  \bibinfo{pages}{481--489}.
+\newblock
+\urldef\tempurl%
+\url{https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p481.pdf}
+\showURL{%
+\tempurl}
 
 
 \bibitem[Chen et~al\mbox{.}(2024b)]%
@@ -81,17 +131,32 @@
 \href{https://doi.org/10.18653/v1/2024.findings-emnlp.623}{doi:\nolinkurl{10.18653/v1/2024.findings-emnlp.623}}
 
 
-\bibitem[Chen et~al\mbox{.}(2024a)]%
+\bibitem[Chen et~al\mbox{.}(2025a)]%
         {chen2024optima}
 \bibfield{author}{\bibinfo{person}{Weize Chen}, \bibinfo{person}{Jiarui Yuan},
   \bibinfo{person}{Chen Qian}, \bibinfo{person}{Cheng Yang},
   \bibinfo{person}{Zhiyuan Liu}, {and} \bibinfo{person}{Maosong Sun}.}
-  \bibinfo{year}{2024}\natexlab{a}.
+  \bibinfo{year}{2025}\natexlab{a}.
 \newblock \showarticletitle{{Optima}: Optimizing Effectiveness and Efficiency
-  for {LLM}-Based Multi-Agent System}.
-\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2410.08115}}
-  (\bibinfo{year}{2024}).
+  for {LLM}-Based Multi-Agent System}. In \bibinfo{booktitle}{\emph{Findings of
+  the Association for Computational Linguistics: ACL 2025}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{11534--11557}.
 \newblock
+\href{https://doi.org/10.18653/v1/2025.findings-acl.601}{doi:\nolinkurl{10.18653/v1/2025.findings-acl.601}}
+
+
+\bibitem[Chen et~al\mbox{.}(2024a)]%
+        {chen2024scalable}
+\bibfield{author}{\bibinfo{person}{Yongchao Chen}, \bibinfo{person}{Jacob
+  Arkin}, \bibinfo{person}{Yang Zhang}, \bibinfo{person}{Nicholas Roy}, {and}
+  \bibinfo{person}{Chuchu Fan}.} \bibinfo{year}{2024}\natexlab{a}.
+\newblock \showarticletitle{Scalable Multi-Robot Collaboration with Large
+  Language Models: Centralized or Decentralized Systems?}. In
+  \bibinfo{booktitle}{\emph{2024 IEEE International Conference on Robotics and
+  Automation (ICRA)}}. \bibinfo{publisher}{IEEE}, \bibinfo{pages}{4311--4317}.
+\newblock
+\href{https://doi.org/10.1109/ICRA57147.2024.10610676}{doi:\nolinkurl{10.1109/ICRA57147.2024.10610676}}
 
 
 \bibitem[Choi et~al\mbox{.}(2009)]%
@@ -124,6 +189,54 @@
 \tempurl}
 
 
+\bibitem[Chopra et~al\mbox{.}(2026)]%
+        {aamas2026_SAXY3841}
+\bibfield{author}{\bibinfo{person}{Amit~K. Chopra}, \bibinfo{person}{Samuel~H.
+  Christie, V}, {and} \bibinfo{person}{Munindar~P. Singh}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{{Peach}: Program Each Agent and Communicate
+  Howsoever}. In \bibinfo{booktitle}{\emph{Proceedings of the 25th
+  International Conference on Autonomous Agents and Multiagent Systems}}.
+  \bibinfo{publisher}{International Foundation for Autonomous Agents and
+  Multiagent Systems}, \bibinfo{pages}{1022--1030}.
+\newblock
+\href{https://doi.org/10.65109/SAXY3841}{doi:\nolinkurl{10.65109/SAXY3841}}
+
+
+\bibitem[Christie et~al\mbox{.}(2022)]%
+        {aamas2022_p281}
+\bibfield{author}{\bibinfo{person}{Samuel~H. Christie, V},
+  \bibinfo{person}{Amit~K. Chopra}, {and} \bibinfo{person}{Munindar~P. Singh}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Pippi: Practical Protocol Instantiation}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 21st International Conference on
+  Autonomous Agents and Multiagent Systems}}. \bibinfo{publisher}{International
+  Foundation for Autonomous Agents and Multiagent Systems},
+  \bibinfo{address}{Online}, \bibinfo{pages}{281--289}.
+\newblock
+\urldef\tempurl%
+\url{https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p281.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Christie et~al\mbox{.}(2023)]%
+        {aamas2023_p1154}
+\bibfield{author}{\bibinfo{person}{Samuel~H. Christie, V},
+  \bibinfo{person}{Munindar~P. Singh}, {and} \bibinfo{person}{Amit~K. Chopra}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Kiko}: Programming Agents to Enact Interaction
+  Protocols}. In \bibinfo{booktitle}{\emph{Proceedings of the 22nd
+  International Conference on Autonomous Agents and Multiagent Systems}}.
+  \bibinfo{publisher}{International Foundation for Autonomous Agents and
+  Multiagent Systems}, \bibinfo{pages}{1154--1163}.
+\newblock
+\urldef\tempurl%
+\url{https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p1154.pdf}
+\showURL{%
+\tempurl}
+
+
 \bibitem[Cohen and Levesque(1991)]%
         {cohen1991teamwork}
 \bibfield{author}{\bibinfo{person}{Philip~R. Cohen} {and}
@@ -133,6 +246,20 @@
   \bibinfo{number}{4} (\bibinfo{year}{1991}), \bibinfo{pages}{487--512}.
 \newblock
 \href{https://doi.org/10.2307/2216075}{doi:\nolinkurl{10.2307/2216075}}
+
+
+\bibitem[{DeepSeek}(2026)]%
+        {deepseek2026api}
+\bibfield{author}{\bibinfo{person}{{DeepSeek}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{DeepSeek API Documentation}}.
+\newblock
+\shownote{Documentation accessed September 29, 2026}.
+\newblock
+\urldef\tempurl%
+\url{https://api-docs.deepseek.com/}
+\showURL{%
+\tempurl}
 
 
 \bibitem[Dong et~al\mbox{.}(2024)]%
@@ -149,6 +276,35 @@
 \href{https://doi.org/10.18653/v1/2024.findings-acl.964}{doi:\nolinkurl{10.18653/v1/2024.findings-acl.964}}
 
 
+\bibitem[Efron and Tibshirani(1994)]%
+        {efron1994bootstrap}
+\bibfield{author}{\bibinfo{person}{Bradley Efron} {and}
+  \bibinfo{person}{Robert~J. Tibshirani}.} \bibinfo{year}{1994}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{An Introduction to the Bootstrap}
+  (\bibinfo{edition}{1} ed.)}.
+\newblock \bibinfo{publisher}{Chapman and Hall/CRC}, \bibinfo{address}{New
+  York}.
+\newblock
+\href{https://doi.org/10.1201/9780429246593}{doi:\nolinkurl{10.1201/9780429246593}}
+
+
+\bibitem[Fang and Kress-Gazit(2024)]%
+        {aamas2024_p544}
+\bibfield{author}{\bibinfo{person}{Amy Fang} {and} \bibinfo{person}{Hadas
+  Kress-Gazit}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{High-Level, Collaborative Task Planning Grammar
+  and Execution for Heterogeneous Agents}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 23rd International Conference on
+  Autonomous Agents and Multiagent Systems}}. \bibinfo{publisher}{International
+  Foundation for Autonomous Agents and Multiagent Systems},
+  \bibinfo{address}{Auckland, New Zealand}, \bibinfo{pages}{544--552}.
+\newblock
+\urldef\tempurl%
+\url{https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p544.pdf}
+\showURL{%
+\tempurl}
+
+
 \bibitem[Foerster et~al\mbox{.}(2016)]%
         {foerster2016dial}
 \bibfield{author}{\bibinfo{person}{Jakob Foerster},
@@ -159,6 +315,18 @@
   Reinforcement Learning}. In \bibinfo{booktitle}{\emph{Advances in Neural
   Information Processing Systems}}, Vol.~\bibinfo{volume}{29}.
 \newblock
+
+
+\bibitem[Fornara and Colombetti(2002)]%
+        {fornara2002operational}
+\bibfield{author}{\bibinfo{person}{Nicoletta Fornara} {and}
+  \bibinfo{person}{Marco Colombetti}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Operational Specification of a Commitment-Based
+  Agent Communication Language}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the First International Joint Conference on Autonomous Agents and Multiagent
+  Systems}}. \bibinfo{publisher}{ACM}.
+\newblock
+\href{https://doi.org/10.1145/544862.544868}{doi:\nolinkurl{10.1145/544862.544868}}
 
 
 \bibitem[Gerkey and Matari{\'c}(2004)]%
@@ -202,6 +370,22 @@
 \href{https://doi.org/10.1016/0004-3702(95)00103-4}{doi:\nolinkurl{10.1016/0004-3702(95)00103-4}}
 
 
+\bibitem[Guo et~al\mbox{.}(2026)]%
+        {guo2026organized}
+\bibfield{author}{\bibinfo{person}{Xudong Guo}, \bibinfo{person}{Kaixuan
+  Huang}, \bibinfo{person}{Jiale Liu}, \bibinfo{person}{Wenhui Fan},
+  \bibinfo{person}{Natalia V{\'e}lez}, \bibinfo{person}{Qingyun Wu},
+  \bibinfo{person}{Huazheng Wang}, \bibinfo{person}{Thomas~L. Griffiths}, {and}
+  \bibinfo{person}{Mengdi Wang}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Embodied {LLM} Agents Learn to Cooperate in
+  Organized Teams}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Computational Social
+  Systems}} \bibinfo{volume}{13}, \bibinfo{number}{2} (\bibinfo{year}{2026}),
+  \bibinfo{pages}{2514--2530}.
+\newblock
+\href{https://doi.org/10.1109/TCSS.2025.3637527}{doi:\nolinkurl{10.1109/TCSS.2025.3637527}}
+
+
 \bibitem[Gupta et~al\mbox{.}(2026)]%
         {gupta2026optimacs}
 \bibfield{author}{\bibinfo{person}{Shashwat Gupta}, \bibinfo{person}{Anson
@@ -215,6 +399,79 @@
   \bibinfo{pages}{28849--28879}.
 \newblock
 \href{https://doi.org/10.18653/v1/2026.findings-acl.1441}{doi:\nolinkurl{10.18653/v1/2026.findings-acl.1441}}
+
+
+\bibitem[Hong et~al\mbox{.}(2024)]%
+        {hong2024metagpt}
+\bibfield{author}{\bibinfo{person}{Sirui Hong}, \bibinfo{person}{Mingchen
+  Zhuge}, \bibinfo{person}{Jonathan Chen}, \bibinfo{person}{Xiawu Zheng},
+  \bibinfo{person}{Yuheng Cheng}, \bibinfo{person}{Jinlin Wang},
+  \bibinfo{person}{Ceyao Zhang}, \bibinfo{person}{Zili Wang},
+  \bibinfo{person}{Steven Yau}, \bibinfo{person}{Zijuan Lin},
+  \bibinfo{person}{Liyang Zhou}, \bibinfo{person}{Chenyu Ran},
+  \bibinfo{person}{Lingfeng Xiao}, \bibinfo{person}{Chenglin Wu}, {and}
+  \bibinfo{person}{J{\"u}rgen Schmidhuber}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{MetaGPT}: Meta Programming for a Multi-Agent
+  Collaborative Framework}. In \bibinfo{booktitle}{\emph{The Twelfth
+  International Conference on Learning Representations}}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.iclr.cc/paper_files/paper/2024/hash/6507b115562bb0a305f1958ccc87355a-Abstract-Conference.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Ichter et~al\mbox{.}(2023)]%
+        {ichter2023saycan}
+\bibfield{author}{\bibinfo{person}{Brian Ichter}, \bibinfo{person}{Anthony
+  Brohan}, \bibinfo{person}{Yevgen Chebotar}, \bibinfo{person}{Chelsea Finn},
+  \bibinfo{person}{Karol Hausman}, {et~al\mbox{.}}}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Do As {I} Can, Not As {I} Say: Grounding Language
+  in Robotic Affordances}. In \bibinfo{booktitle}{\emph{Proceedings of The 6th
+  Conference on Robot Learning}} \emph{(\bibinfo{series}{Proceedings of Machine
+  Learning Research}, Vol.~\bibinfo{volume}{205})}. \bibinfo{publisher}{PMLR},
+  \bibinfo{pages}{287--318}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.mlr.press/v205/ichter23a.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Jaques et~al\mbox{.}(2019)]%
+        {jaques2019social}
+\bibfield{author}{\bibinfo{person}{Natasha Jaques}, \bibinfo{person}{Angeliki
+  Lazaridou}, \bibinfo{person}{Edward Hughes}, \bibinfo{person}{Caglar
+  Gulcehre}, \bibinfo{person}{Pedro Ortega}, \bibinfo{person}{Dj Strouse},
+  \bibinfo{person}{Joel~Z. Leibo}, {and} \bibinfo{person}{Nando De~Freitas}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Social Influence as Intrinsic Motivation for
+  Multi-Agent Deep Reinforcement Learning}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 36th International Conference on
+  Machine Learning}} \emph{(\bibinfo{series}{Proceedings of Machine Learning
+  Research}, Vol.~\bibinfo{volume}{97})}. \bibinfo{publisher}{PMLR},
+  \bibinfo{pages}{3040--3049}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.mlr.press/v97/jaques19a.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Jennings et~al\mbox{.}(2001)]%
+        {jennings2001negotiation}
+\bibfield{author}{\bibinfo{person}{Nicholas~R. Jennings},
+  \bibinfo{person}{Peyman Faratin}, \bibinfo{person}{Alessio~R. Lomuscio},
+  \bibinfo{person}{Simon Parsons}, \bibinfo{person}{Michael~J. Wooldridge},
+  {and} \bibinfo{person}{Carles Sierra}.} \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{Automated Negotiation: Prospects, Methods and
+  Challenges}.
+\newblock \bibinfo{journal}{\emph{Group Decision and Negotiation}}
+  \bibinfo{volume}{10}, \bibinfo{number}{2} (\bibinfo{year}{2001}),
+  \bibinfo{pages}{199--215}.
+\newblock
+\href{https://doi.org/10.1023/A:1008746126376}{doi:\nolinkurl{10.1023/A:1008746126376}}
 
 
 \bibitem[Jian et~al\mbox{.}(2026)]%
@@ -234,6 +491,19 @@
 \tempurl}
 
 
+\bibitem[Kannan et~al\mbox{.}(2024)]%
+        {kannan2023smart}
+\bibfield{author}{\bibinfo{person}{Shyam~Sundar Kannan},
+  \bibinfo{person}{Vishnunandan L.~N. Venkatesh}, {and}
+  \bibinfo{person}{Byung-Cheol Min}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{SMART-LLM}: Smart Multi-Agent Robot Task Planning
+  using Large Language Models}. In \bibinfo{booktitle}{\emph{2024 IEEE/RSJ
+  International Conference on Intelligent Robots and Systems (IROS)}}.
+  \bibinfo{publisher}{IEEE}.
+\newblock
+\href{https://doi.org/10.1109/IROS58592.2024.10802322}{doi:\nolinkurl{10.1109/IROS58592.2024.10802322}}
+
+
 \bibitem[Kim et~al\mbox{.}(2026)]%
         {kim2026agenticcache}
 \bibfield{author}{\bibinfo{person}{Hojoon Kim}, \bibinfo{person}{Yuheng Wu},
@@ -242,6 +512,64 @@
   for Embodied {AI} Agents}. In \bibinfo{booktitle}{\emph{Proceedings of
   Machine Learning and Systems}}, Vol.~\bibinfo{volume}{8}.
 \newblock
+
+
+\bibitem[Li et~al\mbox{.}(2023)]%
+        {li2023theory}
+\bibfield{author}{\bibinfo{person}{Huao Li}, \bibinfo{person}{Yu~Quan Chong},
+  \bibinfo{person}{Simon Stepputtis}, \bibinfo{person}{Joseph Campbell},
+  \bibinfo{person}{Dana Hughes}, \bibinfo{person}{Michael Lewis}, {and}
+  \bibinfo{person}{Katia Sycara}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Theory of Mind for Multi-Agent Collaboration via
+  Large Language Models}. In \bibinfo{booktitle}{\emph{Proceedings of the 2023
+  Conference on Empirical Methods in Natural Language Processing}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{180--192}.
+\newblock
+\href{https://doi.org/10.18653/v1/2023.emnlp-main.13}{doi:\nolinkurl{10.18653/v1/2023.emnlp-main.13}}
+
+
+\bibitem[Li et~al\mbox{.}(2026)]%
+        {aamas2026_EXAJ9853}
+\bibfield{author}{\bibinfo{person}{Yaoru Li}, \bibinfo{person}{Shunyu Liu},
+  \bibinfo{person}{Tongya Zheng}, \bibinfo{person}{Li Sun}, {and}
+  \bibinfo{person}{Mingli Song}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{{Parallelized Planning-Acting for Multi-Agent LLM
+  Systems in Minecraft}}. In \bibinfo{booktitle}{\emph{Proceedings of the 25th
+  International Conference on Autonomous Agents and Multiagent Systems}}.
+  \bibinfo{publisher}{International Foundation for Autonomous Agents and
+  Multiagent Systems}, \bibinfo{pages}{155--164}.
+\newblock
+\href{https://doi.org/10.65109/EXAJ9853}{doi:\nolinkurl{10.65109/EXAJ9853}}
+
+
+\bibitem[Liang et~al\mbox{.}(2023)]%
+        {liang2023code}
+\bibfield{author}{\bibinfo{person}{Jacky Liang}, \bibinfo{person}{Wenlong
+  Huang}, \bibinfo{person}{Fei Xia}, \bibinfo{person}{Peng Xu},
+  \bibinfo{person}{Karol Hausman}, \bibinfo{person}{Brian Ichter},
+  \bibinfo{person}{Pete Florence}, {and} \bibinfo{person}{Andy Zeng}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Code as Policies: Language Model Programs for
+  Embodied Control}. In \bibinfo{booktitle}{\emph{2023 IEEE International
+  Conference on Robotics and Automation (ICRA)}}. \bibinfo{publisher}{IEEE},
+  \bibinfo{pages}{9493--9500}.
+\newblock
+\href{https://doi.org/10.1109/ICRA48891.2023.10160591}{doi:\nolinkurl{10.1109/ICRA48891.2023.10160591}}
+
+
+\bibitem[Liu et~al\mbox{.}(2025)]%
+        {liu2025coherent}
+\bibfield{author}{\bibinfo{person}{Kehui Liu}, \bibinfo{person}{Zixin Tang},
+  \bibinfo{person}{Dong Wang}, \bibinfo{person}{Zhigang Wang},
+  \bibinfo{person}{Xuelong Li}, {and} \bibinfo{person}{Bin Zhao}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{COHERENT}: Collaboration of Heterogeneous
+  Multi-Robot System with Large Language Models}. In
+  \bibinfo{booktitle}{\emph{2025 IEEE International Conference on Robotics and
+  Automation (ICRA)}}. \bibinfo{publisher}{IEEE}.
+\newblock
+\href{https://doi.org/10.1109/ICRA55743.2025.11127808}{doi:\nolinkurl{10.1109/ICRA55743.2025.11127808}}
 
 
 \bibitem[Long et~al\mbox{.}(2024)]%
@@ -259,6 +587,34 @@
 \url{https://arxiv.org/abs/2412.05255}
 \showURL{%
 \tempurl}
+
+
+\bibitem[Lowe et~al\mbox{.}(2019)]%
+        {lowe2019pitfalls}
+\bibfield{author}{\bibinfo{person}{Ryan Lowe}, \bibinfo{person}{Jakob
+  Foerster}, \bibinfo{person}{Y-Lan Boureau}, \bibinfo{person}{Joelle Pineau},
+  {and} \bibinfo{person}{Yann Dauphin}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{On the Pitfalls of Measuring Emergent
+  Communication}. In \bibinfo{booktitle}{\emph{Proceedings of the 18th
+  International Conference on Autonomous Agents and MultiAgent Systems}}.
+  \bibinfo{publisher}{International Foundation for Autonomous Agents and
+  Multiagent Systems}, \bibinfo{pages}{693--701}.
+\newblock
+\href{https://doi.org/10.5555/3306127.3331757}{doi:\nolinkurl{10.5555/3306127.3331757}}
+
+
+\bibitem[Mallick and Chebolu(2026)]%
+        {aamas2026_PHRW6922}
+\bibfield{author}{\bibinfo{person}{Arnab Mallick} {and}
+  \bibinfo{person}{Indraveni Chebolu}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{{$\mu$ACP}: A Formal Calculus for Expressive,
+  Resource-Constrained Agent Communication}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 25th International Conference on
+  Autonomous Agents and Multiagent Systems}}. \bibinfo{publisher}{International
+  Foundation for Autonomous Agents and Multiagent Systems},
+  \bibinfo{pages}{50--58}.
+\newblock
+\href{https://doi.org/10.65109/PHRW6922}{doi:\nolinkurl{10.65109/PHRW6922}}
 
 
 \bibitem[Mandi et~al\mbox{.}(2024)]%
@@ -304,6 +660,95 @@
 \tempurl}
 
 
+\bibitem[Shukor et~al\mbox{.}(2025)]%
+        {shukor2025smolvla}
+\bibfield{author}{\bibinfo{person}{Mustafa Shukor}, \bibinfo{person}{Dana
+  Aubakirova}, \bibinfo{person}{Francesco Capuano}, \bibinfo{person}{Pepijn
+  Kooijmans}, \bibinfo{person}{Steven Palma}, \bibinfo{person}{Adil Zouitine},
+  \bibinfo{person}{Michel Aractingi}, \bibinfo{person}{Caroline Pascal},
+  \bibinfo{person}{Martino Russi}, \bibinfo{person}{Andres Marafioti},
+  \bibinfo{person}{Simon Alibert}, \bibinfo{person}{Matthieu Cord},
+  \bibinfo{person}{Thomas Wolf}, {and} \bibinfo{person}{Remi Cadene}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{SmolVLA}: A Vision-Language-Action Model for
+  Affordable and Efficient Robotics}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2506.01844}}
+  (\bibinfo{year}{2025}).
+\newblock
+\href{https://doi.org/10.48550/arXiv.2506.01844}{doi:\nolinkurl{10.48550/arXiv.2506.01844}}
+
+
+\bibitem[Singh et~al\mbox{.}(2023)]%
+        {singh2023progprompt}
+\bibfield{author}{\bibinfo{person}{Ishika Singh}, \bibinfo{person}{Valts
+  Blukis}, \bibinfo{person}{Arsalan Mousavian}, \bibinfo{person}{Ankit Goyal},
+  \bibinfo{person}{Danfei Xu}, \bibinfo{person}{Jonathan Tremblay},
+  \bibinfo{person}{Dieter Fox}, \bibinfo{person}{Jesse Thomason}, {and}
+  \bibinfo{person}{Animesh Garg}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{ProgPrompt}: Program Generation for Situated Robot
+  Task Planning Using Large Language Models}.
+\newblock \bibinfo{journal}{\emph{Autonomous Robots}}  \bibinfo{volume}{47}
+  (\bibinfo{year}{2023}), \bibinfo{pages}{999--1012}.
+\newblock
+\href{https://doi.org/10.1007/s10514-023-10135-3}{doi:\nolinkurl{10.1007/s10514-023-10135-3}}
+
+
+\bibitem[Singh(1998)]%
+        {singh1998acl}
+\bibfield{author}{\bibinfo{person}{Munindar~P. Singh}.}
+  \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Agent Communication Languages: Rethinking the
+  Principles}.
+\newblock \bibinfo{journal}{\emph{Computer}} \bibinfo{volume}{31},
+  \bibinfo{number}{12} (\bibinfo{year}{1998}), \bibinfo{pages}{40--47}.
+\newblock
+\href{https://doi.org/10.1109/2.735849}{doi:\nolinkurl{10.1109/2.735849}}
+
+
+\bibitem[Singh(2008)]%
+        {singh2008commitments}
+\bibfield{author}{\bibinfo{person}{Munindar~P. Singh}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Semantical Considerations on Dialectical and
+  Practical Commitments}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  Twenty-Third AAAI Conference on Artificial Intelligence}}.
+  \bibinfo{publisher}{AAAI Press}, \bibinfo{pages}{176--181}.
+\newblock
+\urldef\tempurl%
+\url{https://cdn.aaai.org/AAAI/2008/AAAI08-028.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Singh(2011)]%
+        {singh2011bspl}
+\bibfield{author}{\bibinfo{person}{Munindar~P. Singh}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Information-Driven Interaction-Oriented
+  Programming: {BSPL}, the Blindingly Simple Protocol Language}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 10th International Conference on
+  Autonomous Agents and Multiagent Systems}}. \bibinfo{publisher}{International
+  Foundation for Autonomous Agents and Multiagent Systems},
+  \bibinfo{pages}{491--498}.
+\newblock
+\urldef\tempurl%
+\url{https://www.ifaamas.org/Proceedings/aamas2011/papers/A4_B57.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Singh and Chopra(2020)]%
+        {singh2020clouseau}
+\bibfield{author}{\bibinfo{person}{Munindar~P. Singh} {and}
+  \bibinfo{person}{Amit~K. Chopra}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Clouseau}: Generating Communication Protocols from
+  Commitments}. In \bibinfo{booktitle}{\emph{Proceedings of the AAAI Conference
+  on Artificial Intelligence}}, Vol.~\bibinfo{volume}{34}.
+  \bibinfo{publisher}{AAAI Press}, \bibinfo{pages}{7244--7252}.
+\newblock
+\href{https://doi.org/10.1609/aaai.v34i05.6215}{doi:\nolinkurl{10.1609/aaai.v34i05.6215}}
+
+
 \bibitem[Smith(1980)]%
         {smith1980contractnet}
 \bibfield{author}{\bibinfo{person}{Reid~G. Smith}.}
@@ -314,6 +759,19 @@
   \bibinfo{number}{12} (\bibinfo{year}{1980}), \bibinfo{pages}{1104--1113}.
 \newblock
 \href{https://doi.org/10.1109/TC.1980.1675516}{doi:\nolinkurl{10.1109/TC.1980.1675516}}
+
+
+\bibitem[Stone et~al\mbox{.}(2010)]%
+        {stone2010adhoc}
+\bibfield{author}{\bibinfo{person}{Peter Stone}, \bibinfo{person}{Gal~A.
+  Kaminka}, \bibinfo{person}{Sarit Kraus}, {and} \bibinfo{person}{Jeffrey~S.
+  Rosenschein}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Ad Hoc Autonomous Agent Teams: Collaboration
+  without Pre-Coordination}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  Twenty-Fourth AAAI Conference on Artificial Intelligence}}.
+  \bibinfo{publisher}{AAAI Press}, \bibinfo{pages}{1504--1509}.
+\newblock
+\href{https://doi.org/10.1609/aaai.v24i1.7529}{doi:\nolinkurl{10.1609/aaai.v24i1.7529}}
 
 
 \bibitem[Sukhbaatar et~al\mbox{.}(2016)]%
@@ -338,20 +796,36 @@
 \href{https://doi.org/10.1613/jair.433}{doi:\nolinkurl{10.1613/jair.433}}
 
 
-\bibitem[Wang et~al\mbox{.}(2023)]%
+\bibitem[Wang et~al\mbox{.}(2026)]%
+        {aamas2026_QPUC1624}
+\bibfield{author}{\bibinfo{person}{Baiqing Wang}, \bibinfo{person}{Helei Cui},
+  \bibinfo{person}{Bo Zhang}, \bibinfo{person}{Xiaolong Zheng},
+  \bibinfo{person}{Bin Guo}, {and} \bibinfo{person}{Zhiwen Yu}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{{MeCo}: Enhancing {LLM}-Empowered Multi-Robot
+  Collaboration via Similar Task Memoization}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 25th International Conference on
+  Autonomous Agents and Multiagent Systems}}. \bibinfo{publisher}{International
+  Foundation for Autonomous Agents and Multiagent Systems},
+  \bibinfo{pages}{32--40}.
+\newblock
+\href{https://doi.org/10.65109/QPUC1624}{doi:\nolinkurl{10.65109/QPUC1624}}
+
+
+\bibitem[Wang et~al\mbox{.}(2024)]%
         {wang2023voyager}
 \bibfield{author}{\bibinfo{person}{Guanzhi Wang}, \bibinfo{person}{Yuqi Xie},
   \bibinfo{person}{Yunfan Jiang}, \bibinfo{person}{Ajay Mandlekar},
   \bibinfo{person}{Chaowei Xiao}, \bibinfo{person}{Yuke Zhu},
   \bibinfo{person}{Linxi Fan}, {and} \bibinfo{person}{Anima Anandkumar}.}
-  \bibinfo{year}{2023}\natexlab{}.
+  \bibinfo{year}{2024}\natexlab{}.
 \newblock \showarticletitle{{Voyager}: An Open-Ended Embodied Agent with Large
   Language Models}.
-\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2305.16291}}
-  (\bibinfo{year}{2023}).
+\newblock \bibinfo{journal}{\emph{Transactions on Machine Learning Research}}
+  (\bibinfo{year}{2024}).
 \newblock
 \urldef\tempurl%
-\url{https://arxiv.org/abs/2305.16291}
+\url{https://openreview.net/forum?id=ehfRiF0R3a}
 \showURL{%
 \tempurl}
 
@@ -389,6 +863,26 @@
 \tempurl}
 
 
+\bibitem[Wu et~al\mbox{.}(2024)]%
+        {wu2023autogen}
+\bibfield{author}{\bibinfo{person}{Qingyun Wu}, \bibinfo{person}{Gagan Bansal},
+  \bibinfo{person}{Jieyu Zhang}, \bibinfo{person}{Yiran Wu},
+  \bibinfo{person}{Beibin Li}, \bibinfo{person}{Erkang Zhu},
+  \bibinfo{person}{Li Jiang}, \bibinfo{person}{Xiaoyun Zhang},
+  \bibinfo{person}{Shaokun Zhang}, \bibinfo{person}{Jiale Liu},
+  \bibinfo{person}{Ahmed~Hassan Awadallah}, \bibinfo{person}{Ryen~W. White},
+  \bibinfo{person}{Doug Burger}, {and} \bibinfo{person}{Chi Wang}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{AutoGen}: Enabling Next-Gen {LLM} Applications via
+  Multi-Agent Conversations}. In \bibinfo{booktitle}{\emph{First Conference on
+  Language Modeling}}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=BAakY1hNKS}
+\showURL{%
+\tempurl}
+
+
 \bibitem[Yi et~al\mbox{.}(2026)]%
         {yi2026ticking}
 \bibfield{author}{\bibinfo{person}{Juheon Yi}, \bibinfo{person}{Jinglu Wang},
@@ -401,6 +895,86 @@
 \newblock
 \urldef\tempurl%
 \url{https://arxiv.org/abs/2606.15684}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Yolum and Singh(2002)]%
+        {yolum2002flexible}
+\bibfield{author}{\bibinfo{person}{P{\i}nar Yolum} {and}
+  \bibinfo{person}{Munindar~P. Singh}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Flexible Protocol Specification and Execution:
+  Applying Event Calculus Planning Using Commitments}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the First International Joint
+  Conference on Autonomous Agents and Multiagent Systems}}.
+  \bibinfo{publisher}{ACM}, \bibinfo{pages}{527--534}.
+\newblock
+\href{https://doi.org/10.1145/544862.544867}{doi:\nolinkurl{10.1145/544862.544867}}
+
+
+\bibitem[Zhang et~al\mbox{.}(2024)]%
+        {zhang2024coela}
+\bibfield{author}{\bibinfo{person}{Hongxin Zhang}, \bibinfo{person}{Weihua Du},
+  \bibinfo{person}{Jiaming Shan}, \bibinfo{person}{Qinhong Zhou},
+  \bibinfo{person}{Yilun Du}, \bibinfo{person}{Joshua~B. Tenenbaum},
+  \bibinfo{person}{Tianmin Shu}, {and} \bibinfo{person}{Chuang Gan}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Building Cooperative Embodied Agents Modularly with
+  Large Language Models}. In \bibinfo{booktitle}{\emph{The Twelfth
+  International Conference on Learning Representations}}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.iclr.cc/paper_files/paper/2024/hash/54b8b4e0b4ba4aad112e84f32e3b5dbb-Abstract-Conference.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2025a)]%
+        {qwen3embedding2025}
+\bibfield{author}{\bibinfo{person}{Yanzhao Zhang}, \bibinfo{person}{Mingxin
+  Li}, \bibinfo{person}{Dingkun Long}, \bibinfo{person}{Xin Zhang},
+  \bibinfo{person}{Huan Lin}, \bibinfo{person}{Baosong Yang},
+  \bibinfo{person}{Pengjun Xie}, \bibinfo{person}{An Yang},
+  \bibinfo{person}{Dayiheng Liu}, \bibinfo{person}{Junyang Lin},
+  \bibinfo{person}{Fei Huang}, {and} \bibinfo{person}{Jingren Zhou}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \showarticletitle{Qwen3 Embedding: Advancing Text Embedding and
+  Reranking Through Foundation Models}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2506.05176}}
+  (\bibinfo{year}{2025}).
+\newblock
+\href{https://doi.org/10.48550/arXiv.2506.05176}{doi:\nolinkurl{10.48550/arXiv.2506.05176}}
+
+
+\bibitem[Zhang et~al\mbox{.}(2025b)]%
+        {zhang2025read}
+\bibfield{author}{\bibinfo{person}{Yang Zhang}, \bibinfo{person}{Shixin Yang},
+  \bibinfo{person}{Chenjia Bai}, \bibinfo{person}{Fei Wu}, \bibinfo{person}{Xiu
+  Li}, \bibinfo{person}{Zhen Wang}, {and} \bibinfo{person}{Xuelong Li}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \showarticletitle{Towards Efficient {LLM} Grounding for Embodied
+  Multi-Agent Collaboration}. In \bibinfo{booktitle}{\emph{Findings of the
+  Association for Computational Linguistics: ACL 2025}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{1663--1699}.
+\newblock
+\href{https://doi.org/10.18653/v1/2025.findings-acl.84}{doi:\nolinkurl{10.18653/v1/2025.findings-acl.84}}
+
+
+\bibitem[Zhi-Xuan et~al\mbox{.}(2024)]%
+        {aamas2024_p2094}
+\bibfield{author}{\bibinfo{person}{Tan Zhi-Xuan}, \bibinfo{person}{Lance Ying},
+  \bibinfo{person}{Vikash Mansinghka}, {and} \bibinfo{person}{Joshua~B.
+  Tenenbaum}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Pragmatic Instruction Following and Goal Assistance
+  via Cooperative Language-Guided Inverse Planning}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 23rd International Conference on
+  Autonomous Agents and Multiagent Systems}}. \bibinfo{publisher}{International
+  Foundation for Autonomous Agents and Multiagent Systems},
+  \bibinfo{pages}{2094--2103}.
+\newblock
+\urldef\tempurl%
+\url{https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2094.pdf}
 \showURL{%
 \tempurl}
 

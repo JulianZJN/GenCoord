@@ -1,0 +1,44 @@
+Four TRAIN syntax examples; solve only the final MODEL_INPUT.
+
+EXAMPLE P4_BRANCH
+Use only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.
+MODEL_INPUT
+AG agent_a
+CTX {"dag":{"active":false,"dag_id":"PUBLIC_ACTIVE_ORDER_BRANCH","e":[["acquire_material","handoff_material"],["handoff_material","branch_0"],["handoff_material","branch_1"],["branch_0","verify_terminal"],["branch_1","verify_terminal"]],"n":[{"id":"acquire_material","pre":[],"role":"sender","task":"resource.obtain(q=8,item=oak_planks)"},{"id":"handoff_material","pre":["acquire_material"],"role":"sender","task":"resource.deliver(q=8,dst_role=receiver,item=oak_planks)"},{"id":"branch_0","pre":["handoff_material"],"ready":true,"role":"receiver","skill":"craft_item","task":"craft.item(bind=STORAGE_BRANCH,q=1,input=oak_planks,item=chest)"},{"id":"branch_1","pre":["handoff_material"],"ready":true,"role":"receiver","skill":"craft_item","task":"craft.item(bind=WORK_BRANCH,q=1,input=oak_planks,item=crafting_table)"},{"a":{"one_active_branch_required":true},"id":"verify_terminal","p":["control","verify_terminal"],"pre":["branch_0","branch_1"],"pre_mode":"ACTIVE_BRANCH_ONLY","role":"checker"}]},"hist":[],"msg":[],"obs":{"inv":[],"land":[{"bind":"STORAGE_BRANCH","pos":[-14,64,-14],"reach":true},{"bind":"WORK_BRANCH","pos":[0,64,17],"reach":true}],"priv":{"at":"sender-side dispatch board","kind":"active_order_branch","prov":"MINECRAFT_LOCAL_OBSERVATION","val":"STORAGE_BRANCH"},"recv_cap":true,"src":[{"avail":8,"item":"oak_planks","reach":true,"src_ref":"sender_local_source"}]},"peer":"agent_b"}
+OUTPUT
+SELF resource.obtain(q=8,item=oak_planks) > resource.deliver(q=8,item=oak_planks,to=agent_b)
+REQ agent_b craft.item(bind=STORAGE_BRANCH,q=1,input=oak_planks,item=chest)
+
+EXAMPLE P1_DESTINATION
+Use only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.
+MODEL_INPUT
+AG agent_a
+CTX {"dag":{"active":false,"dag_id":"PUBLIC_BUILD_SITE_A_OR_B","e":[["acquire_material","handoff_material"],["handoff_material","branch_0"],["handoff_material","branch_1"],["branch_0","verify_terminal"],["branch_1","verify_terminal"]],"n":[{"id":"acquire_material","pre":[],"role":"sender","task":"resource.obtain(q=8,item=oak_planks)"},{"id":"handoff_material","pre":["acquire_material"],"role":"sender","task":"resource.deliver(q=8,dst_role=receiver,item=oak_planks)"},{"id":"branch_0","pre":["handoff_material"],"ready":true,"role":"receiver","skill":"place_block","task":"build.component(bind=SITE_A,q=1,item=oak_planks,site=site_a)"},{"id":"branch_1","pre":["handoff_material"],"ready":true,"role":"receiver","skill":"place_block","task":"build.component(bind=SITE_B,q=1,item=oak_planks,site=site_b)"},{"a":{"one_active_branch_required":true},"id":"verify_terminal","p":["control","verify_terminal"],"pre":["branch_0","branch_1"],"pre_mode":"ACTIVE_BRANCH_ONLY","role":"checker"}]},"hist":[],"msg":[],"obs":{"inv":[],"land":[{"bind":"SITE_A","pos":[-7,64,-9],"reach":true},{"bind":"SITE_B","pos":[6,64,10],"reach":true}],"priv":{"at":"sender-side blueprint lectern","kind":"active_build_site","prov":"MINECRAFT_LOCAL_OBSERVATION","val":"SITE_A"},"recv_cap":true,"src":[{"avail":8,"item":"oak_planks","reach":true,"src_ref":"sender_local_source"}]},"peer":"agent_b"}
+OUTPUT
+SELF resource.obtain(q=8,item=oak_planks) > resource.deliver(q=8,item=oak_planks,to=agent_b)
+REQ agent_b build.component(bind=SITE_A,q=1,item=oak_planks,site=site_a)
+
+EXAMPLE P2_RECIPE
+Use only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.
+MODEL_INPUT
+AG agent_a
+CTX {"dag":{"active":false,"dag_id":"PUBLIC_CHEST_OR_CRAFTING_TABLE","e":[["acquire_material","handoff_material"],["handoff_material","branch_0"],["handoff_material","branch_1"],["branch_0","verify_terminal"],["branch_1","verify_terminal"]],"n":[{"id":"acquire_material","pre":[],"role":"sender","task":"resource.obtain(q=8,item=oak_planks)"},{"id":"handoff_material","pre":["acquire_material"],"role":"sender","task":"resource.deliver(q=8,dst_role=receiver,item=oak_planks)"},{"id":"branch_0","pre":["handoff_material"],"ready":true,"role":"receiver","skill":"craft_item","task":"craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)"},{"id":"branch_1","pre":["handoff_material"],"ready":true,"role":"receiver","skill":"craft_item","task":"craft.item(bind=CRAFTING_TABLE,q=1,input=oak_planks,item=crafting_table)"},{"a":{"one_active_branch_required":true},"id":"verify_terminal","p":["control","verify_terminal"],"pre":["branch_0","branch_1"],"pre_mode":"ACTIVE_BRANCH_ONLY","role":"checker"}]},"hist":[],"msg":[],"obs":{"inv":[],"land":[{"bind":"CHEST","pos":[1,64,-19],"reach":true},{"bind":"CRAFTING_TABLE","pos":[-3,64,-15],"reach":true}],"priv":{"at":"sender-side construction order","kind":"final_product_order","prov":"MINECRAFT_LOCAL_OBSERVATION","val":"CHEST"},"recv_cap":true,"src":[{"avail":8,"item":"oak_planks","reach":true,"src_ref":"sender_local_source"}]},"peer":"agent_b"}
+OUTPUT
+SELF resource.obtain(q=8,item=oak_planks) > resource.deliver(q=8,item=oak_planks,to=agent_b)
+REQ agent_b craft.item(bind=CHEST,q=1,input=oak_planks,item=chest)
+
+EXAMPLE P3_ALLOCATION
+Use only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.
+MODEL_INPUT
+AG agent_a
+CTX {"dag":{"active":false,"dag_id":"PUBLIC_DEPOSIT_OR_BUILD","e":[["acquire_material","handoff_material"],["handoff_material","branch_0"],["handoff_material","branch_1"],["branch_0","verify_terminal"],["branch_1","verify_terminal"]],"n":[{"id":"acquire_material","pre":[],"role":"sender","task":"resource.obtain(q=8,item=cobblestone)"},{"id":"handoff_material","pre":["acquire_material"],"role":"sender","task":"resource.deliver(q=8,dst_role=receiver,item=cobblestone)"},{"id":"branch_0","pre":["handoff_material"],"ready":true,"role":"receiver","skill":"deposit_item","task":"resource.deliver(bind=DEPOSIT,q=4,dst=reserve_chest,item=cobblestone)"},{"id":"branch_1","pre":["handoff_material"],"ready":true,"role":"receiver","skill":"place_block","task":"build.component(bind=BUILD,q=1,item=cobblestone,site=marker_site)"},{"a":{"one_active_branch_required":true},"id":"verify_terminal","p":["control","verify_terminal"],"pre":["branch_0","branch_1"],"pre_mode":"ACTIVE_BRANCH_ONLY","role":"checker"}]},"hist":[],"msg":[],"obs":{"inv":[],"land":[{"bind":"DEPOSIT","pos":[-6,64,16],"reach":true},{"bind":"BUILD","pos":[-3,64,-16],"reach":true}],"priv":{"at":"sender-side inventory board","kind":"team_resource_deficit","prov":"MINECRAFT_LOCAL_OBSERVATION","val":"DEPOSIT"},"recv_cap":true,"src":[{"avail":8,"item":"cobblestone","reach":true,"src_ref":"sender_local_source"}]},"peer":"agent_b"}
+OUTPUT
+SELF resource.obtain(q=8,item=cobblestone) > resource.deliver(q=8,item=cobblestone,to=agent_b)
+REQ agent_b resource.deliver(bind=DEPOSIT,q=4,dst=reserve_chest,item=cobblestone)
+
+CURRENT INSTANCE
+Use only MODEL_INPUT. Generate self tasks and, when locally justified, one peer request. Return exactly two Short DSL lines: SELF ... and REQ .... No prose or semantic repair.
+MODEL_INPUT
+AG agent_a
+CTX {"dag":{"active":false,"dag_id":"PUBLIC_CHEST_A_OR_B","e":[["acquire_material","handoff_material"],["handoff_material","branch_0"],["handoff_material","branch_1"],["branch_0","verify_terminal"],["branch_1","verify_terminal"]],"n":[{"id":"acquire_material","pre":[],"role":"sender","task":"resource.obtain(q=8,item=cobblestone)"},{"id":"handoff_material","pre":["acquire_material"],"role":"sender","task":"resource.deliver(q=8,dst_role=receiver,item=cobblestone)"},{"id":"branch_0","pre":["handoff_material"],"ready":true,"role":"receiver","skill":"deposit_item","task":"resource.deliver(bind=CHEST_A,q=4,dst=chest_a,item=cobblestone)"},{"id":"branch_1","pre":["handoff_material"],"ready":true,"role":"receiver","skill":"deposit_item","task":"resource.deliver(bind=CHEST_B,q=4,dst=chest_b,item=cobblestone)"},{"a":{"one_active_branch_required":true},"id":"verify_terminal","p":["control","verify_terminal"],"pre":["branch_0","branch_1"],"pre_mode":"ACTIVE_BRANCH_ONLY","role":"checker"}]},"hist":[],"msg":[],"obs":{"inv":[],"land":[{"bind":"CHEST_A","pos":[12,64,-15],"reach":true},{"bind":"CHEST_B","pos":[-3,64,17],"reach":true}],"priv":{"at":"sender-side order board","kind":"order_destination","prov":"MINECRAFT_LOCAL_OBSERVATION","val":"CHEST_A"},"recv_cap":true,"src":[{"avail":8,"item":"cobblestone","reach":true,"src_ref":"sender_local_source"}]},"peer":"agent_b"}
+OUTPUT

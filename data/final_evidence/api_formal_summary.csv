@@ -1,0 +1,25 @@
+assigned,backend,condition,failure_phases,formation_rate,formed,infra_unresolved,missing_live,missing_planning,no_commitment,realization_conflicts,repeat_or_seed,request_following,request_mismatch,selected_true,terminal_rate_full_denominator,terminal_success
+320,api,E2E_TRUE,"{""receiver_formation"": 3}",0.990625,317,0,0,0,3,0,1,317,3,317,0.990625,317
+320,api,R_ABSENT,"{""receiver_formation"": 62}",0.80625,258,0,0,0,62,0,1,0,0,120,0.375,120
+320,api,R_ALT,{},1.0,320,0,0,0,0,0,1,320,0,0,0.0,0
+320,api,R_TRUE,"{""realization_conflict"": 2, ""receiver_formation"": 5}",0.978125,313,0,0,0,7,2,1,314,6,314,0.978125,313
+320,api,E2E_TRUE,"{""receiver_formation"": 1, ""sender_formation"": 1}",0.99375,318,0,0,0,2,0,2,318,2,318,0.99375,318
+320,api,R_ABSENT,"{""receiver_formation"": 51}",0.840625,269,0,0,0,51,0,2,0,0,137,0.428125,137
+320,api,R_ALT,"{""receiver_formation"": 1}",0.996875,319,0,0,0,1,0,2,319,1,0,0.0,0
+320,api,R_TRUE,"{""receiver_formation"": 3}",0.990625,317,0,0,0,3,0,2,317,3,317,0.990625,317
+320,api,E2E_TRUE,"{""receiver_formation"": 3}",0.990625,317,0,0,0,3,0,3,317,3,317,0.990625,317
+320,api,R_ABSENT,"{""receiver_formation"": 52}",0.8375,268,0,0,0,52,0,3,0,0,128,0.4,128
+320,api,R_ALT,"{""receiver_formation"": 2}",0.99375,318,0,0,0,2,0,3,318,2,0,0.0,0
+320,api,R_TRUE,"{""receiver_formation"": 1}",0.996875,319,0,0,0,1,0,3,319,1,319,0.996875,319
+320,local,E2E_TRUE,{},1.0,320,0,0,0,0,0,2026073101,320,0,320,1.0,320
+320,local,R_ABSENT,{},1.0,320,0,0,0,0,0,2026073101,0,0,160,0.5,160
+320,local,R_ALT,{},1.0,320,0,0,0,0,0,2026073101,320,0,0,0.0,0
+320,local,R_TRUE,{},1.0,320,0,0,0,0,0,2026073101,320,0,320,1.0,320
+320,local,E2E_TRUE,{},1.0,320,0,0,0,0,0,2026073102,320,0,320,1.0,320
+320,local,R_ABSENT,{},1.0,320,0,0,0,0,0,2026073102,0,0,160,0.5,160
+320,local,R_ALT,{},1.0,320,0,0,0,0,0,2026073102,320,0,0,0.0,0
+320,local,R_TRUE,{},1.0,320,0,0,0,0,0,2026073102,320,0,320,1.0,320
+320,local,E2E_TRUE,"{""sender_formation"": 2}",0.99375,318,0,0,0,2,0,2026073103,318,0,318,0.99375,318
+320,local,R_ABSENT,{},1.0,320,0,0,0,0,0,2026073103,0,0,160,0.5,160
+320,local,R_ALT,{},1.0,320,0,0,0,0,0,2026073103,320,0,0,0.0,0
+320,local,R_TRUE,{},1.0,320,0,0,0,0,0,2026073103,320,0,320,1.0,320

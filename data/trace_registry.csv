@@ -1,0 +1,4 @@
+figure,role,path
+S2/S3,forward live trace,reports/gcp_sequence/short_dsl_paper_evidence/v0.3/fresh_replication/runs/SHORT_DSL_GCP_0.8B.seed_2026073101/episodes/GCP-PAPER-REP-ACTIVE_ORDER_BRANCH-0015-R1/live/attempt_001.json
+S2/S7,feedback raw-processor trace,reports/gcp_sequence/minimal_supplements/v0.2/C_mutual_private_info/raw_episodes/C_MESSAGE_PASSING.seed_2026080601/shard_00/episodes/GCP-MPI-CONFIRM-STICK-RAW_PROCESSOR-V006-R0/controller_trace.json
+S2/S7,feedback finished-receiver trace,reports/gcp_sequence/minimal_supplements/v0.2/C_mutual_private_info/raw_episodes/C_MESSAGE_PASSING.seed_2026080601/shard_00/episodes/GCP-MPI-CONFIRM-STICK-FINISHED_RECEIVER-V006-R0/controller_trace.json

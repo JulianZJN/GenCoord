@@ -1,0 +1,28 @@
+{
+  "schema_version": "gcp-api-request-transfer-v0.1",
+  "dev_role_rows": 32,
+  "test_role_rows": 320,
+  "timing_role_rows": 64,
+  "test_pair_blocks": 80,
+  "timing_e2e_records_per_backend": 192,
+  "timing_max_api_calls": 384,
+  "fresh_index_bases": {
+    "DEV": 9100000,
+    "TEST": 9200000
+  },
+  "legacy_executor_split": {
+    "DEV": "DEV",
+    "TEST": "CONFIRM"
+  },
+  "source_codebook": "data/gcp_sequence/compact_representation/v0.3/codebook.json",
+  "source_codebook_sha256": "d2a0f8ee47d566695993d56e6bf972c3bad04efef5cd79d288bb86d07db3d0bf",
+  "source_train": "data/gcp_sequence/dual_track/v0.2.1/clusters/train.jsonl",
+  "source_train_sha256": "4d4db07e2f9309e540f67078ad37c9193d2a9f60bd9a326b8d72cf4761712ac2",
+  "files_sha256": {
+    "dev_clusters.jsonl": "a6027b522954058c9ac065c6720087862b347306ec7ed864a7cac6c565d08848",
+    "test_clusters.jsonl": "88afb6f56ebbf4ac0faeb77e61fda38b9e6d69ec2d6ffe70a90e85d20eac0d44",
+    "timing_clusters.jsonl": "dc337f3a936f4e2554fbf206a13c3fe08f9cb6f33afc8c286bf76c73b05b1c34",
+    "worked_examples.json": "e5b883361ed626e5d64ef048c7ddcd7f0505e8b3a6817bc25f12e4818448c788",
+    "pair_registry.json": "75903d4db4371f7632667d799c012ff5e88f4330cf0f12399a604551e269be52"
+  }
+}

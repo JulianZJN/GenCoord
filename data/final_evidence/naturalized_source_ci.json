@@ -1,0 +1,153 @@
+{
+  "scope": "Phase92 C2/C3 binding accuracy at planning layer; no new inference or worlds",
+  "independent_sampling_unit": "32 shared C2/C3 mother language-source groups per condition, nested within 16 template/binding cells",
+  "seed_treatment": "three fixed learned checkpoints averaged within each source group; CI conditional on those checkpoints",
+  "source_sha256": {
+    "phase97_pre_gpu.nosync/results/a2/raw_predictions.jsonl": "3f337d99751ddb486cc608a1278a67bc58117c277d818ce0db401989027fcc7f",
+    "reports/gcp_sequence/naturalized_private_fact/v0.1/planning/learned/NATURALIZED_LEARNED_FACTOR_RULE_0.8B.seed_2026073101/planning_metrics.jsonl": "fb059af6cc7d531992fc5e61620a805c335175870875be982df81f62a05ae526",
+    "reports/gcp_sequence/naturalized_private_fact/v0.1/planning/learned/NATURALIZED_LEARNED_FACTOR_RULE_0.8B.seed_2026073102/planning_metrics.jsonl": "ddda4525493e48fbb8efab97685186a3e9643b745bc1ea72885ba8e532cbd0c6",
+    "reports/gcp_sequence/naturalized_private_fact/v0.1/planning/learned/NATURALIZED_LEARNED_FACTOR_RULE_0.8B.seed_2026073103/planning_metrics.jsonl": "cdbacacf5a4a5a74bd037a891229096dcc4d523e6c81db597679c1c87f342ed9",
+    "reports/gcp_sequence/naturalized_private_fact/v0.1/planning/learned/NATURALIZED_DIRECT_SHORT_DSL_0.8B.seed_2026073101/planning_metrics.jsonl": "3054d371f1114d2cbd3e13f650db2f129f3cbf2b90a87418a77f9afd2bb2a3a9",
+    "reports/gcp_sequence/naturalized_private_fact/v0.1/planning/learned/NATURALIZED_DIRECT_SHORT_DSL_0.8B.seed_2026073102/planning_metrics.jsonl": "a52433c7cd93b341173328384a6e947c7ca612aa180cbd4f8633753b07b9b8d1",
+    "reports/gcp_sequence/naturalized_private_fact/v0.1/planning/learned/NATURALIZED_DIRECT_SHORT_DSL_0.8B.seed_2026073103/planning_metrics.jsonl": "dea69bcc044821e50168394ede48f2890aecd1582aff360081e668ec95089231",
+    "reports/gcp_sequence/naturalized_private_fact/v0.1/planning/model_free/TFIDF_NEAREST_NEIGHBOUR_RULE/planning_metrics.jsonl": "d87a1168c18e4495ce79a3d7cf359b0739c0b7c1b3b7e1cd431b601bde33ebc4"
+  },
+  "results": {
+    "C2": {
+      "mother_source_groups": 32,
+      "role_world_rows": 320,
+      "method_observation_counts": {
+        "Factor-Code + Rule": 960,
+        "Direct Short DSL": 960,
+        "TF-IDF nearest neighbour": 320
+      },
+      "method_means": {
+        "Factor-Code + Rule": 0.790625,
+        "Direct Short DSL": 0.6583333333333333,
+        "TF-IDF nearest neighbour": 0.59375
+      },
+      "paired_differences": {
+        "Factor-Code + Rule minus TF-IDF": {
+          "primary_stratified": {
+            "unit": "mother language source, with role/world/seed observations averaged inside",
+            "source_groups": 32,
+            "semantic_cell_strata": 16,
+            "draws": 10000,
+            "stratified_by_template_and_binding": true,
+            "difference": 0.196875,
+            "ci95": [
+              0.11979166666666666,
+              0.27291666666666664
+            ]
+          },
+          "unstratified_sensitivity": {
+            "unit": "mother language source, with role/world/seed observations averaged inside",
+            "source_groups": 32,
+            "semantic_cell_strata": 16,
+            "draws": 10000,
+            "stratified_by_template_and_binding": false,
+            "difference": 0.196875,
+            "ci95": [
+              0.022916666666666658,
+              0.378125
+            ]
+          }
+        },
+        "Direct Short DSL minus TF-IDF": {
+          "primary_stratified": {
+            "unit": "mother language source, with role/world/seed observations averaged inside",
+            "source_groups": 32,
+            "semantic_cell_strata": 16,
+            "draws": 10000,
+            "stratified_by_template_and_binding": true,
+            "difference": 0.06458333333333333,
+            "ci95": [
+              -0.004166666666666674,
+              0.13333333333333333
+            ]
+          },
+          "unstratified_sensitivity": {
+            "unit": "mother language source, with role/world/seed observations averaged inside",
+            "source_groups": 32,
+            "semantic_cell_strata": 16,
+            "draws": 10000,
+            "stratified_by_template_and_binding": false,
+            "difference": 0.06458333333333333,
+            "ci95": [
+              -0.07500000000000001,
+              0.21770833333333334
+            ]
+          }
+        }
+      }
+    },
+    "C3": {
+      "mother_source_groups": 32,
+      "role_world_rows": 320,
+      "method_observation_counts": {
+        "Factor-Code + Rule": 960,
+        "Direct Short DSL": 960,
+        "TF-IDF nearest neighbour": 320
+      },
+      "method_means": {
+        "Factor-Code + Rule": 0.8010416666666667,
+        "Direct Short DSL": 0.6479166666666667,
+        "TF-IDF nearest neighbour": 0.625
+      },
+      "paired_differences": {
+        "Factor-Code + Rule minus TF-IDF": {
+          "primary_stratified": {
+            "unit": "mother language source, with role/world/seed observations averaged inside",
+            "source_groups": 32,
+            "semantic_cell_strata": 16,
+            "draws": 10000,
+            "stratified_by_template_and_binding": true,
+            "difference": 0.17604166666666665,
+            "ci95": [
+              0.11041666666666666,
+              0.23958333333333334
+            ]
+          },
+          "unstratified_sensitivity": {
+            "unit": "mother language source, with role/world/seed observations averaged inside",
+            "source_groups": 32,
+            "semantic_cell_strata": 16,
+            "draws": 10000,
+            "stratified_by_template_and_binding": false,
+            "difference": 0.17604166666666665,
+            "ci95": [
+              0.004166666666666662,
+              0.3520833333333333
+            ]
+          }
+        },
+        "Direct Short DSL minus TF-IDF": {
+          "primary_stratified": {
+            "unit": "mother language source, with role/world/seed observations averaged inside",
+            "source_groups": 32,
+            "semantic_cell_strata": 16,
+            "draws": 10000,
+            "stratified_by_template_and_binding": true,
+            "difference": 0.02291666666666667,
+            "ci95": [
+              -0.035416666666666666,
+              0.08125
+            ]
+          },
+          "unstratified_sensitivity": {
+            "unit": "mother language source, with role/world/seed observations averaged inside",
+            "source_groups": 32,
+            "semantic_cell_strata": 16,
+            "draws": 10000,
+            "stratified_by_template_and_binding": false,
+            "difference": 0.02291666666666667,
+            "ci95": [
+              -0.12083333333333332,
+              0.16979166666666667
+            ]
+          }
+        }
+      }
+    }
+  }
+}

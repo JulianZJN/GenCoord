@@ -1,0 +1,99 @@
+{
+  "centralized_contract": {
+    "checkpoint_selection": "PRECOMMITTED_FINAL_STEP_NO_DEV_SELECTION",
+    "dtype": "bfloat16",
+    "effective_batch_size": 16,
+    "epochs": 4,
+    "gradient_accumulation_steps": 8,
+    "gradient_checkpointing": true,
+    "learning_rate": 1e-05,
+    "matching_score": 0.11035767841477566,
+    "max_grad_norm": 1.0,
+    "max_length": 2048,
+    "micro_batch_size": 2,
+    "optimizer_update_ratio": 1.0,
+    "optimizer_updates": 80,
+    "scheduler": "cosine",
+    "token_exposure": 970080,
+    "token_exposure_ratio": 1.1166774104429507,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.01
+  },
+  "centralized_data": {
+    "max_total_tokens": 765,
+    "median_total_tokens": 760,
+    "min_total_tokens": 753,
+    "p99_total_tokens": 765,
+    "path": "data/gcp_sequence/minimal_supplements/v0.2/mutual_private_info/training/centralized_gcp.jsonl",
+    "prompt_tokens_per_epoch": 221240,
+    "rows": 320,
+    "sha256": "e87e3005b0cdfe4f08fb057b827d8ce1fc1b5b4aa6365f52341022f979eaf776",
+    "target_and_eos_tokens_per_epoch": 21280,
+    "total_tokens_per_epoch": 242520
+  },
+  "centralized_matched_budget": {
+    "candidate": {
+      "effective_batch_size": 16,
+      "epochs": 4,
+      "gradient_accumulation_steps": 8,
+      "matching_score": 0.11035767841477566,
+      "micro_batch_size": 2,
+      "optimizer_update_ratio": 1.0,
+      "optimizer_updates": 80,
+      "token_exposure": 970080,
+      "token_exposure_ratio": 1.1166774104429507
+    },
+    "checkpoint_selection": "FINAL_STEP_NO_DEV_SELECTION",
+    "dev_outcome_accessed": false,
+    "reference": {
+      "epochs": 2,
+      "gradient_accumulation_steps": 4,
+      "micro_batch_size": 4,
+      "optimizer_updates": 80,
+      "rows": 640,
+      "token_exposure": 868720,
+      "tokens_per_epoch": 434360
+    },
+    "schema_version": "gcp-matched-training-budget-v0.2",
+    "status": "PRECOMMITTED_BEFORE_TRAINING_OUTCOME"
+  },
+  "config": {
+    "path": "configs/gcp_mutual_private_info_pilot_v0.2.json",
+    "sha256": "e37268e3debfe2672b3e2e6e86dae076a1db0c0ec8e094208ef4a0c13d763448"
+  },
+  "dev_outcome_accessed": false,
+  "distributed_contract": {
+    "checkpoint_selection": "PRECOMMITTED_FINAL_STEP_NO_DEV_SELECTION",
+    "dtype": "bfloat16",
+    "epochs": 2,
+    "gradient_accumulation_steps": 4,
+    "gradient_checkpointing": true,
+    "learning_rate": 1e-05,
+    "max_grad_norm": 1.0,
+    "max_length": 2048,
+    "micro_batch_size": 4,
+    "scheduler": "cosine",
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.01
+  },
+  "distributed_data": {
+    "max_total_tokens": 771,
+    "median_total_tokens": 743,
+    "min_total_tokens": 598,
+    "p99_total_tokens": 770,
+    "path": "data/gcp_sequence/minimal_supplements/v0.2/mutual_private_info/training/distributed_gcp.jsonl",
+    "prompt_tokens_per_epoch": 391640,
+    "rows": 640,
+    "sha256": "de8e4ae335899d35943dc74c91679383c8766447ccf4d9171a5247e6cf89bc27",
+    "target_and_eos_tokens_per_epoch": 42720,
+    "total_tokens_per_epoch": 434360
+  },
+  "formal_test_unsealed": false,
+  "qualification_access": "NONE",
+  "schema_version": "gcp-mutual-private-training-budget-audit-v0.2",
+  "status": "PRECOMMITTED_BEFORE_TRAINING_OUTCOME",
+  "tokenizer": {
+    "path": "MODEL_ROOT/Qwen__Qwen3.5-0.8B",
+    "vocab_size": 248077
+  }
+}

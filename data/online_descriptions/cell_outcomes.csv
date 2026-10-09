@@ -1,0 +1,129 @@
+cell,assigned,formed,fulfilled,success,configuration,success_pct,formation_pct
+"[""ACTIVE_ORDER_BRANCH"", ""STORAGE_BRANCH""]",120,120,120,120,Direct / deterministic,100.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""STORAGE_BRANCH""]",120,120,119,119,Direct / learned,99.16666666666667,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""STORAGE_BRANCH""]",120,120,120,0,Factor / deterministic,0.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""STORAGE_BRANCH""]",120,120,120,0,Factor / learned,0.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""STORAGE_BRANCH""]",40,40,40,0,Supervised lexical classifier,0.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""STORAGE_BRANCH""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""STORAGE_BRANCH""]",40,40,40,36,Embedding retrieval,90.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""STORAGE_BRANCH""]",40,40,39,5,TF–IDF retrieval,12.5,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""WORK_BRANCH""]",120,120,120,94,Direct / deterministic,78.33333333333333,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""WORK_BRANCH""]",120,120,120,94,Direct / learned,78.33333333333333,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""WORK_BRANCH""]",120,120,120,120,Factor / deterministic,100.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""WORK_BRANCH""]",120,120,120,120,Factor / learned,100.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""WORK_BRANCH""]",40,40,40,40,Supervised lexical classifier,100.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""WORK_BRANCH""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""WORK_BRANCH""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""ACTIVE_ORDER_BRANCH"", ""WORK_BRANCH""]",40,40,40,40,TF–IDF retrieval,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_A""]",120,120,120,120,Direct / deterministic,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_A""]",120,120,120,120,Direct / learned,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_A""]",120,120,120,120,Factor / deterministic,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_A""]",120,120,120,120,Factor / learned,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_A""]",40,40,40,40,Supervised lexical classifier,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_A""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_A""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_A""]",40,40,40,40,TF–IDF retrieval,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_B""]",120,120,120,0,Direct / deterministic,0.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_B""]",120,120,120,0,Direct / learned,0.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_B""]",120,120,120,120,Factor / deterministic,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_B""]",120,120,120,120,Factor / learned,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_B""]",40,40,40,0,Supervised lexical classifier,0.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_B""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_B""]",40,40,40,12,Embedding retrieval,30.0,100.0
+"[""BUILD_SITE_A_OR_B"", ""SITE_B""]",40,40,40,0,TF–IDF retrieval,0.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_A""]",120,120,119,119,Direct / deterministic,99.16666666666667,100.0
+"[""CHEST_A_OR_B"", ""CHEST_A""]",120,120,120,120,Direct / learned,100.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_A""]",120,120,119,119,Factor / deterministic,99.16666666666667,100.0
+"[""CHEST_A_OR_B"", ""CHEST_A""]",120,120,120,120,Factor / learned,100.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_A""]",40,40,40,40,Supervised lexical classifier,100.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_A""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_A""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_A""]",40,40,39,39,TF–IDF retrieval,97.5,100.0
+"[""CHEST_A_OR_B"", ""CHEST_B""]",120,120,120,0,Direct / deterministic,0.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_B""]",120,120,120,0,Direct / learned,0.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_B""]",120,120,120,120,Factor / deterministic,100.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_B""]",120,120,120,120,Factor / learned,100.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_B""]",40,40,40,0,Supervised lexical classifier,0.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_B""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_B""]",40,40,40,20,Embedding retrieval,50.0,100.0
+"[""CHEST_A_OR_B"", ""CHEST_B""]",40,40,40,0,TF–IDF retrieval,0.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CHEST""]",120,120,120,120,Direct / deterministic,100.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CHEST""]",120,120,120,120,Direct / learned,100.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CHEST""]",120,120,120,120,Factor / deterministic,100.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CHEST""]",120,120,120,120,Factor / learned,100.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CHEST""]",40,40,40,40,Supervised lexical classifier,100.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CHEST""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CHEST""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CHEST""]",40,40,40,36,TF–IDF retrieval,90.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CRAFTING_TABLE""]",120,84,84,0,Direct / deterministic,0.0,70.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CRAFTING_TABLE""]",120,84,84,0,Direct / learned,0.0,70.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CRAFTING_TABLE""]",120,0,0,0,Factor / deterministic,0.0,0.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CRAFTING_TABLE""]",120,0,0,0,Factor / learned,0.0,0.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CRAFTING_TABLE""]",40,40,40,0,Supervised lexical classifier,0.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CRAFTING_TABLE""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CRAFTING_TABLE""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""CHEST_OR_CRAFTING_TABLE"", ""CRAFTING_TABLE""]",40,40,40,4,TF–IDF retrieval,10.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""BUILD""]",120,120,120,120,Direct / deterministic,100.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""BUILD""]",120,120,120,120,Direct / learned,100.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""BUILD""]",120,120,118,99,Factor / deterministic,82.5,100.0
+"[""DEPOSIT_OR_BUILD"", ""BUILD""]",120,120,120,100,Factor / learned,83.33333333333333,100.0
+"[""DEPOSIT_OR_BUILD"", ""BUILD""]",40,40,40,40,Supervised lexical classifier,100.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""BUILD""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""BUILD""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""BUILD""]",40,40,39,39,TF–IDF retrieval,97.5,100.0
+"[""DEPOSIT_OR_BUILD"", ""DEPOSIT""]",120,120,119,119,Direct / deterministic,99.16666666666667,100.0
+"[""DEPOSIT_OR_BUILD"", ""DEPOSIT""]",120,120,120,120,Direct / learned,100.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""DEPOSIT""]",120,120,120,120,Factor / deterministic,100.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""DEPOSIT""]",120,120,120,120,Factor / learned,100.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""DEPOSIT""]",40,40,40,14,Supervised lexical classifier,35.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""DEPOSIT""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""DEPOSIT""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""DEPOSIT_OR_BUILD"", ""DEPOSIT""]",40,40,40,24,TF–IDF retrieval,60.0,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""ROOF""]",120,102,102,10,Direct / deterministic,8.333333333333334,85.0
+"[""DUAL_BUILD_ALLOCATION"", ""ROOF""]",120,102,102,10,Direct / learned,8.333333333333334,85.0
+"[""DUAL_BUILD_ALLOCATION"", ""ROOF""]",120,120,120,59,Factor / deterministic,49.166666666666664,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""ROOF""]",120,120,119,58,Factor / learned,48.333333333333336,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""ROOF""]",40,40,39,23,Supervised lexical classifier,57.5,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""ROOF""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""ROOF""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""ROOF""]",40,40,40,24,TF–IDF retrieval,60.0,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""WALL""]",120,120,120,120,Direct / deterministic,100.0,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""WALL""]",120,120,120,120,Direct / learned,100.0,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""WALL""]",120,120,120,120,Factor / deterministic,100.0,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""WALL""]",120,120,119,119,Factor / learned,99.16666666666667,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""WALL""]",40,40,40,16,Supervised lexical classifier,40.0,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""WALL""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""WALL""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""DUAL_BUILD_ALLOCATION"", ""WALL""]",40,40,40,16,TF–IDF retrieval,40.0,100.0
+"[""PLANKS_OR_STICKS"", ""PLANKS""]",120,80,80,34,Direct / deterministic,28.333333333333332,66.66666666666667
+"[""PLANKS_OR_STICKS"", ""PLANKS""]",120,80,80,34,Direct / learned,28.333333333333332,66.66666666666667
+"[""PLANKS_OR_STICKS"", ""PLANKS""]",120,120,119,119,Factor / deterministic,99.16666666666667,100.0
+"[""PLANKS_OR_STICKS"", ""PLANKS""]",120,120,120,120,Factor / learned,100.0,100.0
+"[""PLANKS_OR_STICKS"", ""PLANKS""]",40,40,40,0,Supervised lexical classifier,0.0,100.0
+"[""PLANKS_OR_STICKS"", ""PLANKS""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""PLANKS_OR_STICKS"", ""PLANKS""]",40,40,40,34,Embedding retrieval,85.0,100.0
+"[""PLANKS_OR_STICKS"", ""PLANKS""]",40,40,40,0,TF–IDF retrieval,0.0,100.0
+"[""PLANKS_OR_STICKS"", ""STICKS""]",120,80,80,36,Direct / deterministic,30.0,66.66666666666667
+"[""PLANKS_OR_STICKS"", ""STICKS""]",120,80,80,36,Direct / learned,30.0,66.66666666666667
+"[""PLANKS_OR_STICKS"", ""STICKS""]",120,120,120,49,Factor / deterministic,40.833333333333336,100.0
+"[""PLANKS_OR_STICKS"", ""STICKS""]",120,120,120,49,Factor / learned,40.833333333333336,100.0
+"[""PLANKS_OR_STICKS"", ""STICKS""]",40,40,39,39,Supervised lexical classifier,97.5,100.0
+"[""PLANKS_OR_STICKS"", ""STICKS""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""PLANKS_OR_STICKS"", ""STICKS""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""PLANKS_OR_STICKS"", ""STICKS""]",40,40,40,40,TF–IDF retrieval,100.0,100.0
+"[""REMAINING_TERMINAL"", ""DEPOT_TERMINAL""]",120,120,119,119,Direct / deterministic,99.16666666666667,100.0
+"[""REMAINING_TERMINAL"", ""DEPOT_TERMINAL""]",120,120,120,120,Direct / learned,100.0,100.0
+"[""REMAINING_TERMINAL"", ""DEPOT_TERMINAL""]",120,120,119,119,Factor / deterministic,99.16666666666667,100.0
+"[""REMAINING_TERMINAL"", ""DEPOT_TERMINAL""]",120,120,120,120,Factor / learned,100.0,100.0
+"[""REMAINING_TERMINAL"", ""DEPOT_TERMINAL""]",40,40,40,40,Supervised lexical classifier,100.0,100.0
+"[""REMAINING_TERMINAL"", ""DEPOT_TERMINAL""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""REMAINING_TERMINAL"", ""DEPOT_TERMINAL""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""REMAINING_TERMINAL"", ""DEPOT_TERMINAL""]",40,40,40,40,TF–IDF retrieval,100.0,100.0
+"[""REMAINING_TERMINAL"", ""MARKER_TERMINAL""]",120,120,119,119,Direct / deterministic,99.16666666666667,100.0
+"[""REMAINING_TERMINAL"", ""MARKER_TERMINAL""]",120,120,120,120,Direct / learned,100.0,100.0
+"[""REMAINING_TERMINAL"", ""MARKER_TERMINAL""]",120,120,120,120,Factor / deterministic,100.0,100.0
+"[""REMAINING_TERMINAL"", ""MARKER_TERMINAL""]",120,120,120,120,Factor / learned,100.0,100.0
+"[""REMAINING_TERMINAL"", ""MARKER_TERMINAL""]",40,40,40,40,Supervised lexical classifier,100.0,100.0
+"[""REMAINING_TERMINAL"", ""MARKER_TERMINAL""]",40,40,40,40,Privileged true-binding reference,100.0,100.0
+"[""REMAINING_TERMINAL"", ""MARKER_TERMINAL""]",40,40,40,40,Embedding retrieval,100.0,100.0
+"[""REMAINING_TERMINAL"", ""MARKER_TERMINAL""]",40,40,40,40,TF–IDF retrieval,100.0,100.0

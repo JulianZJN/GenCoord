@@ -1,0 +1,2 @@
+SELF resource.deliver(bind=CHEST_A,q=4,dst=chest_a,item=cobblestone)
+REQ -

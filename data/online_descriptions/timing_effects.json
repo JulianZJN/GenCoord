@@ -1,0 +1,122 @@
+[
+  {
+    "contrast": "F1-F2",
+    "metric": "TTC_ms",
+    "difference": -343.42616160937496,
+    "CI95": [
+      -374.04251719557277,
+      -292.4213013584633
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "F1-F2",
+    "metric": "T_episode_ms",
+    "difference": -334.6578906250004,
+    "CI95": [
+      -378.10014908854134,
+      -279.01897395833396
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "D1-D2",
+    "metric": "TTC_ms",
+    "difference": -784.9114738489585,
+    "CI95": [
+      -935.9299505005209,
+      -680.5370665803388
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "D1-D2",
+    "metric": "T_episode_ms",
+    "difference": -800.1411354166662,
+    "CI95": [
+      -955.825156510414,
+      -680.4974611979164
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "F1-D2",
+    "metric": "TTC_ms",
+    "difference": -1918.458889109375,
+    "CI95": [
+      -2069.562128557422,
+      -1811.8851088423178
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "F1-D2",
+    "metric": "T_episode_ms",
+    "difference": -2113.6454062500006,
+    "CI95": [
+      -5679.2203140625,
+      540.3832005208313
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "F1-T1",
+    "metric": "TTC_ms",
+    "difference": 371.4017138281251,
+    "CI95": [
+      358.8119187842449,
+      383.4869738351562
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "F1-T1",
+    "metric": "T_episode_ms",
+    "difference": -963.164182291667,
+    "CI95": [
+      -3891.3229473958327,
+      634.4429933593735
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "F1-L1",
+    "metric": "TTC_ms",
+    "difference": 98.69699082812511,
+    "CI95": [
+      -447.77477403411444,
+      379.46163272539064
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "F1-L1",
+    "metric": "T_episode_ms",
+    "difference": -1238.5876510416679,
+    "CI95": [
+      -4291.30336888021,
+      543.0573458333317
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "F1-R1",
+    "metric": "TTC_ms",
+    "difference": 318.6969327500001,
+    "CI95": [
+      300.83608202317725,
+      335.02401590651056
+    ],
+    "paired_sources": 16
+  },
+  {
+    "contrast": "F1-R1",
+    "metric": "T_episode_ms",
+    "difference": -1016.4460729166667,
+    "CI95": [
+      -3925.8402837239587,
+      529.118455208332
+    ],
+    "paired_sources": 16
+  }
+]

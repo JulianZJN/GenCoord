@@ -1,0 +1,118 @@
+{
+  "arm_by_backend": {
+    "api": {
+      "M0": {
+        "formed": 952,
+        "receiver_formation": 7,
+        "sender_formation": 1
+      },
+      "M1": {
+        "formed": 959,
+        "sender_formation": 1
+      },
+      "M2": {
+        "formed": 959,
+        "sender_formation": 1
+      }
+    },
+    "local": {
+      "M0": {
+        "formed": 958,
+        "sender_formation": 2
+      },
+      "M1": {
+        "formed": 958,
+        "sender_formation": 2
+      },
+      "M2": {
+        "formed": 958,
+        "sender_formation": 2
+      }
+    }
+  },
+  "arm_counts": {
+    "M0": {
+      "formed": 1910,
+      "receiver_formation": 7,
+      "sender_formation": 3
+    },
+    "M1": {
+      "formed": 1917,
+      "sender_formation": 3
+    },
+    "M2": {
+      "formed": 1917,
+      "sender_formation": 3
+    }
+  },
+  "arm_rows": 5760,
+  "cpu_three_arms_sha256": "bf9bd067f0b6049e38b57269120a6cebb327d22db844b9ee2edee74ef93b5017",
+  "e2e_sender_records": 1920,
+  "gate_by_backend": {
+    "api": {
+      "formed": 952,
+      "receiver_formation": 7,
+      "sender_formation": 1
+    },
+    "local": {
+      "formed": 958,
+      "sender_formation": 2
+    }
+  },
+  "new_world_runs": 0,
+  "newly_formed_no_original_world": 7,
+  "physical_limitation": "No complete exact full-key evidence matched; all replay arms UNRUN.",
+  "physical_links": 0,
+  "planning_containers_checked": 7680,
+  "planning_members_checked": {
+    "raw/formal/api/planning/part001.jsonl": 2387,
+    "raw/formal/api/planning/part002.jsonl": 1453,
+    "raw/formal/local.seed_2026073101/planning/part001.jsonl": 1280,
+    "raw/formal/local.seed_2026073102/planning/part001.jsonl": 1280,
+    "raw/formal/local.seed_2026073103/planning/part001.jsonl": 1280
+  },
+  "r_true_raw_legal_conflicts": [
+    {
+      "backend": "api",
+      "delivered_request_binding_id": "BUILD",
+      "old_failure_phase": "realization_conflict",
+      "old_gate_formed": false,
+      "raw_legal_public_binding": true,
+      "raw_selected_binding_id": "DEPOSIT",
+      "record_id": "7471ec9d8601ab28cfbd5ff2",
+      "source": {
+        "archive_line": 1700,
+        "archive_member": "raw/formal/api/planning/part001.jsonl",
+        "original_path": "reports/gcp_sequence/api_request_transfer/v0.3_formal/formal/api/records/7471ec9d8601ab28cfbd5ff2/planning.json",
+        "sha256": "034317dafc2afa264ce4cc4d646baca0791d07dafa39bcedf967f884af7759a9"
+      }
+    },
+    {
+      "backend": "api",
+      "delivered_request_binding_id": "MARKER_TERMINAL",
+      "old_failure_phase": "realization_conflict",
+      "old_gate_formed": false,
+      "raw_legal_public_binding": true,
+      "raw_selected_binding_id": "DEPOT_TERMINAL",
+      "record_id": "b4e3b45a5dad32779558a662",
+      "source": {
+        "archive_line": 288,
+        "archive_member": "raw/formal/api/planning/part002.jsonl",
+        "original_path": "reports/gcp_sequence/api_request_transfer/v0.3_formal/formal/api/records/b4e3b45a5dad32779558a662/planning.json",
+        "sha256": "c6577745adc14b0a9a8a9006bbc499132b6362569ee521f2019de606b58bcf6d"
+      }
+    }
+  ],
+  "records_total": 7680,
+  "scope": "PHASE96_ARCHIVE_CPU_REPLAY_ONLY",
+  "source_member_sha256": {
+    "phase96/analysis/formal_summary.csv": "44376fd985ec829405f71f56a215433d2a419b8636385f628ed55c71b0a8505f",
+    "phase96/analysis/records.csv": "ac25b0fe1269a6990e187962a0477011eac2065c27514f9eb933a381704aa3d3",
+    "phase96/inputs/data/gcp_sequence/api_request_transfer/v0.1/test_clusters.jsonl": "88afb6f56ebbf4ac0faeb77e61fda38b9e6d69ec2d6ffe70a90e85d20eac0d44",
+    "phase96/inputs/data/gcp_sequence/compact_representation/v0.3/codebook.json": "d2a0f8ee47d566695993d56e6bf972c3bad04efef5cd79d288bb86d07db3d0bf",
+    "phase96/source/src/gcp_sequence/api_request_transfer.py": "4b13ef845af1cca96e4587f94c8b80da26a55c7ca82436125777d681270166e0",
+    "raw_index.csv": "50bbc1f20a8dace0abe36f3341f7a921d33a7bec4f351c82828a77d3db32cc8b"
+  },
+  "v1_receiver_sha256": "320ff6b52425d0e0912b210f0272586c707668016ef327b053f82b78f56dbfe1",
+  "zip_sha256": "0b7549c71764b80c60b29c5a38f1f72b5c8779b497ed0e05df1bc0a48b6a9466"
+}
